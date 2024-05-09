@@ -1,0 +1,20 @@
+Participantes del proyecto:
+
+Francy Lorena Bejarano Parra --> francy-lorena.
+
+Lina Mora --> lina-mora.
+
+Valentina Ramírez Ramírez --> valentina-ramirez.  
+
+Mateo Rueda Gómez  --> mateo-rueda.
+
+Karla Nicole González Barahona  --> karla-nicole.
+
+
+Todos nuestros roles de equipo serán rotativos, dándonos así la oportunidad de aprender cada enfoque en el desarrollo. 
+
+main --> rama principal
+
+dev --> rama de trabajo 
+
+Todos los participantes realizaremos push a la rama DEV con el fin de garantizar la seguridad de nuestra rama principal.
