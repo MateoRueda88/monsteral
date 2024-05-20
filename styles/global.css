@@ -1,0 +1,107 @@
+/* #523726 cafe oscuro  */
+/* #C8B999 cafe claro */
+/* 
+normalizar nuestra hoja de estilos */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+
+}
+/* content header */
+.header-content{
+height: 28vh;
+gap: 10px;
+display: flex;
+flex-direction: column;
+
+
+
+}
+.send-text{
+    background-color: #523726;
+    color: #C8B999;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 10pt;
+ 
+}
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+/* Menu hamburguesa */
+.nav-list{
+    display: none;
+}
+.check{
+    display: none;
+}
+input:checked ~ ul{
+    display: block;
+}
+label {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+  }
+  /* seccion donde estan alojadas nuestras opciones de navegacion */
+  li {
+    display: block;
+    background: lightgrey;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+  }
+/* 
+  contenido principal header */
+  /* .img-logo{
+    width: 100px;
+    height: auto;
+  } */
+  .content-logo{
+    width: 120px;
+    height: 30px;
+    background-image: url(../assets/img/LogoMonsteralPng.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+   
+  }
+
+  .icons-content{
+    display: flex;
+    height: 20px;
+    gap: 20px;
+
+  }
+/* 
+  sesion busquedad */
+.content-search{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    border-top: 2px solid #939535;
+    padding-top: 10px;
+}
+
+  .search{
+    border: 1px solid black;
+    border-radius: 50px;
+    width: 200px;
+    text-align: center;
+    height: 18px;
+    padding: 10px;
+  }
+
+  .img-lupa{
+    height: 20px;
+  }
