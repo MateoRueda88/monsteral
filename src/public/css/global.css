@@ -36,6 +36,9 @@ flex-direction: column;
 
 }
 /* Menu hamburguesa */
+.content-nav{
+  z-index: 1;
+}
 .nav-list{
     display: none;
 }
@@ -69,7 +72,7 @@ label {
   .content-logo{
     width: 120px;
     height: 30px;
-    background-image: url(../assets/img/LogoMonsteralPng.webp);
+    background-image: url(../img/LogoMonsteralPng.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,3 +108,4 @@ label {
   .img-lupa{
     height: 20px;
   }
+
