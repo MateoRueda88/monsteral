@@ -15,7 +15,7 @@
   display: grid;
   place-items: center;
   gap: 2%;
-  background-image: url(fondomovil.png);
+  background-image: url("../img/aboutImg/mobileBackgroundV.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

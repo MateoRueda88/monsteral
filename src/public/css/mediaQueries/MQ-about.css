@@ -9,7 +9,7 @@
       border-radius: 20px;
       display: grid;
       grid-template-columns:repeat(2,1fr);
-      background-image:url("fondo2.png");
+      background-image:url("src/public/img/aboutImg/tabletBackgroundV.webp");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -131,7 +131,7 @@
       flex-wrap: wrap;
       border-radius: 50px;
       gap: 10px;
-      background-image: url(fondo2.png);
+      background-image:url("../img/aboutImg/tabletBackgroundV.webp");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
