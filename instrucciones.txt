@@ -17,4 +17,5 @@ main --> rama principal
 
 dev --> rama de trabajo 
 
+rama
 Todos los participantes realizaremos push a la rama DEV con el fin de garantizar la seguridad de nuestra rama principal.
