@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand";
+  }
+
+/* Se inicia estilo de la sección Valores desde MOVIL trabajada por Karla ...................................... */
+
+  
+  .valuesContainer {
+    height: auto;
+  border-top: 5px solid;
+  border-color: #5D5F10;
+  display: grid;
+  place-items: center;
+  gap: 2%;
+  background-image: url(fondomovil.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  }
+  .valuesTitleContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: auto;
+    border-bottom: 5px solid;
+    border-color: #5D5F10;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: white; 
+  }
+  
+  .titleValues{
+    font-size: 20pt;
+    color: #6D6E44; 
+     
+  }
+  
+  /* Contenedor del primer valor Aprendizaje */
+  
+  .valueF {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+  }
+  
+  .valueF .value {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 70% 0% 70% 0%;
+    overflow: hidden;
+    transition: .5s;
+  }
+  
+  .valueF .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+  }
+  
+  .valueF .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .valueF .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    padding-left: 10%;
+  }
+  
+  .valueF .back {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #E4E4CC;
+    padding: 15px;
+    color:#5D5F10;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+  }
+  
+  .valueF .back h3 {
+    font-size: 15pt;
+    margin-top: 20px;
+    text-align: right;
+  }
+  .valueF .back div{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .valueF .back p {
+    padding-top: 18%;
+    width: 90%;
+    font-weight:900;
+    color: #6D6E44;
+    line-height: 1.5;
+  } 
+  
+  .valueF:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+  }
+  
+  .valueF:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+  }
+  
+  /* cabio de targeta orientacion y otras cualidades ------------------------------------------------------ */
+  .valueF .value1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 0% 70% 0% 70%;
+    overflow: hidden;
+    transition: .5s;
+  }
+  
+  .valueF .front1 {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+  
+    }
+  
+  .valueF .front1 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .valueF .front1 h3 {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 40px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    padding-right: 2%;
+    text-align: right;
+    font-size: 15pt;
+  }
+  
+  .valueF .back1 {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #E4E4CC;
+    padding: 15px;
+    color:#5D5F10;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 10px #000;
+  }
+  
+  .valueF .back1 h3 {
+    font-size: 13pt;
+    margin-top: 27px;
+    text-align: left;
+  }
+  
+  .valueF .back1 div{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .valueF .back1 p {
+    padding-top: 10%;
+    width: 88%;
+    font-weight:900;
+    color: #6D6E44;
+    line-height: 1.5;
+    margin-left:  20px;
+    text-align: center;
+  } 
+  
+  .valueF:hover .front1 {
+    transform: perspective(600px) rotateY(180deg);
+  }
+  
+  .valueF:hover .back1 {
+    transform: perspective(600px) rotateY(360deg);
+  }
+
+  /* final de la sección de valores desde MOVIL Trabajado por Karla.............................................................. */
+  
+  
