@@ -1,0 +1,295 @@
+  
+/*mision y vision version mobile*/
+@media (max-width: 480px) {
+  .main-container-mv {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .container-mision{
+    width: 80%;
+    padding: 5%;
+    margin: auto;
+    margin-top: 20%;
+    text-align: center;
+  }
+  .container-vision{
+    width: 80%;
+    padding: 5%;
+    margin: auto;
+    margin-top: 120%;
+    text-align: center;
+  }
+  .img-mision{
+    max-width: 100%; 
+    height: auto;
+  }
+  .img-vision{
+    max-width: 100%; 
+    height: auto;
+  
+  }
+}
+  
+  
+  /* Se inicia diseño adaptativo media queries para tablet....................................................................................... */
+  
+  @media(min-width:768px){
+  
+    .valueContentBackground{
+      background-color:#E4E4CC;
+      width: auto;
+      border-radius: 20px;
+      display: grid;
+      grid-template-columns:repeat(2,1fr);
+      background-image:url("src/public/img/aboutImg/tabletBackgroundV.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: 4%;
+    }
+  
+    .valuesContainer {
+      height: auto;
+    border-top: 5px solid;
+    border-color: #5D5F10;
+    display: grid;
+    place-items: center;
+    gap: 2%;
+    background-image: none;
+    }
+     
+    /* Contenedor del primer vacio */
+    .empty{
+      position: relative;
+      width: 250px;
+      height: 300px;
+      margin: 20px;
+      }
+  
+    .valueF .value { 
+      border-radius: 0% 25% 0% 25%;  
+    }
+    
+     
+    .valueF .front h3 {
+      text-align: center;
+      font-size: 16pt;
+    }
+    .valueF .back {
+    background-color: #C8B999;
+    }
+    
+    .valueF .back h3 {
+      font-size: 18pt;
+      text-align: center;
+      color:#5D5F10;
+      
+    }
+    .valueF .back div{
+      display: flex;
+      justify-content: center;
+    }
+    
+    .valueF .back p {
+      padding-top: 10%;
+      font-size: 14pt;
+      width: 92%;
+      margin-left: 0%;
+    } 
+    
+    .valueF:hover .front {
+      transform: perspective(600px) rotateY(180deg);
+    }
+    
+    .valueF:hover .back {
+      transform: perspective(600px) rotateY(360deg);
+    }
+    
+    /* cabio de targeta orientacion y otras cualidades ------------------------------------------------------ */
+    .valueF .value1 {
+      border-radius: 0% 25% 0% 25%;
+    }
+    
+    .valueF .front1 h3 {
+      line-height: 40px; 
+      padding-right: 0%;
+      text-align:center;
+      font-size: 16pt;
+    }
+  
+    .valueF .back1 {
+      background-color: #C8B999;
+      }
+  
+    .valueF .back1 h3 {
+      font-size: 18pt;
+      text-align: center;
+      margin-top: 10%;
+    }
+    
+    .valueF .back1 div{
+      display: flex;
+      justify-content: center;
+    }
+    
+    .valueF .back1 p {
+      padding-top: 10%;
+      width: 95%;
+      color: #6D6E44;
+      margin-left:  0%;
+      text-align: center;
+      font-size: 14pt;
+    } 
+    
+    .valueF:hover .front1 {
+      transform: perspective(600px) rotateY(180deg);
+    }
+    
+    .valueF:hover .back1 {
+      transform: perspective(600px) rotateY(360deg);
+    } 
+  
+  }
+  /* Se inicia diseño adaptativo media queries para DESKTOP....................................................................................... */
+   
+  @media(min-width:1024px){
+  
+    .valueContentGeneral{
+      background-color:#E4E4CC;
+      width: 70%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-radius: 50px;
+      gap: 10px;
+      background-image:url("../img/aboutImg/tabletBackgroundV.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: 100px;
+    
+    }    
+  
+    .valueContentBackground{
+      background-color: transparent;
+      width:fit-content;
+      height:fit-content ;
+      display: inline-flex;
+      grid-template-columns:min-content;
+      align-items: center;
+      background-image:none;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-top: 30px;
+      margin-bottom: 3%;
+    }
+  
+    .valuesContainer {
+      height: auto;
+    border-top: 5px solid;
+    border-color:none;
+    display: grid;
+    place-items: center;
+    gap: 2%;
+    background-image: none;
+      
+    }
+    
+     /*Contenedor del primer valor*/
+    .empty{                               /*contenedor vacio*/
+     position: relative;
+      width: 0px;
+      height:0px;
+      margin: none;
+      background-color: #5D5F10;
+       }
+  
+    .valueF .value { 
+      border-radius: 0% 25% 0% 25%;  
+    }
+      
+    .valueF .front h3 {
+      text-align: center;
+      font-size: 16pt;
+    }
+    .valueF .back {
+    background-color: #C8B999;
+    }
+    
+    .valueF .back h3 {
+      font-size: 18pt;
+      text-align: center;
+      color:#5D5F10;
+      
+    }
+    .valueF .back div{             /*div que contiene la etiqueta p para que su distribucion sea mejor*/
+      display: flex;
+      justify-content: center;
+      
+    }
+    
+    .valueF .back p {
+      padding-top: 10%;
+      font-size: 14pt;
+      width: 92%;
+      margin-left: 0%;
+    } 
+    
+    .valueF:hover .front {
+      transform: perspective(600px) rotateY(180deg);
+    }
+    
+    .valueF:hover .back {
+      transform: perspective(600px) rotateY(360deg);
+    }
+    
+    /* cabio de targeta orientacion y otras cualidades ------------------------------------------------------ */
+    .valueF .value1 {
+      border-radius: 0% 25% 0% 25%;
+    }
+    
+    .valueF .front1 h3 {
+      line-height: 40px; 
+      padding-right: 0%;
+      text-align:center;
+      font-size: 16pt;
+    }
+  
+    .valueF .back1 {
+      background-color: #C8B999;
+      }
+  
+    .valueF .back1 h3 {
+      font-size: 18pt;
+      text-align: center;
+      margin-top: 10%;
+    }
+    
+    .valueF .back1 div{
+      display: flex;
+      justify-content: center;
+    }
+    
+    .valueF .back1 p {
+      padding-top: 10%;
+      width: 95%;
+      color: #6D6E44;
+      margin-left:  0%;
+      text-align: center;
+      font-size: 14pt;
+    } 
+    
+    .valueF:hover .front1 {
+      transform: perspective(600px) rotateY(180deg);
+    }
+    
+    .valueF:hover .back1 {
+      transform: perspective(600px) rotateY(360deg);
+    }
+  
+  }
