@@ -1,9 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cont-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+   
+}
+.subtitulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #523726;
+    color: #c8b999;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 10pt;
+}
 .formulario{
     display: flex;
+    width: 90%;
     flex-direction: column;
-    gap: 1rem;
+    gap: .3rem;
+    padding: .5rem;
+    background-color: rgb(147, 149, 53, .5);
+   
 }
 label{
+    width: 90%;
+    padding: .2rem;
+    gap: .5rem;
     display: flex;
     flex-direction: column;
+    color: #939535;
+    font-weight: bold;
+}
+.input-form{ 
+    background-color:#d5bc86;
+    border: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+.btn-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-enviar{
+    width: 70px;
+    font-size: 12pt;
+    padding: .3rem;
+    border: none;
+    background-color: rgb(147, 149, 53,.01);
+    font-weight: bold;
+    color: #939535;
+}
+.btn-enviar:hover{
+color: #c8b999;
+}
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-info{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    padding: .5rem;
+    background-color: rgb(147, 149, 53, .5);
+    margin-top: 20px;
+}
+.container-info div p a{
+    text-decoration: none;
+    color:#523726;
 }

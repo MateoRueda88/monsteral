@@ -1,31 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-    <link rel="stylesheet" href="../public/css/contact.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../public/css/contact.css" />
+    <link rel="stylesheet" href="../public/css/global.css" />
+    <link rel="stylesheet" href="../public/css/mediaQueries/MQ-global.css" />
+  </head>
+  <body>
+    <header class="header-content">
+      <p class="send-text">Envios gratis por compras superiores a $200.000</p>
+      <!-- menu navegacion -->
+      <div class="info-header">
+        <div class="menu-hamburguesa">
+          <button class="abrir-nav" id="abrir"></button>
+          <nav class="content-nav" id="nav">
+            <button class="cerrar-nav" id="cerrar">X</button>
+            <ul class="nav-list">
+              <li><a href="" class="enlace-nav">Plantas</a></li>
+              <li><a href="" class="enlace-nav">Noticias</a></li>
+              <li><a href="" class="enlace-nav">Talleres</a></li>
+              <li><a href="" class="enlace-nav">Nosotros</a></li>
+              <li><a href="" class="enlace-nav">Contactanos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="content-logo">
+          <img src="../public/img/LogoMonsteralPng.webp" alt="imagen logo" />
+        </div>
+        <div class="content-search-tablet">
+          <input
+            type="search"
+            id="search"
+            class="search-tablet"
+            placeholder="¿Que estas buscando?"
+          />
+          <img
+            src="../public/img/macgnificGlass.webp"
+            alt=""
+            class="img-lupa"
+          />
+        </div>
+        <div class="icons-content">
+          <img class="icons" src="../public/img/user.webp" alt=" img user" />
+          <img class="icons" src="../public/img/car.webp" alt=" img car" />
+          <img
+            class="icons"
+            src="../public/img/whatsapp.webp"
+            alt="img whatsapp"
+          />
+        </div>
+      </div>
 
-    <form action="" class="formulario" id="form">
-        <label for="name">Nombre completo:
-        <input type="text"  id="name" name="name" >
-        <span class="error" id="nameError"></span>
+      <!-- </div> -->
+      <div class="content-search">
+        <input
+          type="search"
+          id="search"
+          class="search"
+          placeholder="¿Que estas buscando?"
+        />
+        <img
+          src="../public/img/macgnificGlass.webp"
+          alt="image glass"
+          class="img-lupa"
+        />
+      </div>
+      <div class="content-navigation">
+        <nav class="content-nav-tablet" id="nav">
+          <ul class="nav-list-tablet">
+            <li><a href="" class="enlace-nav">Plantas</a></li>
+            <li><a href="" class="enlace-nav">Noticias</a></li>
+            <li><a href="" class="enlace-nav">Talleres</a></li>
+            <li><a href="" class="enlace-nav">Nosotros</a></li>
+            <li><a href="" class="enlace-nav">Contactenos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="cont-contact">
+      <h2 class="subtitulo">Conctact</h2>
+      <form action="" class="formulario" id="form">
+        <label for="name"
+          >Nombre completo
+          <input type="text" id="name" name="name" class="input-form" />
+          <span class="error" id="nameError"></span>
         </label>
-        <label for="email">Email:
-            <input type="email" id="email" name="email">
-            
+        <label for="email"
+          >Email
+          <input type="email" id="email" name="email" class="input-form" />
+          <span class="error" id="emailError"></span>
         </label>
-        
-        <label for="phone">Phone:
-            <input type="tel" name="phone" id="phone">
+
+        <label for="phone"
+          >Telefono
+          <input type="tel" name="phone" id="phone" class="input-form" />
+          <span class="error" id="nameError"></span>
         </label>
-        <label for="message">mensaje:
-            <textarea name="" id="message" cols="30" rows="5"></textarea>
+        <label for="message"
+          >Mensaje
+          <textarea
+            name=""
+            id="message"
+            cols="30"
+            rows="3"
+            class="input-form"
+          ></textarea>
         </label>
-        <input type="submit" value="Enviar">
-    </form>
+        <div class="btn-cont">
+          <input type="submit" value="Enviar" class="btn-enviar" />
+        </div>
+      </form>
+    </div>
+    <div class="info">
+      <div class="container-info">
+        <div class="phone-info">
+          <img src="" alt="" />
+          <p><a href="#">+57 3002470631</a></p>
+        </div>
+        <div class="email-info">
+          <img src="" alt="" />
+          <p><a href="#">contactenos@monsteral.com</a></p>
+        </div>
+        <div class="hours">
+          <img src="" alt="" />
+          <p><a href="#">Lun-Sab 8 a.m-5p.m</a></p>
+        </div>
+      </div>
+    </div>
     <script src="../js/contact.js"></script>
-</body>
+    <script src="../app.js"></script>
+  </body>
 </html>

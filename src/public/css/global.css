@@ -35,7 +35,7 @@ normalizar nuestra hoja de estilos */
   justify-content: space-around;
   padding: .2rem;
 }
-.hamburguesa {
+.menu-hamburguesa {
   width: 15%;
 }
 .abrir-nav {
@@ -147,7 +147,9 @@ normalizar nuestra hoja de estilos */
 .content-navigation{
   display: none;
 }
-
+.content-nav-tablet{
+  display: none;
+}
 .nav-list-table{
   display: none;
 }
