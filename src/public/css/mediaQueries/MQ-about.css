@@ -1,4 +1,39 @@
   
+/*mision y vision version mobile*/
+@media (max-width: 480px) {
+  .main-container-mv {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .container-mision{
+    width: 80%;
+    padding: 5%;
+    margin: auto;
+    margin-top: 20%;
+    text-align: center;
+  }
+  .container-vision{
+    width: 80%;
+    padding: 5%;
+    margin: auto;
+    margin-top: 120%;
+    text-align: center;
+  }
+  .img-mision{
+    max-width: 100%; 
+    height: auto;
+  }
+  .img-vision{
+    max-width: 100%; 
+    height: auto;
+  
+  }
+}
+  
+  
   /* Se inicia diseño adaptativo media queries para tablet....................................................................................... */
   
   @media(min-width:768px){

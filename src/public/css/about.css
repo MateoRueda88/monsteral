@@ -5,6 +5,61 @@
     font-family: "Quicksand";
   }
 
+/*mision -vision*/
+/*contenedor padre*/
+.main-container-mv{
+  width: 100%;
+  height: auto;
+  padding: 5%;
+  border-top: 5px solid #5D5F10;
+  background-image: url("/src/public/img/aboutImg/hojas\ mv.webp");
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: top center;
+  margin-top: 45px;;
+  text-align: center;
+  display: flex;
+  flex-direction: row; 
+}  
+
+.container-mision{
+  background-color: #C8B999;
+  width: 50%;
+  padding: 5%;
+  margin-left: 5%;
+  margin-top: 15%;
+  border-radius: 40px;
+}
+
+.container-vision{
+  background-color: #C8B999;
+  width: 50%;
+  padding: 5%;
+  margin-top: 5%;
+  margin-left: 50%;
+  margin-right: 10%;
+  border-radius: 40px;
+}
+
+h1{
+  color: #5D5F10;
+}
+
+p{
+  color: #523726;
+}
+
+.img-mision{
+  float:left;
+}
+
+.img-vision{
+  float: right;
+}
+/*Fin mision-vision*/
+
+
+
 /* Se inicia estilo de la sección Valores desde MOVIL trabajada por Karla ...................................... */
 
   
@@ -194,6 +249,5 @@
   .valueF:hover .back1 {
     transform: perspective(600px) rotateY(360deg);
   }
-
   /* final de la sección de valores desde MOVIL Trabajado por Karla.............................................................. */
   
