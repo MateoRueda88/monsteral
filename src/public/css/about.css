@@ -6,6 +6,7 @@
   }
 
 /*mision -vision*/
+
 /*contenedor padre*/
 .main-container-mv{
   width: 100%;
@@ -51,10 +52,12 @@ p{
 
 .img-mision{
   float:left;
+  margin-left: 8%;
 }
 
 .img-vision{
   float: right;
+  margin-right: 8%;
 }
 /*Fin mision-vision*/
 
