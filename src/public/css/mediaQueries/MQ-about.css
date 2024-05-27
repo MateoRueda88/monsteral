@@ -1,7 +1,16 @@
-  
 /* media query tablet */
 
 @media screen and (min-width:768px){
+  /* INICIO LINA MORA */
+  .contenedorImagen{
+    width: 350px;
+    display: flex;
+    justify-content: center;
+}
+.textoNH{
+    font-size: 20px;        
+}
+/* FINAL DE LINA */
 
   .container-team{
       background-image: url(../../img/aboutImg/hojas-tablet.webp);
@@ -26,6 +35,17 @@
 /* query desktop */
 
 @media (min-width:1024px){
+    /* INICIO LINA MORA */
+    .contenedorImagen{
+      width: 500px;
+      display: flex;
+      justify-content: center;
+    }
+    .textoNH{
+        font-size: 25px;        
+    }  
+    /* FINAL LINA MORA */
+
   .container-team{
       background-image: url(../../img/aboutImg/Desktop.png) ;
       background-size: cover;
@@ -68,10 +88,12 @@
   .img-mision{
     max-width: 100%; 
     height: auto;
+    margin-left: 20%;
   }
   .img-vision{
     max-width: 100%; 
     height: auto;
+    margin-right: 20%;
   
   }
 }
