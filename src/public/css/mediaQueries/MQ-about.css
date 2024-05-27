@@ -1,5 +1,5 @@
   
-/*mision y vision version mobile*/
+/*mision y vision version mobile ...................................*/
 @media (max-width: 480px) {
   .main-container-mv {
       width: 100%;
@@ -34,7 +34,7 @@
 }
   
   
-  /* Se inicia diseño adaptativo media queries para tablet....................................................................................... */
+  /* Se inicia diseño adaptativo media queries para tablet KARLA....................................................................................... */
   
   @media(min-width:768px){
   
@@ -44,7 +44,7 @@
       border-radius: 20px;
       display: grid;
       grid-template-columns:repeat(2,1fr);
-      background-image:url("src/public/img/aboutImg/tabletBackgroundV.webp");
+      background-image:url(../../img/aboutImg/tabletBackgroundV.webp);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -166,7 +166,7 @@
       flex-wrap: wrap;
       border-radius: 50px;
       gap: 10px;
-      background-image:url("../img/aboutImg/tabletBackgroundV.webp");
+      background-image:url(../../img/aboutImg/tabletBackgroundV.webp);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -293,3 +293,5 @@
     }
   
   }
+
+  /* Fin del MQ de karla .......................................................................................................................... */
