@@ -4,22 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
-    <link rel="stylesheet" href="/src/public/css/about.css" />
-    <link rel="stylesheet" href="/src/public/css/mediaQueries/MQ-about.css" />
-    <link rel="stylesheet" href="/src/public/css/global.css" />
+    <link rel="stylesheet" href="../src/public/css/about.css" />
+    <link rel="stylesheet" href="../public/css/global.css" />
+    <link rel="stylesheet" href="../src/public/css/mediaQueries/MQ-about.css" />
+    <link rel="stylesheet" href="../public/css/mediaQueries/MQ-global.css" />
+
   </head>
   <body class="">
     <!-- content header -->
     <header class="header-content">
       <p class="send-text">Envios gratis por compras superiores a $200.000</p>
-      <div class="contentTest">
-        <!-- menu navegacion -->
-        <nav class="content-nav">
-          <input class="check" type="checkbox" name="check" id="check" />
-          <label for="check"
-            ><img src="/src/public/img/more.webp" alt="imagen hamburguesa"
-          /></label>
-          <ul class="nav-list">
+      <!-- menu navegacion -->
+      <div class="info-header">
+        <div class="menu-hamburguesa">
+          <button class="abrir-nav" id="abrir"></button>
+          <nav class="content-nav" id="nav">
+            <button class="cerrar-nav" id="cerrar">X</button>
+            <ul class="nav-list">
+              <li><a href="" class="enlace-nav">Plantas</a></li>
+              <li><a href="" class="enlace-nav">Noticias</a></li>
+              <li><a href="" class="enlace-nav">Talleres</a></li>
+              <li><a href="" class="enlace-nav">Nosotros</a></li>
+              <li><a href="" class="enlace-nav">Contactanos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="content-logo">
+          <img src="../public/img/LogoMonsteralPng.webp" alt="imagen logo" />
+        </div>
+        <div class="content-search-tablet">
+          <input
+            type="search"
+            id="search"
+            class="search-tablet"
+            placeholder="¿Que estas buscando?"
+          />
+          <img
+            src="../public/img/macgnificGlass.webp"
+            alt=""
+            class="img-lupa"
+          />
+        </div>
+        <div class="icons-content">
+          <img class="icons" src="../public/img/user.webp" alt=" img user" />
+          <img class="icons" src="../public/img/car.webp" alt=" img car" />
+          <img
+            class="icons"
+            src="../public/img/whatsapp.webp"
+            alt="img whatsapp"
+          />
+        </div>
+      </div>
+
+      <!-- </div> -->
+      <div class="content-search">
+        <input
+          type="search"
+          id="search"
+          class="search"
+          placeholder="¿Que estas buscando?"
+        />
+        <img src="../public/img/macgnificGlass.webp" alt="image glass" class="img-lupa" />
+      </div>
+      <div class="content-navigation">
+        <nav class="content-nav-tablet" id="nav">
+          <ul class="nav-list-tablet">
+
             <li><a href="" class="enlace-nav">Plantas</a></li>
             <li><a href="" class="enlace-nav">Noticias</a></li>
             <li><a href="" class="enlace-nav">Talleres</a></li>
@@ -27,20 +77,12 @@
             <li><a href="" class="enlace-nav">Contactenos</a></li>
           </ul>
         </nav>
-        <div class="content-logo"></div>
-        <div class="icons-content">
-          <img class="icons" src="/src/public/img/user.webp" alt=" img user" />
-          <img class="icons" src="/src/public/img/car.webp" alt=" img car" />
-          <img class="icons" src="/src/public/img/whatsapp.webp" alt="img whatsapp" />
-        </div>
-      </div>
-      <div class="content-search">
-        <input type="search" id="search" class="search" placeholder="¿Que estas buscando?" />
-        <img src="/src/public/img/macgnificGlass.webp" alt="" class="img-lupa" />
+
       </div>
     </header>
     <!-- cotent principal -->
     <main>
+
 
       <!-- Misión - visión -->
     <!-- contenedor padre -->
@@ -81,104 +123,118 @@
        <!-- seccion de valores parte de karla .................................................................................................... -->
        <div class="valuesContainer">
         <div class="valuesTitleContainer">
-            <h1 class="titleValues">Nuestros Valores</h1>
+          <h1 class="titleValues">Nuestros Valores</h1>
         </div>
 
- <!-- Targetas Valores -->
 
- <div class="valueContentGeneral"> <!--contenedor general implementado en el mediaqueri Desktop -->
+        <!-- Targetas Valores -->
 
- <div class="valueContentBackground">
-    
-   <!-- Valor del Aprendizaje ........................................... -->
+        <div class="valueContentGeneral">
+          <!--contenedor general implementado en el mediaqueri Desktop -->
 
- <div class="valueF">
-    <div class="value front">
-        <img src="/src/public/img/aboutImg/learning.webp" alt="">
-        <h3>Aprendizaje</h3>
-    </div>
-    <div class="value back">
-        <h3>Aprendizaje</h3>
-        <div>
-            <p>Aprender nos transforma y amplía nuestros horizontes, impulsándonos hacia un futuro mejor.</p>
-        </div>     
-    </div>
- </div>
+          <div class="valueContentBackground">
+            <!-- Valor del Aprendizaje ........................................... -->
 
- <!-- div vacio para centrar las targetas ........................................... -->
- <div class="empty"><h1></h1></div>
+            <div class="valueF">
+              <div class="value front">
+                <img src="../src/public/img/aboutImg/learning.webp" alt="" />
+                <h3>Aprendizaje</h3>
+              </div>
+              <div class="value back">
+                <h3>Aprendizaje</h3>
+                <div>
+                  <p>
+                    Aprender nos transforma y amplía nuestros horizontes,
+                    impulsándonos hacia un futuro mejor.
+                  </p>
+                </div>
+              </div>
+            </div>
 
- <!-- div vacio para centrar las targetas...........................................  -->
- <div class="empty"><h1></h1></div>
+            <!-- div vacio para centrar las targetas ........................................... -->
+            <div class="empty"><h1></h1></div>
 
- <!-- Conexion con la Naturaleza ........................................... -->
+            <!-- div vacio para centrar las targetas...........................................  -->
+            <div class="empty"><h1></h1></div>
 
- <div class="valueF">
-    <div class="value1 front1">
-        <img src="/src/public/img/aboutImg/Connection.webp" alt="">
-        <h3>Conexión con la Naturaleza</h3>
-    </div>
-    <div class="value1 back1">
-        <h3>Conexión con la Naturaleza</h3>
-        <div>
-            <p>La conexión con la naturaleza es esencial para el bienestar físico y mental, fomentando <br>la paz interior <br> y la salud.</p>
-        </div>     
-    </div>
- </div>
+            <!-- Conexion con la Naturaleza ........................................... -->
 
- </div>
+            <div class="valueF">
+              <div class="value1 front1">
+                <img src="../src/public/img/aboutImg/Connection.webp" alt="" />
+                <h3>Conexión con la Naturaleza</h3>
+              </div>
+              <div class="value1 back1">
+                <h3>Conexión con la Naturaleza</h3>
+                <div>
+                  <p>
+                    La conexión con la naturaleza es esencial para el bienestar
+                    físico y mental, fomentando <br />la paz interior <br />
+                    y la salud.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
 
- <!-- inicio de la segunda seccion de valores...............................................................................  -->
+          <!-- inicio de la segunda seccion de valores...............................................................................  -->
 
+          <div class="valueContentBackground">
+            <!-- Valor del compromiso -->
 
- <div class="valueContentBackground">
+            <div class="valueF">
+              <div class="value front">
+                <img src="../src/public/img/aboutImg/commitment.webp" alt="" />
+                <h3>Compromiso</h3>
+              </div>
+              <div class="value back">
+                <h3>Compromiso</h3>
+                <div>
+                  <p>
+                    El compromiso ayuda a fortalecer la confianza, asegura la
+                    responsabilidad y facilita el logro de metas nuestras metas.
+                  </p>
+                </div>
+              </div>
+            </div>
 
-    <!-- Valor del compromiso -->
+            <!-- div vacio para centrar las targetas ........................................... -->
+            <div class="empty"><h1></h1></div>
 
- <div class="valueF">
-    <div class="value front">
-        <img src="/src/public/img/aboutImg/commitment.webp" alt="">
-        <h3>Compromiso</h3>
-    </div>
-    <div class="value back">
-        <h3>Compromiso</h3>
-        <div>
-            <p>El compromiso ayuda a fortalecer la confianza, asegura la responsabilidad y facilita el logro de metas nuestras metas.</p>
-        </div>     
-    </div>
+            <!-- div vacio para centrar las targetas ...........................................  -->
+            <div class="empty"><h1></h1></div>
 
- </div>
-    
- <!-- div vacio para centrar las targetas ........................................... -->
- <div class="empty"><h1></h1></div>
+            <!-- Corresponsabilidad ...........................................-->
 
- <!-- div vacio para centrar las targetas ...........................................  -->
- <div class="empty"><h1></h1></div>
-
- <!-- Corresponsabilidad ...........................................-->
-
- <div class="valueF">
-    <div class="value1 front1">
-        <img src="/src/public/img/aboutImg/co-responsibility.webp" alt="">
-        <h3>Corresponsabilidad <br> <br></h3>
-    </div>
-    <div class="value1 back1">
-        <h3>Corresponsabilidad</h3>
-        <div>
-            <p>ayuda a distribuir equitativamente las tareas y responsabilidades, promoviendo la colaboración.</p>
-        </div>     
-    </div>
- </div>
-
- </div>
-</div>
- </div> <!--final del div class contenerdor generar para dosktop -->
- <!-- fin de la sección valores parte Karla ................................................................................................ -->
+            <div class="valueF">
+              <div class="value1 front1">
+                <img
+                  src="../src/public/img/aboutImg/co-responsibility.webp"
+                  alt=""
+                />
+                <h3>
+                  Corresponsabilidad <br />
+                  <br />
+                </h3>
+              </div>
+              <div class="value1 back1">
+                <h3>Corresponsabilidad</h3>
+                <div>
+                  <p>
+                    ayuda a distribuir equitativamente las tareas y
+                    responsabilidades, promoviendo la colaboración.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--final del div class contenerdor generar para dosktop -->
+      <!-- fin de la sección valores parte Karla ................................................................................................ -->
     </main>
     <!-- content footer -->
-   
 
+    <script src="../app.js"></script>
   </body>
 </html>
-
-
