@@ -1,90 +1,110 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.cont-contact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-   
+.cont-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
-.subtitulo{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #523726;
-    color: #c8b999;
-    text-align: center;
-    padding: 5px;
-    font-weight: bold;
-    font-size: 10pt;
+.subtitulo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #523726;
+  color: #c8b999;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 10pt;
 }
-.formulario{
-    display: flex;
-    width: 90%;
-    flex-direction: column;
-    gap: .3rem;
-    padding: .5rem;
-    background-color: rgb(147, 149, 53, .5);
-   
+.cont-contact {
+  background-image: url(../img/opciones-de-logo-1.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-label{
-    width: 90%;
-    padding: .2rem;
-    gap: .5rem;
-    display: flex;
-    flex-direction: column;
-    color: #939535;
-    font-weight: bold;
+.fondo-contact img {
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.input-form{ 
-    background-color:#d5bc86;
-    border: none;
-    border-radius: 10px;
-    padding: 5px;
-    width: 100%;
-    display: flex;
-    justify-content: center; 
+.formulario {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.5rem;
+  background-color: rgb(228, 228, 204, 0.8);
+  border-radius: 15px;
 }
-.btn-cont{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+label {
+  width: 90%;
+  padding: 0.2rem;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  color: #523726;
+  font-weight: bold;
 }
-.btn-enviar{
-    width: 70px;
-    font-size: 12pt;
-    padding: .3rem;
-    border: none;
-    background-color: rgb(147, 149, 53,.01);
-    font-weight: bold;
-    color: #939535;
+.input-form {
+  background-color: white;
+  border: 1px solid #523726;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
-.btn-enviar:hover{
-color: #c8b999;
+.btn-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.info{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btn-enviar {
+  width: 70px;
+  font-size: 12pt;
+  padding: 0.3rem;
+  border: none;
+  background-color: rgb(147, 149, 53, 0.01);
+  font-weight: bold;
+  color: #939535;
 }
-.container-info{
-    display: flex;
-    width: 90%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: .3rem;
-    padding: .5rem;
-    background-color: rgb(147, 149, 53, .5);
-    margin-top: 20px;
+.btn-enviar:hover {
+  color: #c8b999;
 }
-.container-info div p a{
-    text-decoration: none;
-    color:#523726;
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-info {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 1rem;
+  background-color: #c8b999;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+.container-info div p a {
+  text-decoration: none;
+  color: #523726;
+}
+
+.phone-info {
+  display: flex;
+  gap: 1rem;
+}
+.phone-info img {
+  height: 20px;
 }
