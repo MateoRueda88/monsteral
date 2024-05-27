@@ -205,10 +205,12 @@ p{
 
 .img-mision{
   float:left;
+  margin-left: 8%;
 }
 
 .img-vision{
   float: right;
+  margin-right: 8%;
 }
 /*Fin mision-vision*/
 
