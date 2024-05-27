@@ -1,4 +1,47 @@
   
+/* media query tablet */
+
+@media screen and (min-width:768px){
+
+  .container-team{
+      background-image: url(../../img/aboutImg/hojas-tablet.webp);
+      background-size: cover;
+      background-position: right;
+      background-repeat: no-repeat;
+      justify-content: left;
+  }
+
+  .card-team{
+      width: 70%;
+  }
+  .card-descrip-front{
+      border-radius: 0% 70%;
+  }
+  .card-team p{
+      font-size: 16px;
+  }
+
+}
+
+/* query desktop */
+
+@media (min-width:1024px){
+  .container-team{
+      background-image: url(../../img/aboutImg/Desktop.png) ;
+      background-size: cover;
+      gap: 3rem;
+      justify-content: center;
+  }
+  .card-team{
+      width: 40%;
+      height: 400px;
+  }
+  .card-team p{
+      font-size: 20px;
+      margin: 80px;
+  }
+}
+
 /*mision y vision version mobile ...................................*/
 @media (max-width: 480px) {
   .main-container-mv {
