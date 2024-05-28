@@ -152,6 +152,3 @@ estilos validaciones */
   text-align: center;
   font-size: 10pt;
 }
-.email:invalid{
-  border: 2px solid red;
-}
