@@ -2,6 +2,8 @@ const formulario = document.getElementById('form')
 const nombre = document.getElementById('nameError')
 formulario.addEventListener('click', (event) =>{
   let valorInput = event.target.value;
+  let longitudInputNombre = valorInput.length;
+  console.log(longitudInputNombre)
   console.log(valorInput)
 })
 
