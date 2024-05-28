@@ -12,7 +12,7 @@ normalizar nuestra hoja de estilos */
 /* content header */
 .header-content {
   width: 100%;
-  height: 28vh;
+  height:auto;
   display: flex;
   flex-direction: column;
 }

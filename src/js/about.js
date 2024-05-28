@@ -10,7 +10,7 @@ const team =[
         id: 2,
         name1:"Karla González",
         position: "Product Owner",
-        img:"../public/img/aboutImg/KarlaPhoto.webp",
+        img:"../public/img/aboutImg/karla_Img.png",
         description: "Persona creativa, innovadora, que gestiona soluciones y disfrutar de la naturaleza."
     },
     {

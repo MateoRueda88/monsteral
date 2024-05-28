@@ -1,57 +1,63 @@
 
-/* nuestra hisotira */
+/* Nuestra Historia LINA....................................................................................... */
 .nuestraHistoria{
+<<<<<<< HEAD
   position: absolute; 
   top: 200px;
   width: 100%;
   height: 300px;
   background-color: #93953543;
   font-family: "Quicksand", sans-serif;
+=======
+  background-color: #E4E4CC;
+  display:flex;
+  align-items: center;
+>>>>>>> 9914cb24da46cd3df3758adc61a245132d206072
   border-top: 5px solid #5D5F10;
-}
-.titulo2{
-  color: #5D5F10;
-  position: absolute;
-  left: 50%;
-  top: -1%;
-}
-.textoNH{
-  background-color: #9395354d;
-  border-radius: 0px 50px;
-  color: black;
-  position: absolute;
-  top: 20%;
-  left: 33%;
-  width: 62%;
-  height: 75%;
-}
-.contenido2{
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  left: 10%;
-}
-.imgDiv{
-  width: 170px;
-  height: 97%;
+  margin-top: 30px;
+  padding-bottom: 20px;
+ 
 }
 .contenedorImagen{
-  height: 90%;
+width: 120px;
+height: 166px;
+}
+
+.contenedorImagen img{
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textoNH{
+  width: 250px;
+  height:fit-content;
+  background-color: #D0D0A6;
+  border-radius: 0 30px 0 30px;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+
+}
+.nuestraHistoria h2{
+  color: #5D5F10;
+  text-align: center;
+}
+.textoNH p{
+  font-size: 12pt;
+  color: #5D5F10;
+  text-align: center;
+  font-weight:900;
 }
 
 
 
+/* equipo..................................................................... */
+.teamH1{
+ 
+}
 
-
-
-
-
-
-
-
-
-
-/* equipo */
 .container-team{
   width: 100%;
   height: auto;
@@ -64,12 +70,14 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 0.1rem;
+ 
+  
 }
 .title-team{
   color: rgba(109, 110, 68, 1);
   text-align: center;
   font-size: 36px;
-  border-bottom: 2px solid rgba(93, 95, 16, 1);
+  border-bottom: 5px solid rgba(93, 95, 16, 1);
 }
 
 /* Girar cards */
@@ -153,47 +161,7 @@
     font-family: "Quicksand";
   }
 
-  /*PARTE DE LINA MORA HISTORIA*/
-.nuestraHistoria{
-    position: absolute;
-    top: 10%;
-    padding: 10px;
-    width: 100%;
-    height: 30%;
-    background-color: #93953543;
-    font-family: "Quicksand", sans-serif;
-    border-top: 5px solid #5D5F10;
-}
-.titulo2{
-    color: #5D5F10;
-    position: absolute;
-    left: 50%;
-    top: -1%;
-}
-.textoNH{
-    background-color: #9395354d;
-    border-radius: 0px 50px;
-    color: black;
-    position: absolute;
-    top: 20%;
-    left: 33%;
-    width: 62%;
-    height: 75%;
-}
-.contenido2{
-    position: absolute;
-    top: 10%;
-    right: 10%;
-    left: 10%;
-}
-.imgDiv{
-    position: static;
-    border-radius: 80%;
-    width: 30%;
-    height: 97%;
-    left: 5%;
-    border: 2px solid rgb(78, 147, 62);
-}
+
 
 /*mision -vision*/
 

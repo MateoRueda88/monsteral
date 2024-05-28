@@ -79,56 +79,69 @@
         </nav>
       </div>
     </header>
-    <div class="cont-contact">
-      <h2 class="subtitulo">Conctact</h2>
-      <form action="" class="formulario" id="form">
-        <label for="name"
-          >Nombre completo
-          <input type="text" id="name" name="name" class="input-form" />
-          <span class="error" id="nameError"></span>
-        </label>
-        <label for="email"
-          >Email
-          <input type="email" id="email" name="email" class="input-form" />
-          <span class="error" id="emailError"></span>
-        </label>
+    <!-- Section contact -->
 
-        <label for="phone"
-          >Telefono
-          <input type="tel" name="phone" id="phone" class="input-form" />
-          <span class="error" id="nameError"></span>
-        </label>
-        <label for="message"
-          >Mensaje
-          <textarea
-            name=""
-            id="message"
-            cols="30"
-            rows="3"
-            class="input-form"
-          ></textarea>
-        </label>
-        <div class="btn-cont">
-          <input type="submit" value="Enviar" class="btn-enviar" />
-        </div>
-      </form>
-    </div>
-    <div class="info">
-      <div class="container-info">
-        <div class="phone-info">
-          <img src="" alt="" />
-          <p><a href="#">+57 3002470631</a></p>
-        </div>
-        <div class="email-info">
-          <img src="" alt="" />
-          <p><a href="#">contactenos@monsteral.com</a></p>
-        </div>
-        <div class="hours">
-          <img src="" alt="" />
-          <p><a href="#">Lun-Sab 8 a.m-5p.m</a></p>
-        </div>
+<main class="container-main-contact">
+  <h2 class="subtitulo">Conctact</h2>
+  <div class="cont-contact">
+    <form action="" class="formulario" id="form"   onsubmit="clear(event)">
+      <label for="name" id="label"
+        >Nombre completo
+        <input type="text" id="name" name="name" class="input-form" />
+        <span class="error" id="nameError"></span>
+      </label>
+      <label for="email" id="label"
+        >Email
+        <input type="email" id="email" name="email" class="input-form"/>
+        <span class="error" id="emailError"></span>
+      </label>
+      <label for="phone" id="label"
+        >Telefono
+        <input type="tel" name="phone" id="phone" class="input-form" maxlength="10" />
+        <span class="error" id="namePhone"></span>
+      </label>
+      <label for="message" id="label"
+        >Mensaje
+        <textarea
+          name=""
+          id="message"
+          cols="30"
+          rows="3"
+          class="input-form"
+        ></textarea>
+      </label>
+      <div class="btn-cont">
+        <input type="submit" value="Enviar" class="btn-enviar" id="sub"/>
+      </div>
+    </form>
+  </div>
+  <div class="info">
+    <div class="container-info">
+      <div class="cont-info">
+        <img src="../public/img/whatsappG.webp" alt="" />
+        <p><a href="#">+57 3002470631</a></p>
+      </div>
+      <div class="cont-info">
+        <img src="../public/img/mail.webp" alt="" />
+        <p><a href="#">contactenos@monsteral.com</a></p>
+      </div>
+      <div class="cont-info">
+        <img src="../public/img/clock.webp" alt="" />
+        <p><a href="#">Lun-Sab 8 a.m-5p.m</a></p>
       </div>
     </div>
+    <p class="subtitulo">Suscribete</p>
+  </div>
+</main>
+<footer class="footer">
+  <img src="../public/img/LogoMonsteralPng.webp" alt="">
+  <a href="">contactenos@monsteral.com</a>
+  <div class="icons-content">
+    <img class="icons" src="../public/img/user.webp" alt=" img user" />
+    <img class="icons" src="../public/img/car.webp" alt=" img car" />
+    <img class="icons"src="../public/img/whatsapp.webp"alt="img whatsapp"/>
+  </div>
+</footer>
     <script src="../js/contact.js"></script>
     <script src="../app.js"></script>
   </body>
