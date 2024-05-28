@@ -84,23 +84,23 @@
 <main class="container-main-contact">
   <h2 class="subtitulo">Conctact</h2>
   <div class="cont-contact">
-    <form action="" class="formulario" id="form">
-      <label for="name"
+    <form action="" class="formulario" id="form"   onsubmit="clear(event)">
+      <label for="name" id="label"
         >Nombre completo
-        <input type="text" id="name" name="name" class="input-form" required />
+        <input type="text" id="name" name="name" class="input-form" />
         <span class="error" id="nameError"></span>
       </label>
-      <label for="email"
+      <label for="email" id="label"
         >Email
-        <input type="email" id="email" name="email" class="input-form" required />
+        <input type="email" id="email" name="email" class="input-form"/>
         <span class="error" id="emailError"></span>
       </label>
-      <label for="phone"
+      <label for="phone" id="label"
         >Telefono
-        <input type="tel" name="phone" id="phone" class="input-form" required />
+        <input type="tel" name="phone" id="phone" class="input-form" maxlength="10" />
         <span class="error" id="namePhone"></span>
       </label>
-      <label for="message"
+      <label for="message" id="label"
         >Mensaje
         <textarea
           name=""
@@ -111,22 +111,22 @@
         ></textarea>
       </label>
       <div class="btn-cont">
-        <input type="submit" value="Enviar" class="btn-enviar" />
+        <input type="submit" value="Enviar" class="btn-enviar" id="sub"/>
       </div>
     </form>
   </div>
   <div class="info">
     <div class="container-info">
       <div class="cont-info">
-        <img src="../public/img/whatsapp.webp" alt="" />
+        <img src="../public/img/whatsappG.webp" alt="" />
         <p><a href="#">+57 3002470631</a></p>
       </div>
       <div class="cont-info">
-        <img src="../public/img/user.webp" alt="" />
+        <img src="../public/img/mail.webp" alt="" />
         <p><a href="#">contactenos@monsteral.com</a></p>
       </div>
       <div class="cont-info">
-        <img src="../public/img/car.webp" alt="" />
+        <img src="../public/img/clock.webp" alt="" />
         <p><a href="#">Lun-Sab 8 a.m-5p.m</a></p>
       </div>
     </div>
