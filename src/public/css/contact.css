@@ -3,11 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-.cont-contact {
+.container-main-contact{
   display: flex;
+  background-image: url(../img/opciones-de-logo-1.webp);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
   flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+  height: auto;
+  gap: 1.5rem;
 }
 .subtitulo {
   width: 100%;
@@ -22,24 +26,18 @@
   font-size: 10pt;
 }
 .cont-contact {
-  background-image: url(../img/opciones-de-logo-1.webp);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.fondo-contact img {
-  height: auto;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 .formulario {
   display: flex;
   width: 90%;
   flex-direction: column;
   gap: 0.3rem;
-  padding: 0.5rem;
-  background-color: rgb(228, 228, 204, 0.8);
+  padding: 0.7rem;
+  background-color: rgb(228, 228, 204, 0.7);
   border-radius: 15px;
 }
 label {
@@ -73,38 +71,70 @@ label {
   border: none;
   background-color: rgb(147, 149, 53, 0.01);
   font-weight: bold;
-  color: #939535;
+  color: #523726;
 }
 .btn-enviar:hover {
-  color: #c8b999;
+  color:#c8b999;
 }
 .info {
   width: 100%;
+  height: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+ 
 }
 .container-info {
   display: flex;
   width: 90%;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 0.3rem;
   padding: 1rem;
   background-color: #c8b999;
   margin-top: 20px;
   border-radius: 10px;
+  background-image: url(../img/opciones-de-logo-1.webp);
+  background-position: bottom;
+
+  
 }
 .container-info div p a {
   text-decoration: none;
-  color: #523726;
+  color: #939535;
+  font-weight: bold;
 }
 
-.phone-info {
+.cont-info {
   display: flex;
-  gap: 1rem;
+  gap: .5rem;
+  padding: .3rem;
+  text-align: center;
 }
-.phone-info img {
+.cont-info img {
   height: 20px;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: .3rem;
+  width: 100%;
+  height: auto;
+}
+
+.content-logo img {
+  object-fit: contain;
+  width: 12px;
+}
+
+.icons-content {
+  display: flex;
+  justify-content: center;
+  height: 15px;
+  width: 10px;
+  gap: 15px;
 }
