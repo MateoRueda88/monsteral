@@ -87,17 +87,17 @@
     <form action="" class="formulario" id="form"   onsubmit="clear(event)">
       <label for="name" id="label"
         >Nombre completo
-        <input type="text" id="name" name="name" class="input-form" />
+        <input type="text" id="name" name="name" class="input-form" required />
         <span class="error" id="nameError"></span>
       </label>
       <label for="email" id="label"
         >Email
-        <input type="email" id="email" name="email" class="input-form"/>
+        <input type="email" id="email" name="email" class="input-form" required/>
         <span class="error" id="emailError"></span>
       </label>
       <label for="phone" id="label"
         >Telefono
-        <input type="tel" name="phone" id="phone" class="input-form" maxlength="10" />
+        <input type="tel" name="phone" id="phone" class="input-form" maxlength="10" required />
         <span class="error" id="namePhone"></span>
       </label>
       <label for="message" id="label"
@@ -107,7 +107,7 @@
           id="message"
           cols="30"
           rows="3"
-          class="input-form"
+          class="input-form" required 
         ></textarea>
       </label>
       <div class="btn-cont">

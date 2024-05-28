@@ -1,37 +1,101 @@
-const errName = document.getElementById('nameError')
-document.getElementById("form").addEventListener("submit",  (event) =>  {
-  //Previene el envío del formulario
-   event.preventDefault();
-let valorInput = event.target.value;
-let longitudInput = valorInput.length;
+const formulario = document.getElementById('form');
+const nombre = document.getElementById('name');
+const errName = document.getElementById('nameError');
+const phone = document.getElementById('phone');
+const errPhone = document.getElementById('namePhone')
    // resetear inputs
-   function clear(event) {
-    event.preventDefault();
-    document.getElementById('name').value = '';
-    document.getElementById('email').value = '';
-    document.getElementById('phone').value = '';
-    document.getElementById('message').value = '';
+
+nombre.addEventListener('change', (event)=>{
+  longitudInput(event)
+  tipoDato(event)
+})
+function longitudInput(event){
+  let valorInput = event.target.value;
+let longitudInputNombre = valorInput.length;
+  if(longitudInputNombre < 3){
+errName.textContent = ("Ingresa mas caracteres")
+  }else{
+    errName.textContent = ("✔")
+  }
+
 }
-clear(event)
 
-
-// verificacion de numero de caracteres en phone
-const errorPhone = document.getElementById('namePhone')
-  document.getElementById('phone').addEventListener('input', function() {
-    const inputValue = this.value;
-    const maxLength = 10;
-
-    if (inputValue.length > maxLength) {
-      // Mostrar un mensaje de error o deshabilitar el botón de envío
-      errorPhone.textContent = ('Número de teléfono demasiado largo');
-    }
-  });
-
+phone.addEventListener('change', (event) => {
+  tipoDato(event);
 });
 
-document.getElementById('label').addEventListener('click', (event) =>{
-  let valorIn = event.target.value
-})
+function tipoDato(event) {
+  let tipoDate = event.target.value;
+  if (isNaN(tipoDate)) {
+      errPhone.textContent = "Caracter no válido";
+  } else {
+      errPhone.textContent = "✔";
+  }
+}
+// phone.addEventListener('change', (event)=>{
+//   tipoDato(event)
+// })
+//  function tipoDato(event){
+//   let tipoDate = event.target.value
+//  if(tipoDate !== Number){
+//    errPhone.textContent = ("Caracter no valido")
+//    }
+//    else{
+//      errPhone.textContent = ("✔")
+//    }
+//  }
+
+ 
+// verificacion de numero de caracteres en phone
+
+
+
+
+
+
+
+
+
+
+
+// const errName = document.getElementById('nameError')
+// document.getElementById("form").addEventListener("submit",  (event) =>  {
+//   //Previene el envío del formulario
+//    event.preventDefault();
+// // let valorInput = event.target.value;
+// // let longitudInput = valorInput.length;
+//    // resetear inputs
+//    function clear(event) {
+//     event.preventDefault();
+//     document.getElementById('name').value = '';
+//     document.getElementById('email').value = '';
+//     document.getElementById('phone').value = '';
+//     document.getElementById('message').value = '';
+// }
+// clear(event)
+
+
+// // verificacion de numero de caracteres en phone
+// const errorPhone = document.getElementById('namePhone')
+//   document.getElementById('phone').addEventListener('input', function() {
+//     const inputValue = this.value;
+//     const maxLength = 10;
+//     function mostrarAlerta(){
+//       const error = document.createElement('P');
+//       error.textContent='Hubo un error...';
+//       formulario.appendChild(error)
+//       }
+//     if (inputValue.length !== maxLength) {
+//       // Mostrar un mensaje de error o deshabilitar el botón de envío
+//      mostrarAlerta()
+//     }
+//   });
+
+// });
+
+// document.getElementById('label').addEventListener('click', (event) =>{
+//   let valorIn = event.target.value
+// })
 
 
 

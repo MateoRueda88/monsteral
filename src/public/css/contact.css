@@ -148,8 +148,5 @@ estilos validaciones */
 
 .error{
   text-align: center;
-  font-size: 5pt;
-}
-.email:invalid{
-  border: 2px solid red;
+  font-size: 10pt;
 }
