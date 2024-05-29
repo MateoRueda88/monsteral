@@ -122,6 +122,9 @@ label {
 .cont-info img {
   height: 20px;
 }
+.email-monsteral{
+  font-size: 5pt;
+}
 .footer{
   display: flex;
   flex-direction: column;
