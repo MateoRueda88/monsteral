@@ -32,7 +32,7 @@ normalizar nuestra hoja de estilos */
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: space-around;
+ gap: 3rem;
   padding: .2rem;
 }
 .menu-hamburguesa {
@@ -47,7 +47,6 @@ normalizar nuestra hoja de estilos */
   margin-left: 10px;
 }
 .cerrar-nav {
-  /* background-image: url(../img/more.webp); */
   width: 15px;
   height: 20px;
   background-size: cover;
@@ -127,7 +126,7 @@ normalizar nuestra hoja de estilos */
   display: flex;
   justify-content: center;
   height: 18px;
-  gap: 15px;
+  gap: 10px;
 }
 .content-search {
   display: flex;
