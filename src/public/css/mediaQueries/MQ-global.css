@@ -1,4 +1,4 @@
-@media screen and (min-width: 744px) {
+@media screen and (min-width: 768px) {
   /* texto de envios gratis */
     .send-text {
     font-size: 15pt;
@@ -101,7 +101,7 @@
         border-radius: 14px;
       }
       .icons-content {
-        height: 35px;
+        height: 25px;
         gap: 20px;
       }
       .content-logo img {

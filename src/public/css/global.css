@@ -16,38 +16,37 @@ normalizar nuestra hoja de estilos */
   display: flex;
   flex-direction: column;
 }
-.send-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #523726;
-  color: #c8b999;
-  text-align: center;
-  padding: 5px;
-  font-weight: bold;
-  font-size: 9pt;
-}
+.badge.text-bg-primary.text-wrap{
+  background-color: #523726 !important;  
+  color: #c8b999 !important;
+  border-radius: 0;
+  }
 
 .info-header{
-  display: flex;
   width: 100%;
-  align-items: center;
+  height: 47px;
+  display: flex;
   justify-content: space-around;
-  padding: .2rem;
+  align-items: center;
+  border-bottom: 2px solid #939535;
+  padding-bottom: 4px;
 }
 .menu-hamburguesa {
-  width: 15%;
+  width: auto;
+  height: fit-content;
+  
 }
 .abrir-nav {
-  background-image: url(../img/more.webp);
-  width: 18px;
-  height: 18px;
+  background-color: transparent;
+  background-image: url("../img/more.webp");
+  width:24px;
+  height: 24px;
   background-size: cover;
   border: none;
   margin-left: 10px;
 }
 .cerrar-nav {
-  /* background-image: url(../img/more.webp); */
+  
   width: 15px;
   height: 20px;
   background-size: cover;
@@ -67,10 +66,10 @@ normalizar nuestra hoja de estilos */
 
 .content-nav {
   position: absolute;
-  height: 100vh;
+  height:35vh;
   top: 1.5rem;
   left: 0;
-  width: 50%;
+  width: 40%;
   visibility: hidden;
   opacity: 0;
   display: flex;
@@ -79,12 +78,16 @@ normalizar nuestra hoja de estilos */
   background-color: rgb(82, 55, 38);
   padding: 1rem;
   text-align: center;
+  border-radius: 0 20px 20px 0;
+    
 }
 
 .content-nav.visible {
   opacity: 1;
   visibility: visible;
+  opacity: 96%;
 }
+
 .nav-list {
   display: flex;
   flex-direction: column;
@@ -92,11 +95,18 @@ normalizar nuestra hoja de estilos */
   height: 80vh;
   gap: .4rem;
   list-style-type: none;
-
+  
+} 
+ul.nav-list{
+  
+  padding-left: 0;
+}
+.cerrar-nav ul{
+  padding-left: none!important;
 }
 .content-nav ul li{
   border-bottom: 1.5px solid #939535;
-  padding: .3rem;
+ padding-left: none;
 
 }
 
@@ -119,23 +129,29 @@ normalizar nuestra hoja de estilos */
   align-items: center;
 }
 .content-logo img {
-  object-fit: contain;
-  width: 120px;
+  width: 110px;
+}
+.icons-content{
+display: flex;
+justify-content: center;
+gap:20px;
 }
 
-.icons-content {
-  display: flex;
-  justify-content: center;
-  height: 18px;
-  gap: 15px;
+.icons-content a {
+  height: 20px;
+  width: fit-content;    
+}
+.icons-content a img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .content-search {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
-  gap: 5px;
-  border-top: 2px solid #939535;
+  gap: 3px;
   padding: 10px;
   height: auto;
   
@@ -160,8 +176,9 @@ normalizar nuestra hoja de estilos */
   height: 18px;
   padding: 10px;
   border-radius: 10px;
+  font-size: 9pt;
 }
 
 .img-lupa {
-  height: 20px;
+  height: 18px;
 }
