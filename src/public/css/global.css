@@ -24,12 +24,14 @@ normalizar nuestra hoja de estilos */
 
 .info-header{
   width: 100%;
+
   height: 47px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   border-bottom: 2px solid #939535;
   padding-bottom: 4px;
+
 }
 .menu-hamburguesa {
   width: auto;
@@ -46,7 +48,7 @@ normalizar nuestra hoja de estilos */
   margin-left: 10px;
 }
 .cerrar-nav {
-  
+
   width: 15px;
   height: 20px;
   background-size: cover;
@@ -145,6 +147,7 @@ gap:20px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+
 }
 .content-search {
   display: flex;
