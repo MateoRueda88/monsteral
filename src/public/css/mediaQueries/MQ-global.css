@@ -110,6 +110,26 @@
   .img-lupa {
     height: 35px;
   }
+
+  /* estilos footer */
+  
+  .footer{
+    height: 40vh;
+  }
+  .logo-footer img{
+    width: 60px;
+  }
+  .footer .email{
+    font-size: 14pt;
+  }
+  .icons-footer{
+    justify-content: center;
+    gap: 3rem;
+  }
+  .icons-footer img{
+    height: 28px;
+    width: fit-content;  
+  }
  
 }
 @media screen and (min-width: 1024px){
