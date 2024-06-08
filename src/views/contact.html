@@ -6,108 +6,49 @@
     <title>Contact</title>
     <link rel="stylesheet" href="../public/css/contact.css" />
     <link rel="stylesheet" href="../public/css/global.css" />
+    <link rel="stylesheet" href="../public/css/mediaQueries/MQ-contact.css" />
     <link rel="stylesheet" href="../public/css/mediaQueries/MQ-global.css" />
+  
   </head>
+  
   <body>
-    <header class="header-content">
-      <p class="send-text">Envios gratis por compras superiores a $200.000</p>
-      <!-- menu navegacion -->
-      <div class="info-header">
-        <div class="menu-hamburguesa">
-          <button class="abrir-nav" id="abrir"></button>
-          <nav class="content-nav" id="nav">
-            <button class="cerrar-nav" id="cerrar">X</button>
-            <ul class="nav-list">
-              <li><a href="" class="enlace-nav">Plantas</a></li>
-              <li><a href="" class="enlace-nav">Noticias</a></li>
-              <li><a href="" class="enlace-nav">Talleres</a></li>
-              <li><a href="" class="enlace-nav">Nosotros</a></li>
-              <li><a href="" class="enlace-nav">Contactanos</a></li>
-            </ul>
-          </nav>
-        </div>
-        <div class="content-logo">
-          <img src="../public/img/LogoMonsteralPng.webp" alt="imagen logo" />
-        </div>
-        <div class="content-search-tablet">
-          <input
-            type="search"
-            id="search"
-            class="search-tablet"
-            placeholder="¿Que estas buscando?"
-          />
-          <img
-            src="../public/img/macgnificGlass.webp"
-            alt=""
-            class="img-lupa"
-          />
-        </div>
-        <div class="icons-content">
-          <img class="icons" src="../public/img/user.webp" alt=" img user" />
-          <img class="icons" src="../public/img/car.webp" alt=" img car" />
-          <img
-            class="icons"
-            src="../public/img/whatsapp.webp"
-            alt="img whatsapp"
-          />
-        </div>
-      </div>
-
-      <!-- </div> -->
-      <div class="content-search">
-        <input
-          type="search"
-          id="search"
-          class="search"
-          placeholder="¿Que estas buscando?"
-        />
-        <img
-          src="../public/img/macgnificGlass.webp"
-          alt="image glass"
-          class="img-lupa"
-        />
-      </div>
-      <div class="content-navigation">
-        <nav class="content-nav-tablet" id="nav">
-          <ul class="nav-list-tablet">
-            <li><a href="" class="enlace-nav">Plantas</a></li>
-            <li><a href="" class="enlace-nav">Noticias</a></li>
-            <li><a href="" class="enlace-nav">Talleres</a></li>
-            <li><a href="" class="enlace-nav">Nosotros</a></li>
-            <li><a href="" class="enlace-nav">Contactenos</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <!-- content header -->
+    <header id="menu-container">
+      <!-- content created dynamicaly by script -->
+    </header> 
+    <!-- cotent principal -->
     <!-- Section contact -->
 
 <main class="container-main-contact">
-  <h2 class="subtitulo">Conctact</h2>
+  <h2 class="subtitulo">Contáctanos</h2>
   <div class="cont-contact">
-    <form action="" class="formulario" id="form"   onsubmit="clear(event)">
+
+    <!-- inicio del formulario .................................................... -->
+
+    <form action="https://formspree.io/f/xnqeyekq" method="post" class="formulario" id="form">
       <label for="name" id="label"
         >Nombre completo
-        <input type="text" id="name" name="name" class="input-form" />
+        <input type="text" id="name" name="name" class="input-form" required />
         <span class="error" id="nameError"></span>
       </label>
       <label for="email" id="label"
         >Email
-        <input type="email" id="email" name="email" class="input-form"/>
+        <input type="email" id="email" name="email" class="input-form" required/>
         <span class="error" id="emailError"></span>
       </label>
       <label for="phone" id="label"
         >Telefono
-        <input type="tel" name="phone" id="phone" class="input-form" maxlength="10" />
+        <input type="tel" name="phone" id="phone" class="input-form" maxlength="10" required />
         <span class="error" id="namePhone"></span>
       </label>
       <label for="message" id="label"
         >Mensaje
         <textarea
-          name=""
+          name="message"
           id="message"
           cols="30"
           rows="3"
-          class="input-form"
+          class="input-form" required 
         ></textarea>
       </label>
       <div class="btn-cont">
@@ -123,7 +64,7 @@
       </div>
       <div class="cont-info">
         <img src="../public/img/mail.webp" alt="" />
-        <p><a href="#">contactenos@monsteral.com</a></p>
+        <p class="email-monsteral"><a href="#">contactenos@monsteral.com</a></p>
       </div>
       <div class="cont-info">
         <img src="../public/img/clock.webp" alt="" />
@@ -133,16 +74,12 @@
     <p class="subtitulo">Suscribete</p>
   </div>
 </main>
-<footer class="footer">
-  <img src="../public/img/LogoMonsteralPng.webp" alt="">
-  <a href="">contactenos@monsteral.com</a>
-  <div class="icons-content">
-    <img class="icons" src="../public/img/user.webp" alt=" img user" />
-    <img class="icons" src="../public/img/car.webp" alt=" img car" />
-    <img class="icons"src="../public/img/whatsapp.webp"alt="img whatsapp"/>
-  </div>
-</footer>
+<!-- <footer >
+ 
+</footer> -->
     <script src="../js/contact.js"></script>
-    <script src="../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../js/header.js"></script>
+    
   </body>
 </html>

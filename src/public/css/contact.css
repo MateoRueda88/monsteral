@@ -4,13 +4,13 @@
   box-sizing: border-box;
 }
 .container-main-contact{
+  width: auto;
   display: flex;
-  background-image: url(../img/opciones-de-logo-1.webp);
-  background-size: cover;
+  flex-direction: column;
+  background-image: url("../img/aboutImg/opciones-de-logo-1.webp");
+  background-size:cover;
   background-position: top;
   background-repeat: no-repeat;
-  flex-direction: column;
-  height: auto;
   gap: 1.5rem;
 }
 .subtitulo {
@@ -31,6 +31,8 @@
   align-items: center;
   gap: 1rem;
 }
+
+
 .formulario {
   display: flex;
   width: 90%;
@@ -100,7 +102,7 @@ label {
   background-color: #c8b999;
   margin-top: 20px;
   border-radius: 10px;
-  background-image: url(../img/opciones-de-logo-1.webp);
+  background-image: url("../img/aboutImg/opciones-de-logo-1.webp");
   background-position: bottom;
 
   
@@ -119,6 +121,9 @@ label {
 }
 .cont-info img {
   height: 20px;
+}
+.email-monsteral{
+  font-size: 5pt;
 }
 .footer{
   display: flex;
@@ -148,8 +153,5 @@ estilos validaciones */
 
 .error{
   text-align: center;
-  font-size: 5pt;
-}
-.email:invalid{
-  border: 2px solid red;
+  font-size: 10pt;
 }
