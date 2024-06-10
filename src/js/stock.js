@@ -71,6 +71,24 @@
     }
 ]
 
-for (let i = 0; i < products.length; i++){
-    console.log(products[i]);
-  };
+// for (let i = 0; i < products.length; i++){
+//     console.log(products[i]);
+//   };
+
+  const container = document.getElementById('plants');
+
+  let plantsHTML = '';
+
+  for (let i = 0; i < products.length; i++) {
+      plantsHTML += `
+      <div class="plant-card">
+          <h2>${products[i].name}</h2>
+          <p>Precio: $${products[i].price}</p>
+          <img src="${products[i].img}" alt="${products[i].name}" style="width:100px;height:100px;">
+      </div>
+      `;
+      
+  }
+    container.innerHTML = plantsHTML;
+    // <p>Descripción: ${products[i].description}</p>
+
