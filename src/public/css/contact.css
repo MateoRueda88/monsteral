@@ -23,7 +23,7 @@
   text-align: center;
   padding: 5px;
   font-weight: bold;
-  font-size: 10pt;
+  font-size: 12pt;
 }
 .cont-contact {
   display: flex;
@@ -31,8 +31,6 @@
   align-items: center;
   gap: 1rem;
 }
-
-
 .formulario {
   display: flex;
   width: 90%;
@@ -66,21 +64,22 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px;
 }
 .btn-enviar {
-  width: 70px;
-  font-size: 12pt;
+  width: 90px;
+  font-size: 15pt;
   padding: 0.3rem;
-  border: none;
-  background-color: rgb(147, 149, 53, 0.01);
+  border: 2px solid #523726;
+  background-color: #c8b999;
+  border-radius: 10px;
   font-weight: bold;
   color: #523726;
 }
 .btn-enviar:hover {
-  color:#939535;
-  border: 2px solid #939535;
-  border-radius: 10px;
-  cursor: pointer;
+  border: 2px solid #c8b999;
+  background-color: #523726;
+  color: #c8b999;
 }
 .info {
   width: 100%;
@@ -90,7 +89,6 @@ label {
   justify-content: center;
   align-items: center;
   gap: 1rem;
- 
 }
 .container-info {
   display: flex;
@@ -104,26 +102,23 @@ label {
   border-radius: 10px;
   background-image: url("../img/aboutImg/opciones-de-logo-1.webp");
   background-position: bottom;
-
-  
 }
 .container-info div p a {
   text-decoration: none;
   color: #939535;
   font-weight: bold;
 }
-
+.container-info div p a:hover {
+  color: #523726;
+}
 .cont-info {
   display: flex;
-  gap: .5rem;
+  gap: 1rem;
   padding: .3rem;
   text-align: center;
 }
 .cont-info img {
-  height: 20px;
-}
-.email-monsteral{
-  font-size: 5pt;
+  height: 25px;
 }
 .footer{
   display: flex;
@@ -134,12 +129,10 @@ label {
   width: 100%;
   height: auto;
 }
-
 .content-logo img {
   object-fit: contain;
   width: 12px;
 }
-
 .icons-content {
   display: flex;
   justify-content: center;
@@ -148,10 +141,12 @@ label {
   gap: 15px;
 }
 
-/* 
-estilos validaciones */
+/* estilos validaciones */
 
 .error{
   text-align: center;
   font-size: 10pt;
+}
+.email:invalid{
+  border: 2px solid red;
 }
