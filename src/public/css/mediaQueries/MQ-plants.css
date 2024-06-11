@@ -1,0 +1,46 @@
+/* media query tablet */
+
+@media screen and (min-width:768px){
+
+.containerPlants{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px 0;
+}
+
+.plant-card {
+    width: 200px;
+ 
+}
+
+.plant-card h2 {
+    font-size: 1rem;
+}
+
+.plant-card p {
+    font-size: .8rem;
+
+}
+
+.plant-card .plantImg{
+    width: 150px;
+    height: 150px;
+}
+
+.car .carImg{
+    width: 18px;
+    object-fit: contain;
+}
+
+}
+@media screen and (min-width:1024px){
+
+    .containerPlants{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 15px 0;
+    }
+
+}
