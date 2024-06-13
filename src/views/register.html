@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../public/css/register.css" />
+    <link rel="stylesheet" href="../public/css/global.css" />
+    <link rel="stylesheet" href="../public/css/mediaQueries/MQ-contact.css" />
+    <link rel="stylesheet" href="../public/css/mediaQueries/MQ-global.css" />
+  
+  </head>
+  
+  <body>
+    <!-- content header -->
+    <header id="menu-container">
+      <!-- content created dynamicaly by script -->
+    </header> 
+    <!-- cotent principal -->
+    <!-- Section contact -->
+
+<main class="container-main-contact">
+ 
+
+    <div class="container">
+        <h2>Formulario de Registro</h2>
+        <form class="formulario" id="formRegister">
+            <label for="fullName">Nombre completo
+                <input type="text" id="fullName" name="fullName" class="input-form" required />
+                <span class="error" id="nameError"></span>
+            </label>
+            <label for="email">Email
+                <input type="email" id="email" name="email" class="input-form" required/>
+                <span class="error" id="emailError"></span>
+            </label>
+            <label for="phone">Teléfono
+                <input type="tel" name="phone" id="phone" class="input-form" maxlength="10" required />
+                <span class="error" id="phoneError"></span>
+            </label>
+            <label for="password">Contraseña
+                <input type="password" name="password" id="password" class="input-form" maxlength="8" required />
+                <span class="error" id="passwordError"></span>
+            </label>
+            <label for="confirmPassword">Confirmar Contraseña
+                <input type="password" name="confirmPassword" id="confirmPassword" class="input-form" maxlength="8" required/>
+                <span class="error" id="confirmPasswordError"></span>
+            </label>
+            <div class="btn-cont">
+                <input type="submit" value="Registrar" class="btn-enviar" id="sub"/>
+            </div>
+        </form>
+
+
+
+  </div>
+  <div class="info">
+    <div class="container-info">
+      <div class="cont-info">
+        <img src="../public/img/whatsappG.webp" alt="" />
+        <p><a href="#">+57 3002470631</a></p>
+      </div>
+      <div class="cont-info">
+        <img src="../public/img/mail.webp" alt="" />
+        <p class="email-monsteral"><a href="#">contactenos@monsteral.com</a></p>
+      </div>
+      <div class="cont-info">
+        <img src="../public/img/clock.webp" alt="" />
+        <p><a href="#">Lun-Sab 8a.m - 5p.m</a></p>
+      </div>
+    </div>
+    <p class="subtitulo">Suscribete</p>
+  </div>
+</main>
+<!-- <footer >
+ 
+</footer> -->
+    <script src="../js/register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="../js/header.js"></script>
+    
+  </body>
+</html>
