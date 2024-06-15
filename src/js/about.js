@@ -4,7 +4,7 @@ const team =[
         name1:"Mateo Rueda",
         position: "Desarrollador Frontend",
         img: "../public/img/aboutImg/Mateo_Photo.webp",
-        description: "Apasionado por la tecnología y la innovación. En sus tiempos libres realiza actividades al aire libre."
+        description: "Apasionado por la tecnología y la innovación. Le emociona realizar actividades al aire libre."
     },
     {
         id: 2,
@@ -18,21 +18,21 @@ const team =[
         name1:"Valentina Ramírez",
         position: "Team Leader",
         img:"../public/img/aboutImg/foto valentina.webp",
-        description: "Desarrolladora en busca de soluciones tecnológicas innovadoras para crear experiencias de usuario intuitivas y atractivas."
+        description: "Busco soluciones tecnológicas innovadoras para crear experiencias de usuario intuitivas y atractivas."
     },
     {
         id: 4,
         name1:"Lina Mora",
         position: "Desarrollador Backend",
         img:"../public/img/aboutImg/Lina_Photo.webp",
-        description: "Desarrolladora Fullstack apasionada por el diseño web, con sólidos conocimientos en lenguajes de programación."
+        description: "Apasionada por el diseño web, con sólidos conocimientos en lenguajes de programación."
     },
     {
         id: 5,
         name1:"Francy Bejarano",
         position: "Scrum Master",
         img:"../public/img/aboutImg/Francy_Photo.webp",
-        description: "Apasionada por la naturaleza y las manualidades, trabajando día a día por mejorar el medio ambiente"
+        description: "Me gusta la naturaleza y las manualidades, trabajando día a día por mejorar el medio ambiente"
     }
 
 ];

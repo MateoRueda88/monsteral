@@ -72,15 +72,15 @@ height: 250px;
   .container-team{
       background-image: url(../../img/aboutImg/Desktop.png) ;
       background-size: cover;
-      gap: 3rem;
+      background-repeat: no-repeat;
       justify-content: center;
   }
   .card-team{
-      width: 40%;
-      height: 400px;
+      width: 35%;
+      height: 300px;
   }
   .card-team p{
-      font-size: 20px;
+      font-size: .9rem;
       margin: 80px;
   }
 }
