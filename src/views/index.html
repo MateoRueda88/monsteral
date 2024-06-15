@@ -9,6 +9,8 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../public/css/global.css" />
     <link rel="stylesheet" href="../public/css/mediaQueries/MQ-global.css" />
+    <link rel="stylesheet" href="../public/css/banner.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
   
   </head>
@@ -19,10 +21,28 @@
       <!-- content created dynamicaly by script -->
     </header>
     <!-- cotent principal -->
+     <main>
+      <!--------------------- Banner --------------------------------------->
+      <div class="offer-carousel">
+        <div class="carousel" id="carousel">
+          <div class="slider">
+            <img src="../public/img/bannerImg/Banner1.webp" alt="offer1">
+          </div>
+          <div class="slider">
+            <img src="../public/img/bannerImg/Banner2.webp" alt="offer2">
+          </div>
+          <div class="slider">
+            <img src="../public/img/bannerImg/Banner3.webp" alt="offer3">
+          </div>
+
+        </div>
+        <div class="btn-left"><i class='bx bx-left-arrow-alt' ></i></div>
+        <div class="btn-right"><i class='bx bx-right-arrow-alt'></i></div>
+      </div>
+      <!--------------------------- Finish Banner ------------------------------>
+     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../js/header.js"></script>
-    
-    <!---------------------------------- Banner iframe ---------------------------------->
-    <iframe class="banner" src="../views/banner.html" frameborder="0"></iframe>
+    <script src="../js/banner.js"></script>
  </body>
 </html>
