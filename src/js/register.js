@@ -4,8 +4,68 @@ const phone = document.getElementById('phone');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const confirmPassword = document.getElementById('confirmPassword');
-// const errName = document.getElementById('nameError');
-// const errPhones = document.getElementById('phoneError') 
+const errName = document.getElementById('nameError');
+const errPhone = document.getElementById('phoneError');
+
+
+fullName.addEventListener('change', (event)=>{
+    longitudInput(event)
+  })
+  function longitudInput(event){
+    let valorInput = event.target.value;
+  let longitudInputNombre = valorInput.length;
+  if(longitudInputNombre < 3){
+    Swal.fire({
+        title: "Ingrese mas caracteres",
+        showConfirmButton: false,
+        background: 'rgb(228, 228, 204)',
+        icon: 'info',
+        timer: '1000',
+        position: 'center',
+        backdrop: true,
+        color: '#939535',
+        allowOutsideClick: true,
+        toost: true,
+        showConfirmButton: false,
+        customClass:{
+            title: 'titulo-password'
+        }
+});
+}
+else {
+    errName.textContent = "✔";
+}
+
+  }
+
+  phone.addEventListener('change', (event) => {
+    tipoDato(event);
+  });
+  
+  function tipoDato(event) {
+    let tipoDate = event.target.value;
+    if (isNaN(tipoDate)) {
+        Swal.fire({
+            title: "Ingrese campo valido",
+            showConfirmButton: false,
+            background: 'rgb(228, 228, 204)',
+            icon: 'warning',
+            timer: '1000',
+            position: 'center',
+            backdrop: true,
+            color: '#939535',
+            allowOutsideClick: true,
+            toost: true,
+            showConfirmButton: false,
+            customClass:{
+                title: 'titulo-password'
+            }
+    });
+    } else {
+        errPhone.textContent = "✔";
+    }
+  }
+
 
 // Array para guardar los usuarios registrados
 const userRegistered = [];
@@ -67,6 +127,7 @@ function RegisterUser(event) {
         return;  // Salir de la función si las contraseñas no coinciden
     }
     
+    
     // Validar que el usuario no exista
     if (userRegistered.find(user => user.email === emailValue)) {
         Swal.fire({
@@ -127,6 +188,8 @@ function RegisterUser(event) {
     email.value = "";
     password.value = "";
     confirmPassword.value = "";
+    errName.textContent = ""
+    errPhone.textContent = "";
 }
 
 
