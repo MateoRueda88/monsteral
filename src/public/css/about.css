@@ -45,16 +45,13 @@ height: 166px;
 
 
 /* equipo..................................................................... */
-.teamH1{
- 
-}
 
 .container-team{
   width: 100%;
   height: auto;
   margin: 0 auto;
   padding: 50px 20%;
-  background-image: url(../img/aboutImg/hojas-mobile.webp);
+  background-image: url(../img/aboutImg/mobileBackgroundV.webp);
   background-repeat: repeat;
   background-size: cover;
   display: flex;
@@ -64,20 +61,23 @@ height: 166px;
  
   
 }
-.title-team{
-  color: rgba(109, 110, 68, 1);
+.teamH1 h1{
+  color: #5D5F10;
   text-align: center;
-  font-size: 36px;
+  font-size: 2rem;
   border-bottom: 5px solid rgba(93, 95, 16, 1);
+  border-top: 5px solid rgba(93, 95, 16, 1);
+  padding: 10px;
+
 }
 
 /* Girar cards */
 .card-team{
-  margin-top: 40px;
   position: relative;
   display: flex;
-  width: 90%;
-  height: 250px;
+  width: 250px;
+  height: 300px;
+  margin: 20px;
 }
 .card-team div{
   position: absolute;
@@ -93,25 +93,33 @@ height: 166px;
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  background-color: rgba(147, 149, 53, 0.25);
+  background-color: #E4E4CC;
   border-radius: 70% 0%; 
   transform: perspective(500px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+  text-align: center;
 }
 .card-descrip-back{
-  background-color: rgba(147, 149, 53, 0.25);
+  background-color: #E4E4CC;
   transform: perspective(500px) rotateY(180deg);
-  border-radius: 70% 0%; 
+  border-radius: 70% 0%;
+  box-shadow: 0 5px 10px #000;
+  text-align: center; 
   
 }
 .card-team:hover .card-descrip-front{
-  background-color: rgba(147, 149, 53, 0.25);
+  background-color: #E4E4CC;
   transform: perspective(500px) rotateY(180deg);
-  border-radius: 70% 0%; 
+  border-radius: 70% 0%;
+  box-shadow: 0 5px 10px #000;
+  text-align: center; 
 }
 .card-team:hover .card-descrip-back{
   transform: perspective(500px) rotateY(360deg);
-  background-color: rgba(147, 149, 53, 0.25);
-  border-radius: 70% 0%; 
+  background-color: #E4E4CC;
+  border-radius: 70% 0%;
+  box-shadow: 0 5px 10px #000;
+  text-align: center; 
 }
 
 /* Edicion de contenido de las cards */
@@ -125,25 +133,14 @@ height: 166px;
   margin: 30px;
 }
 .card-team h4{
-  font-size: 28px;
+  font-size: 1.2rem;
   color:#5D5F10;
-  margin: 0 80px; 
+  font-weight: bold;
 }
 .card-team h5{
-  font-size: 14px;
+  font-size: 1rem;
   color: #C0904D;
 }
-
-
-/* mision y vision */
-
-
-
-
-
-
-/* valores */
-
 
 * {
     margin: 0;
@@ -152,10 +149,7 @@ height: 166px;
     font-family: "Quicksand";
   }
 
-
-
 /*mision -vision*/
-
 /*contenedor padre*/
 .main-container-mv{
   width: 100%;
@@ -243,7 +237,7 @@ p{
   }
   
   .titleValues{
-    font-size: 20pt;
+    font-size: 2rem;
     color: #6D6E44; 
      
   }

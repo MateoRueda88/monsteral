@@ -1,0 +1,51 @@
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.offer-carousel{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.carousel{
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+.slider{
+    width: calc(100%/3);
+    height: 100%;
+}
+.slider img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.btn-left, .btn-right{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    font-weight: 600;
+    cursor: pointer;
+    transform: translate(0,-50%);
+    transition: .5s ease ;
+    user-select: none;
+
+}
+.btn-left{
+    left: 10px;
+}
+.btn-right{
+    right: 10px;
+}
+.btn-left:hover,
+.btn-right:hover{
+    background-color: #C0904D;
+}
+
