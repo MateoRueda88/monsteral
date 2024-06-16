@@ -171,7 +171,7 @@ height: 166px;
   width: 50%;
   padding: 5%;
   margin-left: 5%;
-  margin-top: 15%;
+  margin-top: 1%;
   border-radius: 40px;
 }
 
@@ -187,18 +187,32 @@ height: 166px;
 
 h1{
   color: #5D5F10;
+  font-size: 36px;
 }
 
 p{
   color: #523726;
+  font-size: 16px;
 }
 
 .img-mision{
+  width: 100%;
+  height: auto;
+}
+.img-mision img{
+  width: 35%;
+  height: auto;
   float:left;
   margin-left: 8%;
 }
 
 .img-vision{
+  width: 100%;
+  height: auto;
+}
+.img-vision img{
+  width: 35%;
+  height: auto;
   float: right;
   margin-right: 8%;
 }

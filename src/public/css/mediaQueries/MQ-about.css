@@ -95,29 +95,42 @@ height: 250px;
       align-items: center;
   }
   .container-mision{
-    width: 80%;
+    width: 90%;
     padding: 5%;
     margin: auto;
-    margin-top: 20%;
-    text-align: center;
-  }
-  .container-vision{
-    width: 80%;
-    padding: 5%;
-    margin: auto;
-    margin-top: 120%;
+    margin-top: 1%;
     text-align: center;
   }
   .img-mision{
     max-width: 100%; 
+    width: 100%;
     height: auto;
-    margin-left: 20%;
+    margin-left: 5%;
+  }
+  .img-mision img{
+    width: 50%;
+    height: auto;
+    float:left;
+    margin-left: 15%;
+  }
+  .container-vision{
+    width: 90%;
+    padding: 5%;
+    margin: auto;
+    margin-top: 60%;
+    text-align: center;
   }
   .img-vision{
     max-width: 100%; 
+    width: 100%;
     height: auto;
-    margin-right: 20%;
-  
+    margin-right: 5%;
+  }
+  .img-vision img{
+    width: 50%;
+    height: auto;
+    float: right;
+    margin-right: 15%;
   }
 }
   
