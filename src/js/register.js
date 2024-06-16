@@ -4,6 +4,68 @@ const phone = document.getElementById('phone');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 const confirmPassword = document.getElementById('confirmPassword');
+const errName = document.getElementById('nameError');
+const errPhone = document.getElementById('phoneError');
+
+
+fullName.addEventListener('change', (event)=>{
+    longitudInput(event)
+  })
+  function longitudInput(event){
+    let valorInput = event.target.value;
+  let longitudInputNombre = valorInput.length;
+  if(longitudInputNombre < 3){
+    Swal.fire({
+        title: "Ingrese mas caracteres",
+        showConfirmButton: false,
+        background: 'rgb(228, 228, 204)',
+        icon: 'info',
+        timer: '1000',
+        position: 'center',
+        backdrop: true,
+        color: '#939535',
+        allowOutsideClick: true,
+        toost: true,
+        showConfirmButton: false,
+        customClass:{
+            title: 'titulo-password'
+        }
+});
+}
+else {
+    errName.textContent = "✔";
+}
+
+  }
+
+  phone.addEventListener('change', (event) => {
+    tipoDato(event);
+  });
+  
+  function tipoDato(event) {
+    let tipoDate = event.target.value;
+    if (isNaN(tipoDate)) {
+        Swal.fire({
+            title: "Ingrese campo valido",
+            showConfirmButton: false,
+            background: 'rgb(228, 228, 204)',
+            icon: 'warning',
+            timer: '1000',
+            position: 'center',
+            backdrop: true,
+            color: '#939535',
+            allowOutsideClick: true,
+            toost: true,
+            showConfirmButton: false,
+            customClass:{
+                title: 'titulo-password'
+            }
+    });
+    } else {
+        errPhone.textContent = "✔";
+    }
+  }
+
 
 // Array para guardar los usuarios registrados
 const userRegistered = [];
@@ -23,24 +85,74 @@ function RegisterUser(event) {
 
     // Validar que los campos no estén vacíos
     if (fullNameValue === "" || phoneValue === "" || emailValue === "" || passwordValue === "" || confirmPasswordValue === "") {
-        alert("Por favor llene todos los campos");
+        Swal.fire({
+            title: "Por favor llenar todos los campos",
+            showConfirmButton: false,
+            background: 'rgb(228, 228, 204)',
+            icon: 'warning',
+            timer: '3000',
+            position: 'center',
+            backdrop: true,
+            color: '#939535',
+            allowOutsideClick: true,
+            toost: true,
+            showConfirmButton: false,
+            customClass:{
+                title: 'titulo-password'
+            }
+
+
+    });
         return;  // Salir de la función si hay campos vacíos
     }
     
     // Validar que las contraseñas coincidan
     if (passwordValue !== confirmPasswordValue) {
-        alert("Las contraseñas no coinciden");
+        Swal.fire({
+            title: "Las constraseñas no coiciden",
+            icon: 'error',
+            background: 'rgb(228, 228, 204)',
+            timer: '3000',
+            position: 'center',
+            backdrop: true,
+            color: '#939535',
+            allowOutsideClick: true,
+            toost: true,
+            showConfirmButton: false,
+            customClass:{
+                title: 'titulo-password'
+            }
+           
+    });
         return;  // Salir de la función si las contraseñas no coinciden
     }
     
+    
     // Validar que el usuario no exista
     if (userRegistered.find(user => user.email === emailValue)) {
-        alert("El usuario ya existe");
+        Swal.fire({
+            title: "El usuario ya exíste",
+            icon: 'info',
+            background: 'rgb(228, 228, 204)',
+            timer: '3000',
+            position: 'center',
+            backdrop: true,
+            color: '#939535',
+            allowOutsideClick: true,
+            toost: true,
+            showConfirmButton: false,
+            customClass:{
+                title: 'titulo-password'
+            }
+           
+           
+    });
         return;  // Salir de la función si el usuario ya existe
     }
 
     // Se agrega automáticamente un ID
     id++;
+  
 
     // Crear el objeto usuario
     const user = {
@@ -56,7 +168,19 @@ function RegisterUser(event) {
     
     // Guardar Array en el LocalStorage
     localStorage.setItem("user", JSON.stringify(userRegistered));
-    alert("Usuario registrado con éxito");
+    Swal.fire({
+        title: "Exitosamente",
+        icon: 'success',
+        background: 'rgb(228, 228, 204)',
+        timer: '3000',
+        position: 'center',
+        backdrop: true,
+        color: '#939535',
+        allowOutsideClick: true,
+        toost: true,
+        showConfirmButton: false
+       
+});
 
     // Limpiar los campos
     fullName.value = "";
@@ -64,6 +188,8 @@ function RegisterUser(event) {
     email.value = "";
     password.value = "";
     confirmPassword.value = "";
+    errName.textContent = ""
+    errPhone.textContent = "";
 }
 
 

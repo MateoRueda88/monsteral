@@ -101,3 +101,13 @@
   .email:invalid{
     border: 2px solid red;
   }
+ 
+/* 
+  estilos SweetAlert */
+
+  .titulo-password{
+    color: #523726;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+ 

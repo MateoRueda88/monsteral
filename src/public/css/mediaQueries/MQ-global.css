@@ -111,10 +111,32 @@
     height: 35px;
   }
 
+<<<<<<< HEAD
+  /* estilos footer */
+  
+  .footer{
+    height: 40vh;
+  }
+  .logo-footer img{
+    width: 60px;
+  }
+  .footer .email{
+    font-size: 14pt;
+  }
+  .icons-footer{
+    justify-content: center;
+    gap: 3rem;
+  }
+  .icons-footer img{
+    height: 28px;
+    width: fit-content;  
+  }
+=======
   .offer-carousel{
     margin-top: 37px; 
   }
 
+>>>>>>> 7789c335f5968d1df25ee2352e3ef4e7b0883b8a
  
 }
 @media screen and (min-width: 1024px){
