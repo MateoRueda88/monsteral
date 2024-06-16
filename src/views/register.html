@@ -23,28 +23,32 @@
  
 
     <div class="container">
-        <h2>Formulario de Registro</h2>
+      
+      <div class="registerDecoration">
+        <h2>texto de prueba</h2>
+      </div>
         <form class="formulario" id="formRegister">
-            <label for="fullName">Nombre completo
-                <input type="text" id="fullName" name="fullName" class="input-form" required />
+          
+           <!-- nombre completo -->
+                <input type="text" id="fullName" name="fullName" class="input-form" required placeholder="Nombre Completo"/>
                 <span class="error" id="nameError"></span>
-            </label>
-            <label for="email">Email
-                <input type="email" id="email" name="email" class="input-form" required/>
+            
+            <!-- Email -->
+                <input type="email" id="email" name="email" class="input-form" required placeholder="Email"/>
                 <span class="error" id="emailError"></span>
-            </label>
-            <label for="phone">Teléfono
-                <input type="tel" name="phone" id="phone" class="input-form" maxlength="10" required />
+          
+              <!-- telefono -->
+                <input type="tel" name="phone" id="phone" class="input-form" maxlength="10" required placeholder="Telefono" />
                 <span class="error" id="phoneError"></span>
-            </label>
-            <label for="password">Contraseña
-                <input type="password" name="password" id="password" class="input-form" maxlength="8" required />
+            
+              <!-- contraseña -->
+                <input type="password" name="password" id="password" class="input-form" maxlength="8" required placeholder="contraseña"/>
                 <span class="error" id="passwordError"></span>
-            </label>
-            <label for="confirmPassword">Confirmar Contraseña
-                <input type="password" name="confirmPassword" id="confirmPassword" class="input-form" maxlength="8" required/>
+            
+              <!-- Confirmar Contraseña -->
+                <input type="password" name="confirmPassword" id="confirmPassword" class="input-form" maxlength="8" required placeholder="Confirmación Contraseña"/>
                 <span class="error" id="confirmPasswordError"></span>
-            </label>
+            
             <div class="btn-cont">
                 <input type="submit" value="Registrar" class="btn-enviar" id="sub"/>
             </div>
@@ -53,23 +57,7 @@
 
 
   </div>
-  <div class="info">
-    <div class="container-info">
-      <div class="cont-info">
-        <img src="../public/img/whatsappG.webp" alt="" />
-        <p><a href="#">+57 3002470631</a></p>
-      </div>
-      <div class="cont-info">
-        <img src="../public/img/mail.webp" alt="" />
-        <p class="email-monsteral"><a href="#">contactenos@monsteral.com</a></p>
-      </div>
-      <div class="cont-info">
-        <img src="../public/img/clock.webp" alt="" />
-        <p><a href="#">Lun-Sab 8a.m - 5p.m</a></p>
-      </div>
-    </div>
-    <p class="subtitulo">Suscribete</p>
-  </div>
+  
 </main>
 <!-- <footer >
  
