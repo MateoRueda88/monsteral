@@ -42,8 +42,6 @@ function LoginEmail(event) {
     if (email.value === "" || password.value === "") {
         alert("Por favor llene todos los campos");
         return;
-        alert("Por favor llene todos los campos");
-        return;
     }
 
 
@@ -53,7 +51,6 @@ function LoginEmail(event) {
     const user = validateUser.find(user => user.email === email.value);
     if (!user) {
         alert("El email ingresado no existe");
-        return;
         return;
     }
 
@@ -79,3 +76,4 @@ function LoginEmail(event) {
     window.location.href = "../views/about.html";
 }
 
+}
