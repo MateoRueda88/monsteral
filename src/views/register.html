@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../public/css/register.css" />
+    <link rel="stylesheet" href="../public/css/mediaQueries/MQ-register.css" />
     <link rel="stylesheet" href="../public/css/global.css" />
-    <link rel="stylesheet" href="../public/css/mediaQueries/MQ-contact.css" />
     <link rel="stylesheet" href="../public/css/mediaQueries/MQ-global.css" />
   
   </head>
@@ -21,12 +21,12 @@
 
 <main class="container-main-contact">
  
-
-    <div class="container">
+<div class="geral" >
+    <div class="gContainer">
       
-      <div class="registerDecoration">
-        <h2>texto de prueba</h2>
-      </div>
+      <div class="registerDecoration" >
+
+      
         <form class="formulario" id="formRegister">
           
            <!-- nombre completo -->
@@ -50,14 +50,15 @@
                 <span class="error" id="confirmPasswordError"></span>
             
             <div class="btn-cont">
-                <input type="submit" value="Registrar" class="btn-enviar" id="sub"/>
+                <input type="submit" value="Registrar" class="btn-register" id="sub"/>
+                <div><h3 class="registered">¿Ya tienes una cuenta?</h3><h3 class="login">
+                  <a href="login.html" alt=" ">inicia sesión</a>
+                </h3></div>
             </div>
         </form>
-
-
-
+      </div>
   </div>
-  
+</div>
 </main>
 <!-- <footer >
  

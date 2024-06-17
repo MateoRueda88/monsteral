@@ -169,7 +169,7 @@ function RegisterUser(event) {
     // Guardar Array en el LocalStorage
     localStorage.setItem("user", JSON.stringify(userRegistered));
     Swal.fire({
-        title: "Exitosamente",
+        title: "Registro Exitoso",
         icon: 'success',
         background: 'rgb(228, 228, 204)',
         timer: '3000',
