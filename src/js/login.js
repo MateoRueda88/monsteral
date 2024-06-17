@@ -1,34 +1,50 @@
-const frmLogin = document.getElementById('formLogin');
+const formLogin = document.getElementById('formLogin');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 
-frmLogin.addEventListener("submit", LoginEmail);
+formLogin.addEventListener("submit", LoginEmail);
 
 function LoginEmail(event) {
-    //Prevenir los eventos precargados
+    // Prevenir los eventos precargados
     event.preventDefault();
+
     // Obtener los valores de los campos de entrada
     const getLocal = localStorage.getItem("user");
+
+    if (!getLocal) {
+        alert("No hay usuarios registrados");
+        return;
+    }
+
     const validateUser = JSON.parse(getLocal);
+
+    // Validar que validateUser sea un array
+    if (!Array.isArray(validateUser)) {
+        alert("Datos de usuario no válidos");
+        return;
+    }
 
     // Validar que los campos no estén vacíos
     if (email.value === "" || password.value === "") {
-        alert("Por favor llene todos los campos")         
+        alert("Por favor llene todos los campos");
+        return;
     }
+
     // Validar que el usuario exista
-    else if(!validateUser.find(user =>user.user === email.value)){
+    const user = validateUser.find(user => user.email === email.value);
+    if (!user) {
         alert("El email ingresado no existe");
+        return;
     }
+
     // Validar que la contraseña coincida
-    else if (
-        validateUser.find(user =>user.user === email.value).password !== password.value){
-            alert("La contraseña ingresada no coincide");
-        }else{
-            alert("Usuario logueado con éxito");
-            //ir a otra pagina desde js
-            window.location.href = "src\views\about.html";
-        }
+    if (user.password !== password.value) {
+        alert("La contraseña ingresada no coincide");
+        return;
+    }
+
+    // Usuario logueado con éxito
+    alert("Usuario logueado con éxito");
+    // Ir a otra página desde js
+    window.location.href = "../views/about.html";
 }
-
-
-
