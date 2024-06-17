@@ -1,24 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prueba</title>
-    <link rel="stylesheet" href="../public/css/about.css" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/src/public/css/login.css" />
+    <link rel="stylesheet" href="../public/css/mediaQueries/MQ-register.css" />
     <link rel="stylesheet" href="../public/css/global.css" />
-    <link rel="stylesheet" href="../public/css/mediaQueries/MQ-about.css" />
     <link rel="stylesheet" href="../public/css/mediaQueries/MQ-global.css" />
+  
+  </head>
+  
+  <body>
+    <!-- content header -->
+    <header id="menu-container">
+      <!-- content created dynamicaly by script -->
+    </header> 
+    <!-- cotent principal -->
+    <!-- Section contact -->
+
+<main class="container-main-contact">
+ 
+<div class="geral" >
+    <div class="gContainer">
+      
+      <div class="registerDecoration" >
+
+      
+        <form class="formulario" id="formLogin" action = "">
+            <!-- Email -->
+                <input type="email" id="email" name="email" class="input-form" required placeholder="Email"/>
+                <span class="error" id="emailError"></span>
+
+              <!-- contraseña -->
+                <input type="password" name="password" id="password" class="input-form" maxlength="8" required placeholder="contraseña"/>
+                <span class="error" id="passwordError"></span>
     
-</head>
-<body>
-  <header id="menu-container">
-    <!-- content created dynamicaly by script -->
-  </header>  
-    <main><h1>contenido de prueba</h1>
-     
-    </main>
-    
+            <div class="btn-cont">
+                <input type="submit" value="Iniciar Sesión" class="btn-register" id="sub"/>               
+            </div>
+            
+        </form>
+      </div>
+  </div>
+</div>
+</main>
+<!-- <footer >
+ 
+</footer> -->
+    <script src="/src/js/login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../js/header.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+  </body>
 </html>
