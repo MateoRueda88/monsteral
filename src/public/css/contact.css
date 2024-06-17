@@ -150,3 +150,10 @@ label {
 .email:invalid{
   border: 2px solid red;
 }
+
+/* validaciones SwwetAlert */
+.titulo-password{
+  color: #472611;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
