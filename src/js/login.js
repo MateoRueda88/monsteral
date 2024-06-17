@@ -48,3 +48,4 @@ function LoginEmail(event) {
     // Ir a otra página desde js
     window.location.href = "../views/about.html";
 }
+
