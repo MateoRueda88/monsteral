@@ -12,40 +12,132 @@ function LoginEmail(event) {
     const getLocal = localStorage.getItem("user");
 
     if (!getLocal) {
-        alert("No hay usuarios registrados");
-        return;
+        Swal.fire({
+            title: "No hay usuarios registrados",
+            showConfirmButton: false,
+            background: '#523726',
+            icon: 'info',
+            timer: '2000',
+            position: 'center',
+            backdrop: true,
+            color: '#939535',
+            allowOutsideClick: true,
+            toost: true,
+            showConfirmButton: false,
+            customClass:{
+            title: 'titulo-password'
+            }
+    });
+    return;
     }
+    
 
     const validateUser = JSON.parse(getLocal);
 
     // Validar que validateUser sea un array
     if (!Array.isArray(validateUser)) {
-        alert("Datos de usuario no válidos");
-        return;
+        Swal.fire({
+            title: "Datos de usuario no válidos",
+            showConfirmButton: false,
+            background: '#523726',
+            icon: 'info',
+            timer: '2000',
+            position: 'center',
+            backdrop: true,
+            color: '#939535',
+            allowOutsideClick: true,
+            toost: true,
+            showConfirmButton: false,
+            customClass:{
+            title: 'titulo-password'
+            }
+    });
+    return;
     }
 
     // Validar que los campos no estén vacíos
     if (email.value === "" || password.value === "") {
-        alert("Por favor llene todos los campos");
-        return;
+        Swal.fire({
+            title: "Campos vacios",
+            showConfirmButton: false,
+            background: '#523726',
+            icon: 'warning',
+            timer: '2000',
+            position: 'center',
+            backdrop: true,
+            color: '#939535',
+            allowOutsideClick: true,
+            toost: true,
+            showConfirmButton: false,
+            customClass:{
+            title: 'titulo-password'
+            }
+    });
+    return;
     }
+    
 
     // Validar que el usuario exista
     const user = validateUser.find(user => user.email === email.value);
     if (!user) {
-        alert("El email ingresado no existe");
-        return;
+        Swal.fire({
+            title: "El email ingresado no existe",
+            icon: 'warning',
+            background: '#523726',
+            timer: '3000',
+            position: 'center',
+            backdrop: true,
+            color: '#939535',
+            allowOutsideClick: true,
+            toost: true,
+            showConfirmButton: false,
+            customClass:{
+            title: 'titulo-password'
+            }      
+    });
+        return; 
     }
 
     // Validar que la contraseña coincida
     if (user.password !== password.value) {
-        alert("La contraseña ingresada no coincide");
-        return;
+        Swal.fire({
+            title: "Las constraseñas no coiciden",
+            icon: 'error',
+            background: '#523726',
+            timer: '3000',
+            position: 'center',
+            backdrop: true,
+            color: '#939535',
+            allowOutsideClick: true,
+            toost: true,
+            showConfirmButton: false,
+            customClass:{
+            title: 'titulo-password'
+            }
+           
+    });
+        return; 
     }
 
     // Usuario logueado con éxito
-    alert("Usuario logueado con éxito");
-    // Ir a otra página desde js
-    window.location.href = "../views/about.html";
-}
+    Swal.fire({
+        title: "Usuario logueado con éxito",
+        icon: 'success',
+        background: '#523726',
+        timer: '3000',
+        position: 'center',
+        backdrop: true,
+        color: '#939535',
+        allowOutsideClick: true,
+        toost: true,
+        showConfirmButton: false,
+        customClass:{
+        title: 'titulo-password'
+        }
+       
+});
 
+    // Ir a otra página desde js
+    //window.location.href = "../views/about.html";
+
+ }
