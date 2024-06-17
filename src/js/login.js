@@ -1,39 +1,15 @@
-const foormLogin = document.getElementById('formLogin');
+const formLogin = document.getElementById('formLogin');
 const email = document.getElementById('email');
 const password = document.getElementById('password');
 
 formLogin.addEventListener("submit", LoginEmail);
-formLogin.addEventListener("submit", LoginEmail);
 
 function LoginEmail(event) {
-    //  Prevenir los eventos precargados
+    // Prevenir los eventos precargados
     event.preventDefault();
-
 
     // Obtener los valores de los campos de entrada
     const getLocal = localStorage.getItem("user");
-
-    if (!getLocal) {
-        Swal.fire({
-            title: "No hay usuarios registrados",
-            showConfirmButton: false,
-            background: '#523726',
-            icon: 'info',
-            timer: '2000',
-            position: 'center',
-            backdrop: true,
-            color: '#939535',
-            allowOutsideClick: true,
-            toost: true,
-            showConfirmButton: false,
-            customClass:{
-            title: 'titulo-password'
-            }
-    });
-    return;
-    }
-    
-
 
     if (!getLocal) {
         Swal.fire({
@@ -121,7 +97,6 @@ function LoginEmail(event) {
     });
         return; 
     }
-
 
     // Validar que la contraseña coincida
     if (user.password !== password.value) {
