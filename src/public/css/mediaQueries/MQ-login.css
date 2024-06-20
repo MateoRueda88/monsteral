@@ -1,10 +1,36 @@
 @media screen and (min-width:768px){
-
-    .geral{
-      height: 750px;
-      margin-top: 55px;
-      padding-top: 65px;
+  .geral{
+    height: 750px;
+    margin-top: 55px;
+    padding-top: 65px;
+  }
+    
+  .registerDecoration{
+    width: 380px;
+    height: 160.5%;
+    box-shadow: 15px 45px 0px rgba(6, 48, 35, 0.776); 
+  }
+  .formulario {
+    width: 380px;
+    top: 142px;
+  }
+    
+  .input-form {
+    font-size: 0.8rem;
+    height: 40px;
+  }
+    
+  .btn-cont div{
+    margin-top: 13px;
+  }
+  .registered{
+    font-size: .7rem;
+  }
+  .login{
+    font-size: .7rem;
+  }
       
+<<<<<<< HEAD
     }
     
     .registerDecoration {
@@ -33,73 +59,69 @@
       .login{
         font-size: .7rem;
       }
+=======
+  /* estilos validaciones */
+>>>>>>> dev
       
-      /* estilos validaciones */
-      
-      .error{
-        text-align: center;
-        font-size: 10pt;
-      }
-      .email:invalid{
-        border: 2px solid red;
-      }
+  .error{
+    text-align: center;
+    font-size: 10pt;
+  }
+  .email:invalid{
+    border: 2px solid red;
+  }
      
-    /* 
-      estilos SweetAlert */
+  /* estilos SweetAlert */
     
-      .titulo-password{
-        color: #523726;
-        font-size: 1rem;
-        font-weight: 300;
-      }
-    }
-    @media screen and (min-width:1024px){
-         
-          .registerDecoration{
-            width: 480px;
-            height: 150%;
-            background-position:inherit; /* Centra la imagen dentro del contenedor */
-            box-shadow: 14px 18px 0px rgba(6, 48, 35, 0.776); /* Sombra ajustada */
-          }
+  .titulo-password{
+    color: #523726;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+@media screen and (min-width:1024px){
+  .registerDecoration{
+    width: 480px;
+    height: 170%;
+    background-position:inherit; /* Centra la imagen dentro del contenedor */
+    box-shadow: 16px 60px 0px rgba(6, 48, 35, 0.776); /* Sombra ajustada */
+  }
           
-            .formulario {
-              width: 480px;
-              top: 180px;
-            }
+  .formulario {
+    width: 480px;
+    top: 180px;
+  }
           
-            .input-form {
-              font-size: 0.9rem;
-              height: 42px;
-            }
+ .input-form {
+    font-size: 0.9rem;
+    height: 42px;
+  }
           
-            .btn-cont div{
-              margin-top: 15px;
-          
-            }
-            .registered{
-              font-size: .8rem;
-            }
-            .login{
-              font-size: .8rem;
-            }
+  .btn-cont div{
+    margin-top: 15px;
+  }
+  .registered{
+    font-size: .8rem;
+  }
+ .login{
+    font-size: .8rem;
+  }
             
-            /* estilos validaciones */
+  /* estilos validaciones */
             
-            .error{
-              text-align: center;
-              font-size: 10pt;
-            }
-            .email:invalid{
-              border: 2px solid red;
-            }
+  .error{
+    text-align: center;
+    font-size: 10pt;
+  }
+ .email:invalid{
+    border: 2px solid red;
+  }
            
-          /* 
-            estilos SweetAlert */
+  /* estilos SweetAlert */
           
-            .titulo-password{
-              color: #C8B999;
-              font-size: 1rem;
-              font-weight: bold;
-            }
-    
-    }
+  .titulo-password{
+    color: #C8B999;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}
