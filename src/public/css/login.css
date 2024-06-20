@@ -31,7 +31,7 @@
   background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
   background-position: center; /* Centra la imagen dentro del contenedor */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
-  box-shadow: 12px 18px 0px rgba(6, 48, 35, 0.776); /* Sombra ajustada */
+  box-shadow: 6px 50px 0px 6px rgba(6, 48, 35, 0.776); /* Sombra ajustada */
   
 
 }
@@ -67,14 +67,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 35px;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
   .btn-register {
     width: 110px;
-    font-size: 1rem;
+    font-size: .7rem;
     padding: 0.3rem 1rem;
     border: 2px solid #c8b999;
     border-radius: 25px;
@@ -113,7 +113,6 @@
   }
   .login:hover{
     transform: scale(1.03);
-    border-bottom: 1px solid #005c39;
   }
  
   
