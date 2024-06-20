@@ -1,9 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 .geral{
   background-color: #E4E4CC;
   border-top: 2px solid rgba(6, 48, 35, 0.776);
@@ -17,16 +17,13 @@
   align-items: center;
   flex-direction: column;
   padding-top: 30px;
-  
 }
-
-
 .registerDecoration{
   position: relative;
   width: 280px;
   height: 155%;
   border-radius:  15px;
-  background-color: rgb(0, 78, 78);
+  background-size: cover; 
   background-image: url("../img/fondoRegistro.png");
   background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
   background-position: initial; /* Centra la imagen dentro del contenedor */
@@ -118,16 +115,15 @@
   
   /* estilos validaciones */
   
-  .error{
-    text-align: center;
-    font-size: 10pt;
-  }
-  .email:invalid{
-    border: 2px solid red;
-  }
+.error{
+  text-align: center;
+  font-size: 10pt;
+}
+.email:invalid{
+  border: 2px solid red;
+}
  
-/* 
-  estilos SweetAlert */
+/*estilos SweetAlert */
 
   .titulo-password{
     color: #C8B999;

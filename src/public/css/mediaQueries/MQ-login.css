@@ -30,7 +30,38 @@
     font-size: .7rem;
   }
       
+<<<<<<< HEAD
+    }
+    
+    .registerDecoration {
+      width: 380px;
+      height: 161.5%;
+      box-shadow: 16px 37px 8px rgba(6, 48, 35, 0.776);
+  }
+    
+      .formulario {
+        width: 380px;
+        top: 142px;
+      }
+    
+      .input-form {
+        font-size: 0.8rem;
+        height: 40px;
+      }
+    
+      .btn-cont div{
+        margin-top: 13px;
+    
+      }
+      .registered{
+        font-size: .7rem;
+      }
+      .login{
+        font-size: .7rem;
+      }
+=======
   /* estilos validaciones */
+>>>>>>> dev
       
   .error{
     text-align: center;
