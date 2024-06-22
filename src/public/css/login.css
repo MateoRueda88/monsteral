@@ -1,136 +1,139 @@
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
 .geral{
-  background-color: #E4E4CC;
-  border-top: 2px solid rgba(6, 48, 35, 0.776);
-  background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201440%20320%22%3E%3Cpath%20fill%3D%22rgb(1%2C%2059%2C%2059)%22%20fill-opacity%3D%220.6%22%20d%3D%22M0%2C256L9.2%2C256C18.5%2C256%2C37%2C256%2C55%2C234.7C73.8%2C213%2C92%2C171%2C111%2C154.7C129.2%2C139%2C148%2C149%2C166%2C133.3C184.6%2C117%2C203%2C75%2C222%2C69.3C240%2C64%2C258%2C96%2C277%2C138.7C295.4%2C181%2C314%2C235%2C332%2C240C350.8%2C245%2C369%2C203%2C388%2C192C406.2%2C181%2C425%2C203%2C443%2C197.3C461.5%2C192%2C480%2C160%2C498%2C128C516.9%2C96%2C535%2C64%2C554%2C69.3C572.3%2C75%2C591%2C117%2C609%2C160C627.7%2C203%2C646%2C245%2C665%2C245.3C683.1%2C245%2C702%2C203%2C720%2C202.7C738.5%2C203%2C757%2C245%2C775%2C256C793.8%2C267%2C812%2C245%2C831%2C229.3C849.2%2C213%2C868%2C203%2C886%2C218.7C904.6%2C235%2C923%2C277%2C942%2C266.7C960%2C256%2C978%2C192%2C997%2C186.7C1015.4%2C181%2C1034%2C235%2C1052%2C245.3C1070.8%2C256%2C1089%2C224%2C1108%2C229.3C1126.2%2C235%2C1145%2C277%2C1163%2C277.3C1181.5%2C277%2C1200%2C235%2C1218%2C218.7C1236.9%2C203%2C1255%2C213%2C1274%2C186.7C1292.3%2C160%2C1311%2C96%2C1329%2C96C1347.7%2C96%2C1366%2C160%2C1385%2C202.7C1403.1%2C245%2C1422%2C267%2C1431%2C277.3L1440%2C288L1440%2C320L1430.8%2C320C1421.5%2C320%2C1403%2C320%2C1385%2C320C1366.2%2C320%2C1348%2C320%2C1329%2C320C1310.8%2C320%2C1292%2C320%2C1274%2C320C1255.4%2C320%2C1237%2C320%2C1218%2C320C1200%2C320%2C1182%2C320%2C1163%2C320C1144.6%2C320%2C1126%2C320%2C1108%2C320C1089.2%2C320%2C1071%2C320%2C1052%2C320C1033.8%2C320%2C1015%2C320%2C997%2C320C978.5%2C320%2C960%2C320%2C942%2C320C923.1%2C320%2C905%2C320%2C886%2C320C867.7%2C320%2C849%2C320%2C831%2C320C812.3%2C320%2C794%2C320%2C775%2C320C756.9%2C320%2C738%2C320%2C720%2C320C701.5%2C320%2C683%2C320%2C665%2C320C646.2%2C320%2C628%2C320%2C609%2C320C590.8%2C320%2C572%2C320%2C554%2C320C535.4%2C320%2C517%2C320%2C498%2C320C480%2C320%2C462%2C320%2C443%2C320C424.6%2C320%2C406%2C320%2C388%2C320C369.2%2C320%2C351%2C320%2C332%2C320C313.8%2C320%2C295%2C320%2C277%2C320C258.5%2C320%2C240%2C320%2C222%2C320C203.1%2C320%2C185%2C320%2C166%2C320C147.7%2C320%2C129%2C320%2C111%2C320C92.3%2C320%2C74%2C320%2C55%2C320C36.9%2C320%2C18%2C320%2C9%2C320L0%2C320Z%22%3E%3C/path%3E%3C/svg%3E');
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size:120%;
+background-color: #E4E4CC;
+border-top: 2px solid rgba(6, 48, 35, 0.776);
+background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201440%20320%22%3E%3Cpath%20fill%3D%22rgb(1%2C%2059%2C%2059)%22%20fill-opacity%3D%220.6%22%20d%3D%22M0%2C256L9.2%2C256C18.5%2C256%2C37%2C256%2C55%2C234.7C73.8%2C213%2C92%2C171%2C111%2C154.7C129.2%2C139%2C148%2C149%2C166%2C133.3C184.6%2C117%2C203%2C75%2C222%2C69.3C240%2C64%2C258%2C96%2C277%2C138.7C295.4%2C181%2C314%2C235%2C332%2C240C350.8%2C245%2C369%2C203%2C388%2C192C406.2%2C181%2C425%2C203%2C443%2C197.3C461.5%2C192%2C480%2C160%2C498%2C128C516.9%2C96%2C535%2C64%2C554%2C69.3C572.3%2C75%2C591%2C117%2C609%2C160C627.7%2C203%2C646%2C245%2C665%2C245.3C683.1%2C245%2C702%2C203%2C720%2C202.7C738.5%2C203%2C757%2C245%2C775%2C256C793.8%2C267%2C812%2C245%2C831%2C229.3C849.2%2C213%2C868%2C203%2C886%2C218.7C904.6%2C235%2C923%2C277%2C942%2C266.7C960%2C256%2C978%2C192%2C997%2C186.7C1015.4%2C181%2C1034%2C235%2C1052%2C245.3C1070.8%2C256%2C1089%2C224%2C1108%2C229.3C1126.2%2C235%2C1145%2C277%2C1163%2C277.3C1181.5%2C277%2C1200%2C235%2C1218%2C218.7C1236.9%2C203%2C1255%2C213%2C1274%2C186.7C1292.3%2C160%2C1311%2C96%2C1329%2C96C1347.7%2C96%2C1366%2C160%2C1385%2C202.7C1403.1%2C245%2C1422%2C267%2C1431%2C277.3L1440%2C288L1440%2C320L1430.8%2C320C1421.5%2C320%2C1403%2C320%2C1385%2C320C1366.2%2C320%2C1348%2C320%2C1329%2C320C1310.8%2C320%2C1292%2C320%2C1274%2C320C1255.4%2C320%2C1237%2C320%2C1218%2C320C1200%2C320%2C1182%2C320%2C1163%2C320C1144.6%2C320%2C1126%2C320%2C1108%2C320C1089.2%2C320%2C1071%2C320%2C1052%2C320C1033.8%2C320%2C1015%2C320%2C997%2C320C978.5%2C320%2C960%2C320%2C942%2C320C923.1%2C320%2C905%2C320%2C886%2C320C867.7%2C320%2C849%2C320%2C831%2C320C812.3%2C320%2C794%2C320%2C775%2C320C756.9%2C320%2C738%2C320%2C720%2C320C701.5%2C320%2C683%2C320%2C665%2C320C646.2%2C320%2C628%2C320%2C609%2C320C590.8%2C320%2C572%2C320%2C554%2C320C535.4%2C320%2C517%2C320%2C498%2C320C480%2C320%2C462%2C320%2C443%2C320C424.6%2C320%2C406%2C320%2C388%2C320C369.2%2C320%2C351%2C320%2C332%2C320C313.8%2C320%2C295%2C320%2C277%2C320C258.5%2C320%2C240%2C320%2C222%2C320C203.1%2C320%2C185%2C320%2C166%2C320C147.7%2C320%2C129%2C320%2C111%2C320C92.3%2C320%2C74%2C320%2C55%2C320C36.9%2C320%2C18%2C320%2C9%2C320L0%2C320Z%22%3E%3C/path%3E%3C/svg%3E');
+background-repeat: no-repeat;
+background-position: bottom;
+background-size:120%;
+width: 100%;
+height: 550px;
+display: flex;
+align-items: center;
+flex-direction: column;
+padding-top: 30px;
+
+}
+.registerDecoration{
+position: relative;
+width: 280px;
+height: 155%;
+border-radius:  15px;
+background-color: rgb(0, 78, 78);
+background-image: url("../img/fondoRegistro.png");
+background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+background-position: initial; /* Centra la imagen dentro del contenedor */
+background-repeat: no-repeat; /* Evita que la imagen se repita */
+box-shadow: 12px 18px 0px rgba(6, 48, 35, 0.776); /* Sombra ajustada */
+
+
+}
+
+.formulario {
+  display: flex;
+  width: 280px;
+  border-radius: 15px;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.7rem ;
+  background-color:white;
+  position: relative;
+  top: 100px;
+  align-items: center;
+ 
+}
+
+.input-form {
+  border-bottom: 2px solid #52372650;
+  background-color: transparent;
+  color: #36251a;
+  padding: 0px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  font-size: 0.7rem;
+  height: 35px;
+}
+.btn-cont {
   width: 100%;
-  height: 550px;
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 30px;
-  
+}
+.btn-register {
+  width: 110px;
+  font-size: .8rem;
+  padding: 0.3rem 1rem;
+  border: 2px solid #c8b999;
+  border-radius: 25px;
+  font-weight: bold;
+  background-color: #523726;
+  color: #c8b999;
+  box-shadow: 2px 3px 5px rgba(82, 55, 38, 0.7);
+  transition: all 0.3s ease; /* Efecto de transición */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  text-align: center;
+}
+.btn-register:hover {
+  background-color: #c8b999;
+  color: #523726;
+  border-color: #523726;
+  box-shadow: 2px 3px 8px rgba(82, 55, 38, 0.5); /* Sombra más suave al pasar el ratón */
+  transform: scale(1.03); /* Aumenta ligeramente el tamaño al pasar el ratón */
+}
+.btn-cont div{
+  width: 100%;
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registered{
+  color: #012310;
+  font-size: .5rem;
+}
+.login{
+  color:#005c39;
+  font-size: .5rem;
+  cursor: pointer;
+}
+.login:hover{
+  transform: scale(1.03);
 }
 
 
-.registerDecoration{
-  position: relative;
-  width: 280px;
-  height: 155%;
-  border-radius:  15px;
-  background-color: rgb(0, 78, 78);
-  background-image: url("../img/fondoRegistro.png");
-  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
-  background-position: initial; /* Centra la imagen dentro del contenedor */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-  box-shadow: 12px 18px 0px rgba(6, 48, 35, 0.776); /* Sombra ajustada */
-  
+/* estilos validaciones */
 
+.error{
+  text-align: center;
+  font-size: 10pt;
+}
+.email:invalid{
+  border: 2px solid red;
 }
 
-  .formulario {
-    display: flex;
-    width: 280px;
-    border-radius: 15px;
-    flex-direction: column;
-    gap: 0.3rem;
-    padding: 0.7rem ;
-    background-color:white;
-    position: relative;
-    top: 100px;
-    align-items: center;
-   
-  }
-
-  .input-form {
-    border-bottom: 2px solid #52372650;
-    background-color: transparent;
-    color: #36251a;
-    padding: 0px;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    font-size: 0.7rem;
-    height: 35px;
-  }
-  .btn-cont {
-    width: 100%;
-    height: 3vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 35px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  .btn-register {
-    width: 110px;
-    font-size: .8rem;
-    padding: 0.3rem 1rem;
-    border: 2px solid #c8b999;
-    border-radius: 25px;
-    font-weight: bold;
-    background-color: #523726;
-    color: #c8b999;
-    box-shadow: 2px 3px 5px rgba(82, 55, 38, 0.7);
-    transition: all 0.3s ease; /* Efecto de transición */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    text-align: center;
-  }
-  .btn-register:hover {
-    background-color: #c8b999;
-    color: #523726;
-    border-color: #523726;
-    box-shadow: 2px 3px 8px rgba(82, 55, 38, 0.5); /* Sombra más suave al pasar el ratón */
-    transform: scale(1.03); /* Aumenta ligeramente el tamaño al pasar el ratón */
-  }
-  .btn-cont div{
-    width: 100%;
-    display: flex;
-    gap: 5px;
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .registered{
-    color: #012310;
-    font-size: .5rem;
-  }
-  .login{
-    color:#005c39;
-    font-size: .5rem;
-    cursor: pointer;
-  }
-  .login:hover{
-    transform: scale(1.03);
-  }
- 
-  
-  /* estilos validaciones */
-  
-  .error{
-    text-align: center;
-    font-size: 10pt;
-  }
-  .email:invalid{
-    border: 2px solid red;
-  }
- 
 /* 
-  estilos SweetAlert */
+estilos SweetAlert */
 
-  .titulo-password{
-    color: #C8B999;
-    font-size: 1rem;
-    font-weight: bold;
-  }
+.titulo-password{
+  color: #C8B999;
+  font-size: 1rem;
+  font-weight: bold;
+}
