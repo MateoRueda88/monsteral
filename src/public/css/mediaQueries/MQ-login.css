@@ -7,8 +7,7 @@
     
   .registerDecoration{
     width: 380px;
-    height: 160.5%;
-    box-shadow: 15px 45px 0px rgba(6, 48, 35, 0.776); 
+    height: 175%
   }
   .formulario {
     width: 380px;
@@ -51,9 +50,8 @@
 @media screen and (min-width:1024px){
   .registerDecoration{
     width: 480px;
-    height: 170%;
+    height: 192%;
     background-position:inherit; /* Centra la imagen dentro del contenedor */
-    box-shadow: 16px 60px 0px rgba(6, 48, 35, 0.776); /* Sombra ajustada */
   }
           
   .formulario {
