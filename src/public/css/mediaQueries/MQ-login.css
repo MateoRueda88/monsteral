@@ -46,7 +46,7 @@
     font-size: 1rem;
     font-weight: 300;
   }
-}
+
 @media screen and (min-width:1024px){
   .registerDecoration{
     width: 480px;
@@ -91,4 +91,4 @@
     font-size: 1rem;
     font-weight: bold;
   }
-}
+}}
