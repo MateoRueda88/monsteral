@@ -7,8 +7,7 @@
     
   .registerDecoration{
     width: 380px;
-    height: 160.5%;
-    box-shadow: 15px 45px 0px rgba(6, 48, 35, 0.776); 
+    height: 175%
   }
   .formulario {
     width: 380px;
@@ -30,38 +29,7 @@
     font-size: .7rem;
   }
       
-<<<<<<< HEAD
-    }
-    
-    .registerDecoration {
-      width: 380px;
-      height: 161.5%;
-      box-shadow: 16px 37px 8px rgba(6, 48, 35, 0.776);
-  }
-    
-      .formulario {
-        width: 380px;
-        top: 142px;
-      }
-    
-      .input-form {
-        font-size: 0.8rem;
-        height: 40px;
-      }
-    
-      .btn-cont div{
-        margin-top: 13px;
-    
-      }
-      .registered{
-        font-size: .7rem;
-      }
-      .login{
-        font-size: .7rem;
-      }
-=======
   /* estilos validaciones */
->>>>>>> dev
       
   .error{
     text-align: center;
@@ -78,13 +46,12 @@
     font-size: 1rem;
     font-weight: 300;
   }
-}
+
 @media screen and (min-width:1024px){
   .registerDecoration{
     width: 480px;
-    height: 170%;
+    height: 192%;
     background-position:inherit; /* Centra la imagen dentro del contenedor */
-    box-shadow: 16px 60px 0px rgba(6, 48, 35, 0.776); /* Sombra ajustada */
   }
           
   .formulario {
@@ -124,4 +91,4 @@
     font-size: 1rem;
     font-weight: bold;
   }
-}
+}}
