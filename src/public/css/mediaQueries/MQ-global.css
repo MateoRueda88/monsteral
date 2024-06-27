@@ -111,7 +111,6 @@
     height: 35px;
   }
 
-<<<<<<< HEAD
   /* estilos footer */
   
   .footer{
@@ -131,13 +130,9 @@
     height: 28px;
     width: fit-content;  
   }
-=======
   .offer-carousel{
     margin-top: 37px; 
-  }
-
->>>>>>> 7789c335f5968d1df25ee2352e3ef4e7b0883b8a
- 
+  } 
 }
 @media screen and (min-width: 1024px){
     .search-tablet{
