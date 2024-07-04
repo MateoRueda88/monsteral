@@ -211,20 +211,20 @@ gap:20px;
   width: 50px;
 }
 .footer .email{
-  color: #939535;
+  color: #523726;
   text-decoration: none;
   font-size: 10pt;
 }
 
 .icons-footer{
   display: flex;
-  width: 70%;
-  justify-content: center;
+  width: 100%;
+  height: auto;
+  justify-content:center;
   gap: 2rem;
-  padding: .4rem;
+  padding: .2rem;
 }
 
 .icons-footer img{
-  height: 25px;
-  width: fit-content;  
+  height: 2vh;
 }
