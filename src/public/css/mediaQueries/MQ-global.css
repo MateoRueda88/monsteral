@@ -114,10 +114,10 @@
   /* estilos footer */
   
   .footer{
-    height: 40vh;
+    height: 18vh;
   }
   .logo-footer img{
-    width: 60px;
+    width: 100px;
   }
   .footer .email{
     font-size: 14pt;
@@ -127,9 +127,9 @@
     gap: 3rem;
   }
   .icons-footer img{
-    height: 28px;
-    width: fit-content;  
+    height: 3.5vh;
   }
+ 
   .offer-carousel{
     margin-top: 37px; 
   }
