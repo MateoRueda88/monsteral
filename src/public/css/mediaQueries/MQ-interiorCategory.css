@@ -1,0 +1,42 @@
+/* media query tablet */
+
+@media screen and (min-width:768px){
+
+    .containerPlants{
+        grid-template-columns: repeat(3,1fr);
+        margin-top: 70px;
+    }
+    
+    .plant-card {
+        width: 200px;
+    }
+    
+    .plant-card h2 {
+        font-size: 1.1rem;
+    }
+    
+    .plant-card p {
+        font-size: .8rem;
+    }
+    
+    .plant-card .plantImg{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .car .carImg{
+        width: 18px;
+    }    
+
+    .logo-footer img{
+        width: 75px;
+    }
+}
+@media screen and (min-width:1024px){
+    .containerPlants{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .footer {
+        height: 20vh;
+    }
+}
