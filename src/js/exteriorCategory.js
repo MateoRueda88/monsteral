@@ -1,4 +1,4 @@
-//Lista productos categoria interiores
+//Lista productos categoria plantas exteriores
 
 let products = [ 
     {
