@@ -5,7 +5,7 @@ let products = [
       id: 1,
       name: "Lengua de suegra",
       price: 30000,
-      img: "../public/img/purificadorasCategory/purificadorasCategory",
+      img: "../public/img/purificadorasCategory/lenguaSuegra.webp",
       description: "Planta resistente que purifica el aire."
     },
     {
@@ -52,16 +52,16 @@ let products = [
     },
     {
         id:8,
-        name:"Dracaena",
+        name:"Dracena",
         price: 32000,
-        img: "../public/img/purificadorasCategory/dracaena.webp",
+        img: "../public/img/purificadorasCategory/dracena.webp",
         description: "Planta que mejora la calidad del aire."
     },
     {   
         id:9,
         name:"Aloe Vera",
         price:25000,
-        img:"../public/img/purificadorasCategory/calendula.webp",
+        img:"../public/img/purificadorasCategory/aloeVera.webp",
         description: "Planta suculenta que purifica el aire y trata heridas."
     }, 
     {   
