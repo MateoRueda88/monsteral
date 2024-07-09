@@ -78,6 +78,5 @@ public class Client {
         this.address = address;
     }
 
-
-
+    
 }

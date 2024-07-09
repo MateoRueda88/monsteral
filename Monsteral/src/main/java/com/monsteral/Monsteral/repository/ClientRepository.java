@@ -7,9 +7,17 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-@Repository
 public interface ClientRepository extends JpaRepository<Client, Long> {
-    @Query("SELECT t FROM Todo t WHERE t.completed = true")
+    @Query("SELECT c FROM Client c WHERE c.clientName LIKE :name")
     List<Client> findCompletedClients();
 }
+
+
+//public interface ClientRepository extends JpaRepository<Client, Long> {
+//    @Query("SELECT t FROM Todo t WHERE t.completed = true")
+//    List<Client> findCompletedClients();
+//}
+
+
+
 
