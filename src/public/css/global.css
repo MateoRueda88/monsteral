@@ -88,6 +88,7 @@ normalizar nuestra hoja de estilos */
   opacity: 1;
   visibility: visible;
   opacity: 96%;
+  z-index: 30;
 }
 
 .nav-list {
@@ -157,6 +158,7 @@ gap:20px;
   gap: 3px;
   padding: 10px;
   height: auto;
+  border-bottom: 2px solid #939535;
   
 }
 .content-search-tablet{
