@@ -3,6 +3,7 @@ package com.monsteral.Monsteral.model;
 import jakarta.persistence.*;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "order_shop")
@@ -25,6 +26,9 @@ public class Order_shop {
     @ManyToOne
     @JoinColumn(name = "ID_plants", nullable = false)
     private Plant plant;
+
+    @OneToOne(mappedBy = "order_shop")
+    private List<Payment> payments;
 
    // NO OLVIDAR INGRESAR PLANTS AL CONTRUCTOR Y LOS GET Y SETT////////////////////////////////////////////////
     public Order_shop(){}

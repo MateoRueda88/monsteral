@@ -3,6 +3,7 @@ package com.monsteral.Monsteral.model;
 import jakarta.persistence.*;
 
 import java.util.Date;
+import java.util.List;
 
 //Creamos entidades
 @Entity
@@ -28,6 +29,9 @@ public class Plant {
     @ManyToOne
     @JoinColumn(name = "ID_category", nullable = false)
     private PlantsCategory plantsCategory;
+
+    @OneToMany(mappedBy = "plant")
+    private List<Order_shop> orders;
 
     //Creamos constructores
     public Plant() {}

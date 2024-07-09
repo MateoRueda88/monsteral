@@ -1,5 +1,9 @@
 package com.monsteral.Monsteral.model;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+
+import java.util.List;
+
 //Creacion de entidades
 @Entity
 @Table(name = "client")
@@ -33,8 +37,11 @@ public class Client {
         this.address = address;
     }
 
-    // @OneToMany(mappedBy = "client")
-    // private List<OrderShop> orders;
+     @OneToMany(mappedBy = "client")
+     private List<Learn> learn;
+
+     @OneToMany(mappedBy = "client")
+     private List<Order_shop> orders;
 
     //Creacion de get y set
 
@@ -78,5 +85,5 @@ public class Client {
         this.address = address;
     }
 
-    
+
 }

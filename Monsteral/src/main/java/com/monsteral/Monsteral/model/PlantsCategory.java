@@ -1,6 +1,8 @@
 package com.monsteral.Monsteral.model;
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "plantscategory")
 public class PlantsCategory {
@@ -12,6 +14,9 @@ public class PlantsCategory {
 
     @Column(name = "nameCategory", nullable = false)
     private String nameCategory;
+
+    @OneToMany(mappedBy = "plantscategoria")
+    private List<Plant> plants;
 
 //Creamos constructores
     public PlantsCategory(){}
