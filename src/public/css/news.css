@@ -1,3 +1,7 @@
+main{
+    background-color: #bc8150b1;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +13,7 @@
     display: grid;
     grid-template-columns: repeat(1,1fr);
     gap: 20px;
-    background-color: #bc8150b1;
+    
 }
 
 .new-card {
@@ -50,7 +54,7 @@
 }
 
 .date{
-    color: #065326;
+    color: #5c5c5c;
     font-size: .8rem;
     border: 0.5px solid rgba(82, 82, 82, 0.445);
     padding: 1px 8px 1px 8px;
@@ -101,4 +105,14 @@
 .source a:hover{
     transform: scale(1.1);
 }
+
+.titleNews{
+    background-color: #523726;
+    text-align: center;
+    color: wheat;
+    margin-top: 8px;
+    font-size: 1rem;
+    padding: 5px 0px 5px 0px;
+}
+
 
