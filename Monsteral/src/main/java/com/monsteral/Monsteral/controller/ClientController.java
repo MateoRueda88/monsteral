@@ -2,18 +2,20 @@ package com.monsteral.Monsteral.controller;
 import com.monsteral.Monsteral.model.Client;
 import com.monsteral.Monsteral.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/clients")
+@RequestMapping("/client")
 public class ClientController {
 
     @Autowired
     private ClientService clientService;
 
     @GetMapping
+    @ResponseStatus(HttpStatus.OK)
     public List<Client> getAllClients(){
         return clientService.getAllClients();
     }
@@ -28,8 +30,13 @@ public class ClientController {
         clientService.deleteClientById(id);
     }
 
-    @GetMapping("/completadas")
-    public List<Client> getCompletedClients(){
-        return clientService.getCompletedClients();
+    @PutMapping("/{id}")
+    public Client updateClient(@PathVariable Long id, @RequestBody Client clientDetails) {
+        return clientService.updateClient(id, clientDetails);
     }
+
+//    @GetMapping("/completadas")
+//    public List<Client> getCompletedClients(){
+//        return clientService.getCompletedClients();
+//    }
 }

@@ -53,19 +53,19 @@ public class Payment {
         this.date_pay = date_pay;
     }
 
-    public String getStatusPay() {
-        return statusPay;
-    }
-
-    public void setStatusPay(String statusPay) {
-        this.statusPay = statusPay;
-    }
-
     public Order_shop getOrder_shop() {
         return order_shop;
     }
 
     public void setOrder_shop(Order_shop order_shop) {
         this.order_shop = order_shop;
+    }
+
+    public String getStatusPay() {
+        return statusPay;
+    }
+
+    public void setStatusPay(String statusPay) {
+        this.statusPay = statusPay;
     }
 }

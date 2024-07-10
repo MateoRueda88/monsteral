@@ -29,8 +29,10 @@ public class Learn {
     private Client client;
 
     //Creamos Constructor
-    public Learn(){}
-    public Learn(Long ID_course, String courseName, Date courseDate, String place,  Client client) {
+    public Learn() {
+    }
+
+    public Learn(Long ID_course, String courseName, Date courseDate, String place, Client client) {
         this.ID_course = ID_course;
         this.courseName = courseName;
         this.courseDate = courseDate;
@@ -38,6 +40,7 @@ public class Learn {
         this.client = client;
     }
     //creamos get y set
+
 
     public Long getID_course() {
         return ID_course;
@@ -79,3 +82,5 @@ public class Learn {
         this.client = client;
     }
 }
+
+

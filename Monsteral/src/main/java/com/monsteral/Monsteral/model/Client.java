@@ -1,6 +1,5 @@
 package com.monsteral.Monsteral.model;
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 
 import java.util.List;
 
@@ -45,6 +44,7 @@ public class Client {
 
     //Creacion de get y set
 
+
     public Long getID_client() {
         return ID_client;
     }
@@ -85,5 +85,19 @@ public class Client {
         this.address = address;
     }
 
+    public List<Order_shop> getOrders() {
+        return orders;
+    }
 
+    public void setOrders(List<Order_shop> orders) {
+        this.orders = orders;
+    }
+
+    public List<Learn> getLearn() {
+        return learn;
+    }
+
+    public void setLearn(List<Learn> learn) {
+        this.learn = learn;
+    }
 }

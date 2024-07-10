@@ -9,13 +9,13 @@ public class PlantsCategory {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID_category", nullable = false)
+    @Column(name = "id_category", nullable = false)
     private Long ID_category;
 
     @Column(name = "nameCategory", nullable = false)
     private String nameCategory;
 
-    @OneToMany(mappedBy = "plantscategoria")
+    @OneToMany(mappedBy = "plantsCategory")
     private List<Plant> plants;
 
 //Creamos constructores
@@ -39,5 +39,13 @@ public class PlantsCategory {
 
     public void setNameCategory(String nameCategory) {
         this.nameCategory = nameCategory;
+    }
+
+    public List<Plant> getPlants() {
+        return plants;
+    }
+
+    public void setPlants(List<Plant> plants) {
+        this.plants = plants;
     }
 }
