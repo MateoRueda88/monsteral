@@ -31,8 +31,8 @@ public class ClientController {
     }
 
     @PutMapping("/{id}")
-    public Client updateClient(@PathVariable Long id, @RequestBody Client clientDetails) {
-        return clientService.updateClient(id, clientDetails);
+    public Client updateClient(@PathVariable Long id, @RequestBody Client clientToUpdate){
+        return clientService.updateClient(id, clientToUpdate);
     }
 
 //    @GetMapping("/completadas")

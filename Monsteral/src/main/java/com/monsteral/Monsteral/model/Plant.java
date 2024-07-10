@@ -28,6 +28,7 @@ public class Plant {
     //Nuestra clave foranea que se conecta con la tabla cliente
     @ManyToOne
     @JoinColumn(name = "id_category", nullable = false)
+
     private PlantsCategory plantsCategory;
 
     @OneToMany(mappedBy = "plant")
