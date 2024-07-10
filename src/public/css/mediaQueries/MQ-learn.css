@@ -5,8 +5,18 @@
         padding: 5px;
     }
 
-    .containerLearn{
-        gap: .6rem;
+    .learn-card{
+        width: 32%;
+
+    }
+    .price {
+        font-size: .9rem;
+    }
+    .place{
+        font-size: .8rem;
+    }
+    .learn-card h2{
+        font-size: 1.2rem;
     }
 
 }
@@ -14,6 +24,18 @@
     
     .containerLearn{
         gap: 1.5rem;
+    }
+    .learn-card{
+        width: 23%;
+    }
+    .price {
+        font-size: 1.2rem;
+    }
+    .place{
+        font-size: 1rem;
+    }
+    .learn-card h2{
+        font-size: 1.4rem;
     }
     
 
