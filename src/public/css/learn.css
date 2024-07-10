@@ -14,50 +14,57 @@ font-weight: bold;
 color: #c8b999;
 }
 .containerLearn{
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 2px 2%;
-    display: flex;
+    
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 15px 30px;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 0.2rem;
+  justify-content:space-between;
+  /* gap: 0.1rem; */
+  padding-top: 20px;
+  
   
 }
 
 .learn-card {
-    width: 165px;
-    height: auto;
+   
+     width: 48%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 3px solid #BC8150;
     border-radius: 8px;
     padding: 10px;
-    max-width: 400px;
-    margin: 0 auto;
+    margin: 5px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+
 }
 
 .learn-card h2 {
-    margin-top: 10px;
     color: #939535;
-    font-size: 0.8rem;
+    font-size: 85%;
     text-align: center;
+   
 }
 
-.learn-card p {
-    margin-bottom: 3px;
+.price {
     color: black;
     font-size: .7rem;
 
 }
+.place{
+    margin: 2px;
+    color: gray;
+    font-size: .7rem;
+}
 
 .learn-card .learnImg{
-    width: 140px;
-    height: 140px;
+    width: 100%;
     border-radius: 10px;
+    
 }
 
 .car{

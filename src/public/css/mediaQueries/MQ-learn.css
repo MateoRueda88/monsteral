@@ -5,8 +5,9 @@
         padding: 5px;
     }
 
-    .containerLearn{
-        gap: .6rem;
+    
+    .learn-card{
+        width: 30%;
     }
 
 }
