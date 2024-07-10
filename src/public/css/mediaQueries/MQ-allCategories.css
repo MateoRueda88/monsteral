@@ -4,9 +4,12 @@
 
     .containerPlants{
         grid-template-columns: repeat(3,1fr);
-        margin-top: 70px;
+        margin-top: 105px;
     }
-    
+    .goBack{
+        font-size: 27px;
+        padding: 55px 20px;
+    }
     .plant-card {
         width: 200px;
     }
@@ -35,6 +38,11 @@
 @media screen and (min-width:1024px){
     .containerPlants{
         grid-template-columns: repeat(4,1fr);
+        margin-top: 120px;
+    }
+    .goBack{
+        font-size: 30px;
+        padding: 65px 25px;
     }
     .footer {
         height: 20vh;
