@@ -1,3 +1,8 @@
+const plants = document.getElementById("plants");
+const verCarrito = document.getElementById("verCarrito");
+const modalContainer = document.getElementById("modal-container");
+const modalContent = document.getElementById("modalContent");
+
 //Lista productos
 
  let products = [ 
@@ -71,29 +76,62 @@
         img:"../public/img/plantsImg/gardenia.webp",
         description: "Es un arbusto de hojas perennes con flores blancas, fragantes y cerosas. Es popular en jardines y arreglos florales por su aroma dulce y belleza elegante." 
     }
-]
+];
 
-// for (let i = 0; i < products.length; i++){
-//     console.log(products[i]);
-//   };
+let carrito = [];
 
-  const container = document.getElementById('plants');
+let plantsHTML = '';
 
-  let plantsHTML = '';
 
-  for (let i = 0; i < products.length; i++) {
-      plantsHTML += `
-      <div class="plant-card">
+for (let i = 0; i < products.length; i++) {
+    let content = document.createElement("div");
+    content.classList.add("plant-card");
+
+    let comprar = document.createElement("button");
+    comprar.id = "car";
+    comprar.className = "car";
+    comprar.innerHTML = `<img src="../public/img/greenCar.webp" alt="car" class="carImg">`;
+
+    content.innerHTML = `
         <img src="${products[i].img}" alt="${products[i].name}" class="plantImg">
         <h2>${products[i].name}</h2>
         <p>Precio: $${products[i].price}</p>
-        <div class="car">
-        <img src="../public/img/greenCar.webp" alt="car" class="carImg">
-        </div>
-      </div>
-      `;
-      
-  }
-    container.innerHTML = plantsHTML;
-    // <p>Descripción: ${products[i].description}</p>
+    `; 
+
+    // Agregar el botón al contenido
+    content.appendChild(comprar);
+
+    // Agregar el contenido al contenedor de plantas
+    plants.appendChild(content);
+
+    // Añadir el event listener al botón
+    comprar.addEventListener('click', () => {
+        // Lógica para manejar el clic en el botón
+        console.log(`Añadido ${products[i].name} al carrito`);
+    });
+
+    comprar.addEventListener("click", () => {
+        carrito.push({
+            id: products.id,
+            img: products.img,
+            name: products.name,
+            price: products.price,
+        });
+        console.log(carrito);
+    });
+}
+    verCarrito.addEventListener("click", () => {
+        const modalHeader = document.createElement("div");
+        modalHeader.className = "modal-header";
+        modalHeader.innerHTML =  `
+        <h1 class="modal-header-tittle">Carrito</h1>
+    `; 
+    modalContainer.append(modalHeader);
+
+    const modalButton = document.createElement("h1");
+    modalButton.innerText = "X";
+    modalButton.className = "modal-header-button";
+
+    modalHeader.append(modalButton);
+    });
 

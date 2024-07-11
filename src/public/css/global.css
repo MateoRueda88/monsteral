@@ -24,7 +24,7 @@ normalizar nuestra hoja de estilos */
 
 .info-header{
   width: 100%;
-
+  
   height: 47px;
   display: flex;
   justify-content: space-around;
@@ -88,6 +88,7 @@ normalizar nuestra hoja de estilos */
   opacity: 1;
   visibility: visible;
   opacity: 96%;
+  z-index: 30;
 }
 
 .nav-list {
@@ -157,6 +158,7 @@ gap:20px;
   gap: 3px;
   padding: 10px;
   height: auto;
+  border-bottom: 2px solid #939535;
   
 }
 .content-search-tablet{
@@ -211,20 +213,20 @@ gap:20px;
   width: 50px;
 }
 .footer .email{
-  color: #939535;
+  color: #523726;
   text-decoration: none;
   font-size: 10pt;
 }
 
 .icons-footer{
   display: flex;
-  width: 70%;
-  justify-content: center;
+  width: 100%;
+  height: auto;
+  justify-content:center;
   gap: 2rem;
-  padding: .4rem;
+  padding: .2rem;
 }
 
 .icons-footer img{
-  height: 25px;
-  width: fit-content;  
+  height: 2vh;
 }
