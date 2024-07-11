@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.ads{
+background-color:#523726;
+width: auto;
+height: auto;
+font-size: .9rem;
+text-align: center;
+padding: 2px;
+font-weight: bold;
+color: #c8b999;
+}
+.containerLearn{
+    
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 15px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  /* gap: 0.1rem; */
+  padding-top: 20px;
+  
+  
+}
+
+.learn-card {
+   
+     width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+
+}
+
+.learn-card h2 {
+    color: #939535;
+    font-size: 85%;
+    text-align: center;
+   
+}
+
+.price {
+    color: black;
+    font-size: .7rem;
+
+}
+.place{
+    margin: 2px;
+    color: gray;
+    font-size: .7rem;
+}
+
+.learn-card .learnImg{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.car{
+    width: auto;
+    height: auto;
+    border: 1px solid #939535;
+    border-radius: 3px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car .carImg{
+    width: 17px;
+    object-fit: contain;
+}
