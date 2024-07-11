@@ -33,17 +33,19 @@ let news = [
       },
       {
         id: 5,
-        name: "Noticia5",
-        date: "01/01/01",
-        img: "../public/img/plantsImg/suculenta.webp",
-        description: "Las suculentas son plantas con hojas"
+        name: "Olas que Electrifican: La Energía del Mar Llega a Nuestras Costas",
+        date: "10 de julio de 2024",
+        img: "../public/img/news/new5.webp",
+        description: "Aprovechando la fuerza inagotable de las olas, la energía undimotriz se posiciona como una fuente renovable prometedora, limpia y sostenible. Conoce cómo funciona y los beneficios que trae para nuestro planeta.<br>Este método innovador utiliza el movimiento ondulante del mar para generar electricidad a través de diversos sistemas, como turbinas submarinas, dispositivos flotantes o cámaras de aire comprimido. ",
+        source:"https://acortar.link/fW2xUb"
       },
       {
         id: 6,
-        name: "Noticia6",
-        date: "01/01/01",
-        img: "../public/img/plantsImg/suculenta.webp",
-        description: "Las suculentas son plantas con hojas."
+        name: "¡Agua del aire! La tecnología que convierte el vapor en gotas de esperanza",
+        date: "16 de abril de 2022",
+        img: "../public/img/news/new6.webp",
+        description: "Olvídate de la escasez y la dependencia de infraestructuras. La innovadora tecnología de conversión de aire en agua abre un mundo de posibilidades para el acceso a agua potable limpia y segura en cualquier lugar del planeta.<br> ¿Cómo funciona? Mediante un proceso de condensación y enfriamiento, el vapor de agua presente en el aire se transforma en gotas de agua líquida. Empresas como Watergen en Israel ya han desarrollado dispositivos que capturan el aire, lo enfrían y lo convierten en agua potable, con capacidades de producción que van desde 30 hasta 900 litros diarios.",
+        source:"https://acortar.link/dTwxrb"
       }
 ]
       const container = document.getElementById('news');
