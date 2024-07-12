@@ -5,6 +5,7 @@ main{
 *{
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
 }
@@ -115,4 +116,71 @@ main{
     padding: 5px 0px 5px 0px;
 }
 
+.sectionMail{
+    background-color: #012521be;
+    border-top:solid 2px #301d04;
+  
+   
+}
 
+
+.subs{
+    background: linear-gradient(to right, #bfe1ff,#c0f9ca);
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 5px;
+    margin-bottom: 25px;
+    font-weight: 900;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* register */
+.containerRegister{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    height: 220px;
+}
+
+.input-form{
+    border-bottom: 2px solid #03250950;
+    background: linear-gradient(to right, #0f251b, #30685a92, #72f6d529);
+    color: #fbfffd;
+    padding: 0px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 35px;
+    border-radius: 0 20px 0 20px;
+    padding-left: 10px;
+}
+
+.bottonRegister{
+    height: 50px;
+    margin-bottom: 11px;
+}
+
+.btn-register{
+    cursor: pointer;
+    padding: 20px  13px;
+    border-radius: 50% 50% 50% 50%;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: .8rem;
+    position: relative;
+    z-index: 10;
+    border: solid 4px #301d04;
+    background-color: #d1be97;
+}
+
+.btn-register:hover{
+    transform: scale(1.08);
+    border: solid 4px #301d04;
+    background-color: #f4f1eb;
+    
+}

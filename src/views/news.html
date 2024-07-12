@@ -43,7 +43,8 @@
       <div id="news" class="containerNews"></div>
       
       <h1 class="titleNews"> Secretos Verdes en tu Correo: Únete </h1>
-     
+
+      <div class="sectionMail">
       <!-- slider ....................-->
       <div class="sliderBody">
         <div class="gallery">
@@ -55,17 +56,27 @@
             <img src="../public/img/bannerImg/Banner1.webp" data-index="5" class="gallery-item gallery-item-5">
             </div>
             <div class="gallery-controls"></div>
-            <nav class="gallery-nav">
-                <ul>
-                    <li class="gallery-item-selected"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </nav>
         </div>
     </div> 
+
+    <h1 class="subs">¡No te pierdas ninguna novedad!<br> Suscríbete ahora </h1>
+
+    <!-- registro -->
+      <div class="containerRegister">
+                 <!-- nombre completo -->
+                 <input type="text" id="fullName" name="fullName" class="input-form" required placeholder="Nombre Completo"/>
+                 <span class="error" id="nameError"></span>
+             
+             <!-- Email -->
+                 <input type="email" id="email" name="email" class="input-form" required placeholder="Email"/>
+                 <span class="error" id="emailError"></span>
+
+                 <div class="bottonRegister">
+                  <input type="submit" value="Registrar" class="btn-register" id="sub"/>
+                 </div>
+      </div>
+    </div>
+
     </main>
     <!--------------------------- Footer ------------------------------>
     <footer class="footer">
