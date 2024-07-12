@@ -1,7 +1,5 @@
-const plants = document.getElementById("plants");
-const verCarrito = document.getElementById("verCarrito");
-const modalContainer = document.getElementById("modal-container");
-const modalContent = document.getElementById("modalContent");
+const plantsContainer = document.getElementById("plants");
+const cartContainer = document.getElementById("cart-items");
 
 //Lista productos
 
@@ -80,58 +78,75 @@ const modalContent = document.getElementById("modalContent");
 
 let carrito = [];
 
-let plantsHTML = '';
+// Función para actualizar la visualización del carrito
+function updateCartDisplay() {
+    cartContainer.innerHTML = '';
 
+    // Crear la fila de encabezado
+    const headerRow = document.createElement("li");
+    headerRow.innerHTML = `
+        <span>Imagen</span>
+        <span>Nombre</span>
+        <span>Precio</span>
+        <span>Cantidad</span>
+    `;
+    cartContainer.appendChild(headerRow);
 
-for (let i = 0; i < products.length; i++) {
+    // Iterar sobre los productos en el carrito y mostrarlos
+    carrito.forEach(product => {
+        let cartItem = document.createElement("li");
+        cartItem.classList.add("cart-item");
+        cartItem.innerHTML = `
+            <span><img src="${product.img}" alt="${product.name}" class="cart-item-img"></span>
+            <span>${product.name}</span>
+            <span>$${product.price.toFixed(2)}</span>
+            <span>1</span>
+        `;
+        cartContainer.appendChild(cartItem);
+    });
+}
+
+// Función para crear tarjetas de productos
+function createProductCard(product) {
     let content = document.createElement("div");
     content.classList.add("plant-card");
 
     let comprar = document.createElement("button");
-    comprar.id = "car";
     comprar.className = "car";
-    comprar.innerHTML = `<img src="../public/img/greenCar.webp" alt="car" class="carImg">`;
+    comprar.innerHTML = '<img src="../public/img/greenCar.webp" alt="car" class="carImg">';
 
     content.innerHTML = `
-        <img src="${products[i].img}" alt="${products[i].name}" class="plantImg">
-        <h2>${products[i].name}</h2>
-        <p>Precio: $${products[i].price}</p>
-    `; 
+        <img src="${product.img}" alt="${product.name}" class="plantImg">
+        <h2>${product.name}</h2>
+        <p>Precio: $${product.price}</p>
+    `;
 
     // Agregar el botón al contenido
     content.appendChild(comprar);
+    plantsContainer.appendChild(content);
 
-    // Agregar el contenido al contenedor de plantas
-    plants.appendChild(content);
-
-    // Añadir el event listener al botón
+    // Añadir el event listener al botón para agregar al carrito
     comprar.addEventListener('click', () => {
-        // Lógica para manejar el clic en el botón
-        console.log(`Añadido ${products[i].name} al carrito`);
-    });
+        console.log(`Se añadió la planta: ${product.name} al carrito.`);
 
-    comprar.addEventListener("click", () => {
         carrito.push({
-            id: products.id,
-            img: products.img,
-            name: products.name,
-            price: products.price,
+            id: product.id,
+            img: product.img,
+            name: product.name,
+            price: product.price,
         });
-        console.log(carrito);
+
+        // Actualizar la visualización del carrito
+        updateCartDisplay();
     });
 }
-    verCarrito.addEventListener("click", () => {
-        const modalHeader = document.createElement("div");
-        modalHeader.className = "modal-header";
-        modalHeader.innerHTML =  `
-        <h1 class="modal-header-tittle">Carrito</h1>
-    `; 
-    modalContainer.append(modalHeader);
 
-    const modalButton = document.createElement("h1");
-    modalButton.innerText = "X";
-    modalButton.className = "modal-header-button";
+// Crear tarjetas de productos
+products.forEach(createProductCard);
 
-    modalHeader.append(modalButton);
-    });
-
+// Event listener para vaciar el carrito
+const emptyCartButton = document.getElementById("empty-cart");
+emptyCartButton.addEventListener('click', () => {
+    carrito = [];
+    updateCartDisplay();
+});

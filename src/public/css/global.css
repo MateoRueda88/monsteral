@@ -150,6 +150,80 @@ gap:20px;
   object-fit: cover;
 
 }
+
+/*Carrito superior*/
+.nav-card {
+  display: none; 
+}
+.container-car nav button {
+  display: none; 
+}
+
+.nav-card li{
+  list-style: none;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.buy-card {
+  width: 0; 
+  height: 0; 
+  background-color: #fff; 
+  position: absolute; 
+  right: 0; 
+  overflow: hidden; 
+  transition: all 0.3s ease; 
+}
+
+.container-car:hover .buy-card {
+  width: 500px; 
+  height: auto; 
+  background-color: #c8b999; 
+  z-index: 10;
+}
+
+.container-car {
+  position: relative;
+}
+
+.container-car nav i .nav-card{
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 0 10px;
+  border-bottom: solid #BC8150;
+  color: #523726;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.container-car nav i .buy-card > button{
+  display: block;
+  width: 90%;
+  padding: 1rem;
+  margin: 10px auto;
+  background-color: transparent;
+  border: solid #BC8150;
+  color: #494848;
+  cursor: pointer;
+  font-weight: bold;
+  color: #523726;
+  font-size: 20px;
+}
+
+.container-car  nav i:hover .buy-card > button:hover{
+  border: solid 3px #523726;
+  transition: all .4s;
+  background-color: #939535;
+
+}
+.img-car{
+  width: 10px;
+  height: auto;
+}
+
+/*Fin carrito superior*/
+
 .content-search {
   display: flex;
   width: 100%;
