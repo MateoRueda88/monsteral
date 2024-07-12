@@ -1,4 +1,4 @@
-.sliderBody{
+/* .sliderBody{
     margin: 0;
     padding: 0;
     width: 100%;
@@ -14,18 +14,18 @@
 .gallery-container{
     align-items: center;
     display: flex;
-    height: 200px;
+    height: 400px;
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 1000px;
     position: relative;
 }
 
 .gallery-item{
-    height: 140px;
+    height: 200px;
     opacity: 0;
     position: absolute;
     transition: all 0.3s ease-in-out;
-    width: 200px;
+    width: 330px;
     z-index: 0;
     border-radius: 15px;
     background-size: contain;
@@ -38,9 +38,9 @@
 }
 
 .gallery-item-2, .gallery-item-4{
-    height: 125px;
+    height: 250px;
     opacity: 0.8;
-    width: 250px;
+    width: 380px;
     z-index: 1;
 }
 
@@ -51,11 +51,11 @@
 
 .gallery-item-3{
     box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
-    height: 100px;
+    height: 300px;
     opacity: 1;
     left: 50%;
     transform: translateX(-50%);
-    width: 250px;
+    width: 430px;
     z-index: 2;
 }
 
@@ -167,4 +167,4 @@
 
 
 
-
+ */
