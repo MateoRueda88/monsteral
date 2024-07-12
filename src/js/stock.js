@@ -1,3 +1,6 @@
+const plantsContainer = document.getElementById("plants");
+const cartContainer = document.getElementById("cart-items");
+
 //Lista productos
 
  let products = [ 
@@ -71,29 +74,79 @@
         img:"../public/img/plantsImg/gardenia.webp",
         description: "Es un arbusto de hojas perennes con flores blancas, fragantes y cerosas. Es popular en jardines y arreglos florales por su aroma dulce y belleza elegante." 
     }
-]
+];
 
-// for (let i = 0; i < products.length; i++){
-//     console.log(products[i]);
-//   };
+let carrito = [];
 
-  const container = document.getElementById('plants');
+// Función para actualizar la visualización del carrito
+function updateCartDisplay() {
+    cartContainer.innerHTML = '';
 
-  let plantsHTML = '';
+    // Crear la fila de encabezado
+    const headerRow = document.createElement("li");
+    headerRow.innerHTML = `
+        <span>Imagen</span>
+        <span>Nombre</span>
+        <span>Precio</span>
+        <span>Cantidad</span>
+    `;
+    cartContainer.appendChild(headerRow);
 
-  for (let i = 0; i < products.length; i++) {
-      plantsHTML += `
-      <div class="plant-card">
-        <img src="${products[i].img}" alt="${products[i].name}" class="plantImg">
-        <h2>${products[i].name}</h2>
-        <p>Precio: $${products[i].price}</p>
-        <div class="car">
-        <img src="../public/img/greenCar.webp" alt="car" class="carImg">
-        </div>
-      </div>
-      `;
-      
-  }
-    container.innerHTML = plantsHTML;
-    // <p>Descripción: ${products[i].description}</p>
+    // Iterar sobre los productos en el carrito y mostrarlos
+    carrito.forEach(product => {
+        let cartItem = document.createElement("li");
+        cartItem.classList.add("cart-item");
+        cartItem.innerHTML = `
+            <span><img src="${product.img}" alt="${product.name}" class="cart-item-img"></span>
+            <span>${product.name}</span>
+            <span>$${product.price.toFixed(2)}</span>
+            <span>1</span>
+        `;
+        cartContainer.appendChild(cartItem);
+    });
+}
 
+// Función para crear tarjetas de productos
+function createProductCard(product) {
+    let content = document.createElement("div");
+    content.classList.add("plant-card");
+
+    let comprar = document.createElement("button");
+    comprar.className = "car";
+    comprar.innerHTML = '<img src="../public/img/greenCar.webp" alt="car" class="carImg">';
+
+    content.innerHTML = `
+        <img src="${product.img}" alt="${product.name}" class="plantImg">
+        <h2>${product.name}</h2>
+        <p>Precio: $${product.price}</p>
+    `;
+
+    // Agregar el botón al contenido
+    content.appendChild(comprar);
+    plantsContainer.appendChild(content);
+
+    // Añadir el event listener al botón para agregar al carrito
+    comprar.addEventListener('click', () => {
+        console.log(`Se añadió la planta: ${product.name} al carrito.`);
+
+        carrito.push({
+            id: product.id,
+            img: product.img,
+            name: product.name,
+            price: product.price,
+        });
+
+        // Actualizar la visualización del carrito
+        updateCartDisplay();
+    });
+}
+
+// Crear tarjetas de productos
+products.forEach(createProductCard);
+
+// Event listener para vaciar el carrito
+const emptyCartButton = document.getElementById("empty-cart");
+emptyCartButton.addEventListener('click', () => {
+    carrito = [];
+    updateCartDisplay();
+});

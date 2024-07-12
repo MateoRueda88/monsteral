@@ -18,6 +18,12 @@
     .learn-card h2{
         font-size: 1.2rem;
     }
+    .learn-content{
+        font-size: 1.5rem;
+    }
+    .learn-button{
+        font-size: 1.3rem;
+    }
 
 }
 @media(min-width:1024px){
