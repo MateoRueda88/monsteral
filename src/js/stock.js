@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const plantsContainer = document.getElementById("plants");
+    const cartContainer = document.getElementById("cart-items"); // Asegúrate de que esto selecciona el contenedor correcto
+    const emptyCartButton = document.getElementById("empty-cart");
+    const cartQuantity = document.querySelector(".quantity");
+    const cartTotal = document.querySelector(".total");
+    const showCartButton = document.getElementById("verCarrito");
+    const closeCartButton = document.getElementById("close-cart");
 //Lista productos
 
  let products = [ 
@@ -71,29 +79,99 @@
         img:"../public/img/plantsImg/gardenia.webp",
         description: "Es un arbusto de hojas perennes con flores blancas, fragantes y cerosas. Es popular en jardines y arreglos florales por su aroma dulce y belleza elegante." 
     }
-]
+];
 
-// for (let i = 0; i < products.length; i++){
-//     console.log(products[i]);
-//   };
+let carrito = [];
 
-  const container = document.getElementById('plants');
+// Función para actualizar la visualización del carrito
+function updateCartDisplay() {
+    cartContainer.innerHTML = '';
 
-  let plantsHTML = '';
+    // Crear la fila de encabezado del carrito
+    const headerRow = document.createElement("li");
+    headerRow.innerHTML = `
+        <span>Imagen</span>
+        <span>Nombre</span>
+        <span>Precio</span>
+        <span>Cantidad</span>
+    `;
+    cartContainer.appendChild(headerRow);
 
-  for (let i = 0; i < products.length; i++) {
-      plantsHTML += `
-      <div class="plant-card">
-        <img src="${products[i].img}" alt="${products[i].name}" class="plantImg">
-        <h2>${products[i].name}</h2>
-        <p>Precio: $${products[i].price}</p>
-        <div class="car">
-        <img src="../public/img/greenCar.webp" alt="car" class="carImg">
-        </div>
-      </div>
-      `;
-      
-  }
-    container.innerHTML = plantsHTML;
-    // <p>Descripción: ${products[i].description}</p>
+    // Mostrar los productos en el carrito
+    carrito.forEach(product => {
+        let cartItem = document.createElement("li");
+        cartItem.classList.add("cart-item");
+        cartItem.innerHTML = `
+            <span><img src="${product.img}" alt="${product.name}" class="cart-item-img"></span>
+            <span>${product.name}</span>
+            <span>$${product.price.toFixed(2)}</span>
+            <span>${product.quantity}</span>
+        `;
+        cartContainer.appendChild(cartItem);
+    });
 
+    // Actualizar la cantidad total en el carrito
+    cartQuantity.innerText = carrito.reduce((total, item) => total + item.quantity, 0);
+
+    // Actualizar el total del carrito
+    cartTotal.innerText = `Total: $${carrito.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2)}`;
+}
+
+// Función para agregar un producto al carrito
+function addToCart(product) {
+    let existingItem = carrito.find(item => item.id === product.id);
+
+    if (existingItem) {
+        existingItem.quantity++;
+    } else {
+        carrito.push({
+            id: product.id,
+            img: product.img,
+            name: product.name,
+            price: product.price,
+            quantity: 1
+        });
+    }
+
+    // Actualizar la visualización del carrito
+    updateCartDisplay();
+}
+
+// Crear tarjetas de productos
+function createProductCard(product) {
+    let content = document.createElement("div");
+    content.classList.add("plant-card");
+
+    content.innerHTML = `
+        <img src="${product.img}" alt="${product.name}" class="plantImg">
+        <h2>${product.name}</h2>
+        <p>Precio: $${product.price}</p>
+        <button class="add-to-cart">🪴 Agregar 🛒</button>
+    `;
+
+    plantsContainer.appendChild(content);
+
+    // Añadir evento para agregar al carrito
+    content.querySelector('.add-to-cart').addEventListener('click', () => {
+        addToCart(product);
+    });
+}
+
+// Crear tarjetas de productos
+products.forEach(createProductCard);
+
+// Event listener para vaciar el carrito
+emptyCartButton.addEventListener('click', () => {
+    carrito = [];
+    updateCartDisplay();
+});
+
+// Event listener para mostrar/ocultar el carrito
+showCartButton.addEventListener('click', () => {
+    document.querySelector('.buy-card').classList.toggle('show');
+});
+
+closeCartButton.addEventListener('click', () => {
+    document.querySelector('.buy-card').classList.remove('show');
+});
+});

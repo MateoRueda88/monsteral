@@ -23,9 +23,13 @@
     padding: 10px;
     max-width: 400px;
     margin: 0 auto;
+    margin-top: 7%;
+    margin-bottom: 7%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+.plant-card:hover {
+    transform: scale(1.1);
+}
 .plant-card h2 {
     margin-top: 10px;
     color: #939535;
@@ -46,7 +50,7 @@
     border-radius: 10px;
 }
 
-.car{
+.plant-card .car{
     width: auto;
     height: auto;
     border: 1px solid #939535;
@@ -57,7 +61,7 @@
     align-items: center;
 }
 
-.car .carImg{
+.plant-card.car .carImg{
     width: 17px;
     object-fit: contain;
 }

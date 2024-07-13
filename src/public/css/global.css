@@ -24,7 +24,6 @@ normalizar nuestra hoja de estilos */
 
 .info-header{
   width: 100%;
-
   height: 47px;
   display: flex;
   justify-content: space-around;
@@ -147,9 +146,180 @@ gap:20px;
 .icons-content a img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: cover; 
+}
+
+/*Carrito superior*/
+/*tamaño carrito*/
+.container-car .icons{  
+  width: 40px;
+}
+/*circulo del carrito*/
+.container-car span{
+  background-color:#939535;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  top: -5px;
+  left: 80%;
+  padding: 3px 10px;
+}
+.navCard {
+  display: none; 
+}
+.container-car nav button {
+  display: none; 
+}
+
+.navCard li{
+  list-style: none;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.buy-card {
+  width: 0; 
+  height: 0; 
+  background-color: #fff; 
+  position: absolute; 
+  right: 0; 
+  overflow: hidden; 
+  transition: all 0.3s ease; 
+}
+
+.buy-card h1{
+  color: #523726;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0 20px;
+  display: flex;
+  font-style: normal;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-car:hover .buy-card {
+  width: 500px; 
+  height: auto; 
+  background-color: #c8b999; 
+  z-index: 10;
+}
+
+.container-car {
+  position: relative;
+}
+
+.container-car nav i .navCard{
+  font-size: 19px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px 0 10px;
+  border-bottom: solid #BC8150;
+  color: #523726;
+  font-weight: bold;
+  font-style: normal;
+}
+/*vaciar*/
+.container-car nav i .buy-card > .checkout button{
+  display: block;
+  width: 90%;
+  height: 70%;
+  padding: 5px;
+  margin: 5px auto;
+  background-color: transparent;
+  border: solid #BC8150;
+  color: #494848;
+  cursor: pointer;
+  font-weight: bold;
+  color: #523726;
+  font-size: 20px;
+}
+.container-car  nav i:hover .buy-card > .checkout button:hover{
+  border: solid 3px #523726;
+  transition: all .4s;
+  background-color: #939535;
+}
+/*close*/
+.container-car nav i .buy-card > .checkout .close{
+  display: block;
+  width: 90%;
+  height: 70%;
+  padding: 5px;
+  margin: 5px auto;
+  background-color: transparent;
+  border: solid #BC8150;
+  color: #494848;
+  cursor: pointer;
+  font-weight: bold;
+  color: #523726;
+  font-size: 20px;
+  text-align: center;
+  font-style: normal;
+}
+.container-car  nav i:hover .buy-card > .checkout .close:hover{
+  border: solid 3px #523726;
+  transition: all .4s;
+  background-color: #939535;
+}
+/*division boton cerrar y vaciar*/
+.container-car .checkout{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 
 }
+.total{
+  background-color: #BC8150; 
+  color: #523726;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*boton agregar carrito*/
+.plant-card h2{
+  font-size: 20px; 
+  font-weight: bold;
+  color: #523726; 
+  margin: 10px 0; 
+  text-align: center; 
+}
+
+.plant-card p {
+  font-size: 16px; 
+  font-weight: bold;
+  color: #523726; 
+  margin: 3px 0; 
+  text-align: center; 
+}
+.add-to-cart {
+  background-color: #BC8150;
+  font-weight: bold;
+  color: white; 
+  padding: 5px 10px; 
+  border: none; 
+  cursor: pointer; 
+  font-size: 15px; 
+  border-radius: 5px; 
+  margin-top: 5px;
+}
+
+.add-to-cart:hover {
+  background-color: #45a049; /* Cambio de color de fondo al pasar el ratón */
+}
+
+/*Fin carrito superior*/
+
 .content-search {
   display: flex;
   width: 100%;

@@ -3,14 +3,20 @@
 @media screen and (min-width:768px){
 
     .containerPlants{
-        grid-template-columns: repeat(3,1fr);
-        margin-top: 70px;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 105px;
     }
-    
+    .goBack{
+        font-size: 27px;
+        padding: 55px 20px;
+    }
     .plant-card {
-        width: 200px;
+        width: 330px;
     }
-    
+    .container .xContainer .xContainerx{
+        width: 65px;
+        height: 65px;
+    }
     .plant-card h2 {
         font-size: 1.1rem;
     }
@@ -34,7 +40,12 @@
 }
 @media screen and (min-width:1024px){
     .containerPlants{
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
+        margin-top: 120px;
+    }
+    .goBack{
+        font-size: 30px;
+        padding: 65px 25px;
     }
     .footer {
         height: 20vh;

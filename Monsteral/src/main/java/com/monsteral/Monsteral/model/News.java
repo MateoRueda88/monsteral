@@ -29,6 +29,7 @@ public class News {
     }
     //Creamos get y set
 
+
     public Long getID_news() {
         return ID_news;
     }

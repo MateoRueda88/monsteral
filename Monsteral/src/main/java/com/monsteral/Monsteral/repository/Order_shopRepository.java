@@ -1,4 +1,4 @@
 package com.monsteral.Monsteral.repository;
 
-public class PlantsCategoryRepository {
+public interface Order_shopRepository {
 }

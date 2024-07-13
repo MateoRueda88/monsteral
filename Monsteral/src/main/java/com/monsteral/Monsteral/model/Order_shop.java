@@ -28,9 +28,11 @@ public class Order_shop {
     private Plant plant;
 
     @OneToOne(mappedBy = "order_shop")
-    private List<Payment> payments;
+    private Payment payments;
+
 
    // NO OLVIDAR INGRESAR PLANTS AL CONTRUCTOR Y LOS GET Y SETT////////////////////////////////////////////////
+
     public Order_shop(){}
     public Order_shop(Long ID_order, Date date_order, Client client, Plant plant) {
         this.ID_order = ID_order;
@@ -69,5 +71,13 @@ public class Order_shop {
 
     public void setPlant(Plant plant) {
         this.plant = plant;
+    }
+
+    public Payment getPayments() {
+        return payments;
+    }
+
+    public void setPayments(Payment payments) {
+        this.payments = payments;
     }
 }

@@ -27,14 +27,17 @@ public class Plant {
 
     //Nuestra clave foranea que se conecta con la tabla cliente
     @ManyToOne
-    @JoinColumn(name = "ID_category", nullable = false)
+    @JoinColumn(name = "id_category", nullable = false)
+
     private PlantsCategory plantsCategory;
 
     @OneToMany(mappedBy = "plant")
     private List<Order_shop> orders;
 
     //Creamos constructores
-    public Plant() {}
+    public Plant() {
+    }
+
     public Plant(Long ID_plants, String plantName, String description, Double price, PlantsCategory plantsCategory) {
         this.ID_plants = ID_plants;
         this.plantName = plantName;
@@ -43,6 +46,8 @@ public class Plant {
         this.plantsCategory = plantsCategory;
     }
 //Creamos get y set
+
+
     public Long getID_plants() {
         return ID_plants;
     }
@@ -81,5 +86,13 @@ public class Plant {
 
     public void setPlantsCategory(PlantsCategory plantsCategory) {
         this.plantsCategory = plantsCategory;
+    }
+
+    public List<Order_shop> getOrders() {
+        return orders;
+    }
+
+    public void setOrders(List<Order_shop> orders) {
+        this.orders = orders;
     }
 }
