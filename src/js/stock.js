@@ -1,8 +1,14 @@
-const plantsContainer = document.getElementById("plants");
-const cartContainer = document.getElementById("cart-items");
+
+document.addEventListener("DOMContentLoaded", function() {
+    const plantsContainer = document.getElementById("plants");
+    const cartContainer = document.getElementById("cart-items");
+    const emptyCartButton = document.getElementById("empty-cart");
+    const cartQuantity = document.querySelector(".quantity");
+    const cartTotal = document.getElementById("cart-total");
+    const showCartButton = document.getElementById("verCarrito");
+    const closeCartButton = document.getElementById("close-cart");
 
 //Lista productos
-
  let products = [ 
     {
       id: 1,
@@ -75,15 +81,15 @@ const cartContainer = document.getElementById("cart-items");
         description: "Es un arbusto de hojas perennes con flores blancas, fragantes y cerosas. Es popular en jardines y arreglos florales por su aroma dulce y belleza elegante." 
     }
 ];
-
+ 
 let carrito = [];
 
-// Función para actualizar la visualización del carrito
-function updateCartDisplay() {
+ // Función para actualizar la visualización del carrito
+ function updateCartDisplay() {
     cartContainer.innerHTML = '';
 
-    // Crear la fila de encabezado
-    const headerRow = document.createElement("li");
+      // Crear la fila de encabezado del carrito
+      const headerRow = document.createElement("li");
     headerRow.innerHTML = `
         <span>Imagen</span>
         <span>Nombre</span>
@@ -92,61 +98,91 @@ function updateCartDisplay() {
     `;
     cartContainer.appendChild(headerRow);
 
-    // Iterar sobre los productos en el carrito y mostrarlos
-    carrito.forEach(product => {
+      // Mostrar los productos en el carrito
+      carrito.forEach(product => {
         let cartItem = document.createElement("li");
         cartItem.classList.add("cart-item");
         cartItem.innerHTML = `
             <span><img src="${product.img}" alt="${product.name}" class="cart-item-img"></span>
             <span>${product.name}</span>
             <span>$${product.price.toFixed(2)}</span>
-            <span>1</span>
+            <span>${product.quantity}</span>
         `;
         cartContainer.appendChild(cartItem);
     });
+
+     // Actualizar la cantidad total en el carrito
+     cartQuantity.innerText = carrito.reduce((total, item) => total + item.quantity, 0);
+     
+     // Actualizar el total del carrito
+     cartTotal.innerText = `Total: $${carrito.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2)}`;
 }
 
-// Función para crear tarjetas de productos
-function createProductCard(product) {
-    let content = document.createElement("div");
-    content.classList.add("plant-card");
+  // Función para agregar un producto al carrito
+  function addToCart(product) {
+    console.log('Agregando al carrito:', product);
+    let existingItem = carrito.find(item => item.id === product.id);
 
-    let comprar = document.createElement("button");
-    comprar.className = "car";
-    comprar.innerHTML = '<img src="../public/img/greenCar.webp" alt="car" class="carImg">';
-
-    content.innerHTML = `
-        <img src="${product.img}" alt="${product.name}" class="plantImg">
-        <h2>${product.name}</h2>
-        <p>Precio: $${product.price}</p>
-    `;
-
-    // Agregar el botón al contenido
-    content.appendChild(comprar);
-    plantsContainer.appendChild(content);
-
-    // Añadir el event listener al botón para agregar al carrito
-    comprar.addEventListener('click', () => {
-        console.log(`Se añadió la planta: ${product.name} al carrito.`);
-
+    if (existingItem) {
+        existingItem.quantity++;
+    } else {
         carrito.push({
             id: product.id,
             img: product.img,
             name: product.name,
             price: product.price,
+            quantity: 1
         });
+        
+    }
 
-        // Actualizar la visualización del carrito
-        updateCartDisplay();
+    console.log('Carrito actualizado:', carrito); 
+
+     // Actualizar la visualización del carrito
+     updateCartDisplay();
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+}
+
+ // Crear tarjetas de productos
+  function createProductCard(product) {
+    let content = document.createElement("div");
+    content.classList.add("plant-card");
+    content.innerHTML = `
+        <img src="${product.img}" alt="${product.name}" class="plantImg">
+        <h2>${product.name}</h2>
+        <p>Precio: $${product.price}</p>
+        <button class="add-to-cart">🪴 Agregar 🛒</button>
+    `;
+    plantsContainer.appendChild(content);
+
+     // Añadir evento para agregar al carrito
+     content.querySelector('.add-to-cart').addEventListener('click', () => {
+        addToCart(product);
     });
 }
 
-// Crear tarjetas de productos
-products.forEach(createProductCard);
+    // Crear tarjetas de productos
+    products.forEach(createProductCard);
 
-// Event listener para vaciar el carrito
-const emptyCartButton = document.getElementById("empty-cart");
-emptyCartButton.addEventListener('click', () => {
+ // Event listener para vaciar el carrito
+ emptyCartButton.addEventListener('click', () => {
     carrito = [];
     updateCartDisplay();
+    localStorage.removeItem('carrito');
+});
+
+ // Event listener para mostrar/ocultar el carrito
+ showCartButton.addEventListener('click', () => {
+    document.querySelector('.buy-card').classList.toggle('show');
+});
+
+closeCartButton.addEventListener('click', () => {
+    document.querySelector('.buy-card').classList.remove('show');
+});
+
+let savedCart = localStorage.getItem('carrito');
+if (savedCart) {
+    carrito = JSON.parse(savedCart);
+    updateCartDisplay();
+}
 });
