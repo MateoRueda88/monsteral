@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prueba</title>
-    <link rel="stylesheet" href="../public/css/about.css" />
+    <title> news</title>
     <link rel="stylesheet" href="../public/css/global.css" />
-    <link rel="stylesheet" href="../public/css/mediaQueries/MQ-about.css" />
     <link rel="stylesheet" href="../public/css/mediaQueries/MQ-global.css" />
     <link rel="stylesheet" href="../public/css/bannerNews.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../public/css/news.css">
     <link rel="stylesheet" href="../public/css/sliderNews.css">
+    <link rel="stylesheet" href="../public/css/mediaQueries/MQ-news.css">
+    <link rel="stylesheet" href="../public/css/mediaQueries/MQ-sliderNews.css">
 
     
 </head>
@@ -25,13 +25,13 @@
       <div class="offer-carousel">
         <div class="carousel" id="carousel">
           <div class="slider">
-            <img src="../public/img/bannerImg/Banner1.webp" alt="offer1">
+            <img src="../public/img/news/Bprincipal1D.webp" alt="offer1">
           </div>
           <div class="slider">
-            <img src="../public/img/bannerImg/Banner2.webp" alt="offer2">
+            <img src="../public/img/news/Bprincipal2D.webp" alt="offer2">
           </div>
           <div class="slider">
-            <img src="../public/img/bannerImg/Banner3.webp" alt="offer3">
+            <img src="../public/img/news/Bprincipal3D.webp" alt="offer3">
           </div>
 
         </div>
@@ -45,15 +45,15 @@
       <h1 class="titleNews"> Secretos Verdes en tu Correo: Únete </h1>
 
       <div class="sectionMail">
-      <!-- slider ....................-->
+      <!-- -----------------------------slider ------------------------------->
       <div class="sliderBody">
         <div class="gallery">
             <div class="gallery-container">
-            <img src="../public/img/bannerImg/Banner1.webp" data-index="1" class="gallery-item gallery-item-1">
-            <img src="../public/img/bannerImg/Banner1.webp" data-index="2" class="gallery-item gallery-item-2">
-            <img src="../public/img/bannerImg/Banner1.webp" data-index="3" class="gallery-item gallery-item-3">
-            <img src="../public/img/bannerImg/Banner1.webp" data-index="4" class="gallery-item gallery-item-4">
-            <img src="../public/img/bannerImg/Banner1.webp" data-index="5" class="gallery-item gallery-item-5">
+            <img src="../public/img/news/banner1.webp" data-index="1" class="gallery-item gallery-item-1">
+            <img src="../public/img/news/banner2.webp" data-index="2" class="gallery-item gallery-item-2">
+            <img src="../public/img/news/banner3.webp" data-index="3" class="gallery-item gallery-item-3">
+            <img src="../public/img/news/banner4.webp" data-index="4" class="gallery-item gallery-item-4">
+            <img src="../public/img/news/banner5.webp" data-index="5" class="gallery-item gallery-item-5">
             </div>
             <div class="gallery-controls"></div>
         </div>
@@ -63,14 +63,17 @@
 
     <!-- registro -->
       <div class="containerRegister">
+
+        <div class="containerInput">
                  <!-- nombre completo -->
                  <input type="text" id="fullName" name="fullName" class="input-form" required placeholder="Nombre Completo"/>
                  <span class="error" id="nameError"></span>
              
              <!-- Email -->
+             
                  <input type="email" id="email" name="email" class="input-form" required placeholder="Email"/>
                  <span class="error" id="emailError"></span>
-
+              </div>
                  <div class="bottonRegister">
                   <input type="submit" value="Registrar" class="btn-register" id="sub"/>
                  </div>

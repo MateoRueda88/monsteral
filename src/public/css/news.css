@@ -1,5 +1,5 @@
 main{
-    background-color: #bc8150b1;
+    background-color: #d3c7ad;
 }
 
 *{
@@ -11,14 +11,19 @@ main{
 }
 .containerNews{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding-top: 20px;
     gap: 20px;
     
 }
 
 .new-card {
-    width: 300px;
+    width: 90%;
     height: auto;
     display: flex;
     border-radius: 20px;
@@ -111,21 +116,28 @@ main{
     background-color: #523726;
     text-align: center;
     color: wheat;
-    margin-top: 8px;
+    margin-bottom: 15px;
     font-size: 1rem;
-    padding: 5px 0px 5px 0px;
+    padding: 8px 0px 8px 0px;
+    
 }
 
-.sectionMail{
-    background-color: #012521be;
-    border-top:solid 2px #301d04;
-  
-   
+.containerInput{
+    background-color: #5237265d;
+    width: 350px;
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px;
+    padding-top: 15px;
 }
-
 
 .subs{
-    background: linear-gradient(to right, #bfe1ff,#c0f9ca);
+    background: linear-gradient(to right, #2e1e03,#011e06);
     text-align: center;
     font-size: 1.3rem;
     margin: 5px;
@@ -142,13 +154,13 @@ main{
     align-items: center;
     flex-direction: column;
     gap: 15px;
-    height: 220px;
+    height: 255px;
 }
 
 .input-form{
-    border-bottom: 2px solid #03250950;
-    background: linear-gradient(to right, #0f251b, #30685a92, #72f6d529);
-    color: #fbfffd;
+    border-bottom: 2px solid #03250988;
+    background: linear-gradient(to right, #fef9f1, #edfcf8c1, #e6f5f129);
+    color: #00170b;
     padding: 0px;
     width: 70%;
     display: flex;
@@ -163,11 +175,12 @@ main{
 .bottonRegister{
     height: 50px;
     margin-bottom: 11px;
+   
 }
 
 .btn-register{
     cursor: pointer;
-    padding: 20px  13px;
+    padding: 15px  10px;
     border-radius: 50% 50% 50% 50%;
     margin-bottom: 20px;
     font-weight: 900;
@@ -176,6 +189,7 @@ main{
     z-index: 10;
     border: solid 4px #301d04;
     background-color: #d1be97;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.311);
 }
 
 .btn-register:hover{
