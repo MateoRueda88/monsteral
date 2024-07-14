@@ -1,13 +1,15 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     const plantsContainer = document.getElementById("plants");
+    const cartContainer = document.getElementById("cart-items");
     const cartContainer = document.getElementById("cart-items");
     const emptyCartButton = document.getElementById("empty-cart");
     const cartQuantity = document.querySelector(".quantity");
     const cartTotal = document.getElementById("cart-total");
     const showCartButton = document.getElementById("verCarrito");
     const closeCartButton = document.getElementById("close-cart");
-//Lista productos
 
+//Lista productos
  let products = [ 
     {
       id: 1,
@@ -80,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
         description: "Es un arbusto de hojas perennes con flores blancas, fragantes y cerosas. Es popular en jardines y arreglos florales por su aroma dulce y belleza elegante." 
     }
 ];
-
+ 
 let carrito = [];
 
     // Función para actualizar la visualización del carrito
