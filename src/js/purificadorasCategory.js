@@ -78,15 +78,41 @@ let puriCategoryHTML = '';
 
 for (let i = 0; i < products.length; i++) {
     puriCategoryHTML += `
-      <div class="plant-card">
-        <img src="${products[i].img}" alt="${products[i].name}" class="plantImg">
-        <h2>${products[i].name}</h2>
-        <p>Precio: $${products[i].price}</p>
-        <div class="car">
-        <img src="../public/img/greenCar.webp" alt="car" class="carImg">
+        <div class="plant-card">
+            <div>
+                <div class="container">
+                    <div class="imgContainer">
+                        <img src= "${products[i].img}" alt="" class="mainIMG">
+                    </div>
+                    <div class="xContainer">
+                        <img src="${products[i].img2}" alt="" class="xContainerx active">
+                        <img src="${products[i].img3}" alt="" class="xContainerx">
+                        <img src="${products[i].img4}" alt="" class="xContainerx">
+                        <img src="${products[i].img5}" alt="" class="xContainerx">
+                    </div>
+                </div>
+            </div>
+            <h2>${products[i].name}</h2>
+            <p>Precio: $${products[i].price}</p>
+            <div class="car">
+                <img src="../public/img/greenCar.webp" alt="car" class="carImg">
+            </div>
         </div>
-      </div>
-      `;
+    `;
 }
-    container.innerHTML = puriCategoryHTML;
-    // <p>Descripción: ${products[i].description}</p>
+
+container.innerHTML = puriCategoryHTML;
+
+document.querySelectorAll('.plant-card').forEach(card => {
+    const mainIMG = card.querySelector('.mainIMG');
+    const xContainerx = card.querySelectorAll('.xContainerx');
+
+    xContainerx.forEach(thumb => {
+        thumb.addEventListener('click', function() {
+            const active = card.querySelector('.active');
+            active.classList.remove('active');
+            thumb.classList.add('active');
+            mainIMG.src = thumb.src;
+        });
+    });
+});
