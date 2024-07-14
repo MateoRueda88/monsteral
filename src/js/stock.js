@@ -1,13 +1,14 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     const plantsContainer = document.getElementById("plants");
-    const cartContainer = document.getElementById("cart-items"); // Asegúrate de que esto selecciona el contenedor correcto
+    const cartContainer = document.getElementById("cart-items");
     const emptyCartButton = document.getElementById("empty-cart");
     const cartQuantity = document.querySelector(".quantity");
     const cartTotal = document.querySelector(".total");
     const showCartButton = document.getElementById("verCarrito");
     const closeCartButton = document.getElementById("close-cart");
-//Lista productos
 
+//Lista productos
  let products = [ 
     {
       id: 1,
@@ -80,15 +81,13 @@ document.addEventListener("DOMContentLoaded", function() {
         description: "Es un arbusto de hojas perennes con flores blancas, fragantes y cerosas. Es popular en jardines y arreglos florales por su aroma dulce y belleza elegante." 
     }
 ];
-
+ 
 let carrito = [];
-
-// Función para actualizar la visualización del carrito
 function updateCartDisplay() {
     cartContainer.innerHTML = '';
 
-    // Crear la fila de encabezado del carrito
-    const headerRow = document.createElement("li");
+    const headerRow = document.createElement("div");
+    headerRow.classList.add("navCard");
     headerRow.innerHTML = `
         <span>Imagen</span>
         <span>Nombre</span>
@@ -97,12 +96,11 @@ function updateCartDisplay() {
     `;
     cartContainer.appendChild(headerRow);
 
-    // Mostrar los productos en el carrito
     carrito.forEach(product => {
-        let cartItem = document.createElement("li");
-        cartItem.classList.add("cart-item");
+        let cartItem = document.createElement("cart-items");
+        cartItem.classList.add("cartItems");
         cartItem.innerHTML = `
-            <span><img src="${product.img}" alt="${product.name}" class="cart-item-img"></span>
+            <span><img src="${product.img}" alt="${product.name}" class="cartItems-img"></span>
             <span>${product.name}</span>
             <span>$${product.price.toFixed(2)}</span>
             <span>${product.quantity}</span>
@@ -110,15 +108,12 @@ function updateCartDisplay() {
         cartContainer.appendChild(cartItem);
     });
 
-    // Actualizar la cantidad total en el carrito
     cartQuantity.innerText = carrito.reduce((total, item) => total + item.quantity, 0);
-
-    // Actualizar el total del carrito
     cartTotal.innerText = `Total: $${carrito.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2)}`;
 }
 
-// Función para agregar un producto al carrito
 function addToCart(product) {
+    console.log('Agregando al carrito:', product);
     let existingItem = carrito.find(item => item.id === product.id);
 
     if (existingItem) {
@@ -131,42 +126,39 @@ function addToCart(product) {
             price: product.price,
             quantity: 1
         });
+        
     }
 
-    // Actualizar la visualización del carrito
+    console.log('Carrito actualizado:', carrito); 
+
     updateCartDisplay();
+    localStorage.setItem('carrito', JSON.stringify(carrito));
 }
 
-// Crear tarjetas de productos
 function createProductCard(product) {
     let content = document.createElement("div");
     content.classList.add("plant-card");
-
     content.innerHTML = `
         <img src="${product.img}" alt="${product.name}" class="plantImg">
         <h2>${product.name}</h2>
         <p>Precio: $${product.price}</p>
         <button class="add-to-cart">🪴 Agregar 🛒</button>
     `;
-
     plantsContainer.appendChild(content);
 
-    // Añadir evento para agregar al carrito
     content.querySelector('.add-to-cart').addEventListener('click', () => {
         addToCart(product);
     });
 }
 
-// Crear tarjetas de productos
 products.forEach(createProductCard);
 
-// Event listener para vaciar el carrito
 emptyCartButton.addEventListener('click', () => {
     carrito = [];
     updateCartDisplay();
+    localStorage.removeItem('carrito');
 });
 
-// Event listener para mostrar/ocultar el carrito
 showCartButton.addEventListener('click', () => {
     document.querySelector('.buy-card').classList.toggle('show');
 });
@@ -174,4 +166,10 @@ showCartButton.addEventListener('click', () => {
 closeCartButton.addEventListener('click', () => {
     document.querySelector('.buy-card').classList.remove('show');
 });
+
+let savedCart = localStorage.getItem('carrito');
+if (savedCart) {
+    carrito = JSON.parse(savedCart);
+    updateCartDisplay();
+}
 });
