@@ -1,0 +1,136 @@
+@media screen and (min-width:768px){
+.new-card {
+    width: 350px;
+
+}
+
+.new-card h2 {
+    margin-top: 10px;
+    color: #065326;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 600;
+    padding-left: 5px;
+}
+
+
+.date{
+    font-size: 1rem;
+}
+
+.description{
+    font-size: 1.1rem;
+}
+
+.titleNews{
+    font-size: 1.2rem;
+    padding: 9px 0px 9px 0px;
+}
+
+.containerInput{
+    width: 550px;
+    height: 350px;
+    gap: 15px;
+    padding: 10px;
+    padding-top: 15px;
+}
+
+.subs{
+    font-size: 1.8rem;
+    margin-bottom: 35px;
+}
+
+/* register */
+.containerRegister{
+    height: 275px;
+    padding-bottom: 30px;
+}
+
+.input-form{
+    font-size: 1rem;
+    font-weight: 600;
+    height: 45px;
+}
+
+.btn-register{
+    padding: 20px  13px;
+    border-radius: 50% 50% 50% 50%;
+    font-size: 1rem;
+}
+
+.btn-register:hover{
+    transform: scale(1.08);
+    border: solid 4px #301d04;
+    background-color: #f4f1eb;
+    
+}}
+/* 
+inicio MQ DESKTOP ....................................*/
+
+@media screen and (min-width:1024px){
+    
+    .new-card {
+        width: 350px;
+    
+    }
+    
+    .new-card h2 {
+        margin-top: 10px;
+        color: #065326;
+        font-size: 1rem;
+        text-align: left;
+        font-weight: 600;
+        padding-left: 5px;
+    }
+    
+    
+    .date{
+        font-size: 1rem;
+    }
+    
+    .description{
+        font-size: 1.1rem;
+    }
+    
+    .titleNews{
+        font-size: 1.4rem;
+        padding: 10px 0px 10px 0px;
+    }
+    
+    .containerInput{
+        width: 550px;
+        height: 350px;
+        gap: 15px;
+        padding: 10px;
+        padding-top: 15px;
+    }
+    
+    .subs{
+        font-size: 1.8rem;
+        margin-bottom: 35px;
+    }
+    
+    /* register */
+    .containerRegister{
+        height: 275px;
+        padding-bottom: 30px;
+    }
+    
+    .input-form{
+        font-size: 1rem;
+        font-weight: 600;
+        height: 45px;
+    }
+    
+    .btn-register{
+        padding: 20px  13px;
+        border-radius: 50% 50% 50% 50%;
+        font-size: 1rem;
+    }
+    
+    .btn-register:hover{
+        transform: scale(1.08);
+        border: solid 4px #301d04;
+        background-color: #f4f1eb;
+        
+    }}
