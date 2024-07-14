@@ -2,7 +2,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const plantsContainer = document.getElementById("plants");
     const cartContainer = document.getElementById("cart-items");
-    const cartContainer = document.getElementById("cart-items");
     const emptyCartButton = document.getElementById("empty-cart");
     const cartQuantity = document.querySelector(".quantity");
     const cartTotal = document.getElementById("cart-total");
