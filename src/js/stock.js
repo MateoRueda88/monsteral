@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     const plantsContainer = document.getElementById("plants");
-    const cartContainer = document.getElementById("cart-items"); // Asegúrate de que esto selecciona el contenedor correcto
+    const cartContainer = document.getElementById("cart-items");
     const emptyCartButton = document.getElementById("empty-cart");
     const cartQuantity = document.querySelector(".quantity");
-    const cartTotal = document.querySelector(".total");
+    const cartTotal = document.getElementById("cart-total");
     const showCartButton = document.getElementById("verCarrito");
     const closeCartButton = document.getElementById("close-cart");
 //Lista productos
@@ -83,95 +83,95 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let carrito = [];
 
-// Función para actualizar la visualización del carrito
-function updateCartDisplay() {
-    cartContainer.innerHTML = '';
+    // Función para actualizar la visualización del carrito
+    function updateCartDisplay() {
+        cartContainer.innerHTML = '';
 
-    // Crear la fila de encabezado del carrito
-    const headerRow = document.createElement("li");
-    headerRow.innerHTML = `
-        <span>Imagen</span>
-        <span>Nombre</span>
-        <span>Precio</span>
-        <span>Cantidad</span>
-    `;
-    cartContainer.appendChild(headerRow);
-
-    // Mostrar los productos en el carrito
-    carrito.forEach(product => {
-        let cartItem = document.createElement("li");
-        cartItem.classList.add("cart-item");
-        cartItem.innerHTML = `
-            <span><img src="${product.img}" alt="${product.name}" class="cart-item-img"></span>
-            <span>${product.name}</span>
-            <span>$${product.price.toFixed(2)}</span>
-            <span>${product.quantity}</span>
+        // Crear la fila de encabezado del carrito
+        const headerRow = document.createElement("li");
+        headerRow.innerHTML = `
+            <span>Imagen</span>
+            <span>Nombre</span>
+            <span>Precio</span>
+            <span>Cantidad</span>
         `;
-        cartContainer.appendChild(cartItem);
-    });
+        cartContainer.appendChild(headerRow);
 
-    // Actualizar la cantidad total en el carrito
-    cartQuantity.innerText = carrito.reduce((total, item) => total + item.quantity, 0);
+        // Mostrar los productos en el carrito
+        carrito.forEach(product => {
+            let cartItem = document.createElement("li");
+            cartItem.classList.add("cart-item");
+            cartItem.innerHTML = `
+                <span><img src="${product.img}" alt="${product.name}" class="cart-item-img"></span>
+                <span>${product.name}</span>
+                <span>$${product.price.toFixed(2)}</span>
+                <span>${product.quantity}</span>
+            `;
+            cartContainer.appendChild(cartItem);
+        });
 
-    // Actualizar el total del carrito
-    cartTotal.innerText = `Total: $${carrito.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2)}`;
-}
+        // Actualizar la cantidad total en el carrito
+        cartQuantity.innerText = carrito.reduce((total, item) => total + item.quantity, 0);
 
-// Función para agregar un producto al carrito
-function addToCart(product) {
-    let existingItem = carrito.find(item => item.id === product.id);
+        // Actualizar el total del carrito
+        cartTotal.innerText = `Total: $${carrito.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2)}`;
+    }
 
-    if (existingItem) {
-        existingItem.quantity++;
-    } else {
-        carrito.push({
-            id: product.id,
-            img: product.img,
-            name: product.name,
-            price: product.price,
-            quantity: 1
+    // Función para agregar un producto al carrito
+    function addToCart(product) {
+        let existingItem = carrito.find(item => item.id === product.id);
+
+        if (existingItem) {
+            existingItem.quantity++;
+        } else {
+            carrito.push({
+                id: product.id,
+                img: product.img,
+                name: product.name,
+                price: product.price,
+                quantity: 1
+            });
+        }
+
+        // Actualizar la visualización del carrito
+        updateCartDisplay();
+    }
+
+    // Crear tarjetas de productos
+    function createProductCard(product) {
+        let content = document.createElement("div");
+        content.classList.add("plant-card");
+
+        content.innerHTML = `
+            <img src="${product.img}" alt="${product.name}" class="plantImg">
+            <h2>${product.name}</h2>
+            <p>Precio: $${product.price}</p>
+            <button class="add-to-cart">🪴 Agregar 🛒</button>
+        `;
+
+        plantsContainer.appendChild(content);
+
+        // Añadir evento para agregar al carrito
+        content.querySelector('.add-to-cart').addEventListener('click', () => {
+            addToCart(product);
         });
     }
 
-    // Actualizar la visualización del carrito
-    updateCartDisplay();
-}
+    // Crear tarjetas de productos
+    products.forEach(createProductCard);
 
-// Crear tarjetas de productos
-function createProductCard(product) {
-    let content = document.createElement("div");
-    content.classList.add("plant-card");
-
-    content.innerHTML = `
-        <img src="${product.img}" alt="${product.name}" class="plantImg">
-        <h2>${product.name}</h2>
-        <p>Precio: $${product.price}</p>
-        <button class="add-to-cart">🪴 Agregar 🛒</button>
-    `;
-
-    plantsContainer.appendChild(content);
-
-    // Añadir evento para agregar al carrito
-    content.querySelector('.add-to-cart').addEventListener('click', () => {
-        addToCart(product);
+    // Event listener para vaciar el carrito
+    emptyCartButton.addEventListener('click', () => {
+        carrito = [];
+        updateCartDisplay();
     });
-}
 
-// Crear tarjetas de productos
-products.forEach(createProductCard);
+    // Event listener para mostrar/ocultar el carrito
+    showCartButton.addEventListener('click', () => {
+        document.querySelector('.buy-card').classList.toggle('show');
+    });
 
-// Event listener para vaciar el carrito
-emptyCartButton.addEventListener('click', () => {
-    carrito = [];
-    updateCartDisplay();
-});
-
-// Event listener para mostrar/ocultar el carrito
-showCartButton.addEventListener('click', () => {
-    document.querySelector('.buy-card').classList.toggle('show');
-});
-
-closeCartButton.addEventListener('click', () => {
-    document.querySelector('.buy-card').classList.remove('show');
-});
+    closeCartButton.addEventListener('click', () => {
+        document.querySelector('.buy-card').classList.remove('show');
+    });
 });
