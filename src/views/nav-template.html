@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../public/css/mediaQueries/MQ-global.css" />
  
     </head>
+    <body> 
 
     <!-- content header -->
     <header class="header-content">
@@ -18,6 +19,7 @@
       <div class="badge text-bg-primary text-wrap" style="width: 100%;">
         Envios gratis por compras superiores a $200.000
       </div>
+
       <!-- menu navegacion -->
       <div class="info-header">
         <div class="menu-hamburguesa">
@@ -45,21 +47,29 @@
 
         <div class="icons-content">
 
-          <a href="register.html"><img class="icons" src="../public/img/user.webp" alt=" img user" /></a>
-              
-          <div id="products-container"></div>
+          <a href="register.html"><img class="icons" src="../public/img/user.webp" alt=" img user" /></a>   
+                   
           <div class="container-car" id="cart-container">
             <a href="#"><img class="icons" id="verCarrito" src="../public/img/car.webp" alt=" img car" /></a>  
+            <span class="quantity">0</span>
+           
             <nav>
               <i>
                 <div class="buy-card">
-                  <ul class="nav-card" id="cart-items">
+                  <h1>Carrito</h1>
+                  <ul class="navCard" id="cart-items">
                     <li>Imagen</li>
                     <li>Nombre</li>
                     <li>Precio</li>
                     <li>Cantidad</li>     
                   </ul>
-                  <button id="empty-cart">Vaciar Carrito</button>
+                    <div class="total">Total: $</div>
+
+                    <div class="checkout">
+                    <button id="empty-cart">Vaciar Carrito</button>
+                    <div class="close" id="close-cart">Cerrar</div> 
+                    </div>
+
                 </div>
               </i>
             </nav>
@@ -69,7 +79,9 @@
       </div>
     </div>
 
-    
+     <!-- Contenedor de productos -->
+     <div id="products-container" class="plant-container"></div>
+
 
       <!-- </div> -->
       <div class="content-search">
@@ -97,5 +109,5 @@
 
   
 
-    
+  </body> 
 </html>

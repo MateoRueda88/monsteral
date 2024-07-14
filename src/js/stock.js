@@ -1,6 +1,11 @@
-const plantsContainer = document.getElementById("plants");
-const cartContainer = document.getElementById("cart-items");
-
+document.addEventListener("DOMContentLoaded", function() {
+    const plantsContainer = document.getElementById("plants");
+    const cartContainer = document.getElementById("cart-items"); // Asegúrate de que esto selecciona el contenedor correcto
+    const emptyCartButton = document.getElementById("empty-cart");
+    const cartQuantity = document.querySelector(".quantity");
+    const cartTotal = document.querySelector(".total");
+    const showCartButton = document.getElementById("verCarrito");
+    const closeCartButton = document.getElementById("close-cart");
 //Lista productos
 
  let products = [ 
@@ -82,7 +87,7 @@ let carrito = [];
 function updateCartDisplay() {
     cartContainer.innerHTML = '';
 
-    // Crear la fila de encabezado
+    // Crear la fila de encabezado del carrito
     const headerRow = document.createElement("li");
     headerRow.innerHTML = `
         <span>Imagen</span>
@@ -92,7 +97,7 @@ function updateCartDisplay() {
     `;
     cartContainer.appendChild(headerRow);
 
-    // Iterar sobre los productos en el carrito y mostrarlos
+    // Mostrar los productos en el carrito
     carrito.forEach(product => {
         let cartItem = document.createElement("li");
         cartItem.classList.add("cart-item");
@@ -100,44 +105,55 @@ function updateCartDisplay() {
             <span><img src="${product.img}" alt="${product.name}" class="cart-item-img"></span>
             <span>${product.name}</span>
             <span>$${product.price.toFixed(2)}</span>
-            <span>1</span>
+            <span>${product.quantity}</span>
         `;
         cartContainer.appendChild(cartItem);
     });
+
+    // Actualizar la cantidad total en el carrito
+    cartQuantity.innerText = carrito.reduce((total, item) => total + item.quantity, 0);
+
+    // Actualizar el total del carrito
+    cartTotal.innerText = `Total: $${carrito.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2)}`;
 }
 
-// Función para crear tarjetas de productos
-function createProductCard(product) {
-    let content = document.createElement("div");
-    content.classList.add("plant-card");
+// Función para agregar un producto al carrito
+function addToCart(product) {
+    let existingItem = carrito.find(item => item.id === product.id);
 
-    let comprar = document.createElement("button");
-    comprar.className = "car";
-    comprar.innerHTML = '<img src="../public/img/greenCar.webp" alt="car" class="carImg">';
-
-    content.innerHTML = `
-        <img src="${product.img}" alt="${product.name}" class="plantImg">
-        <h2>${product.name}</h2>
-        <p>Precio: $${product.price}</p>
-    `;
-
-    // Agregar el botón al contenido
-    content.appendChild(comprar);
-    plantsContainer.appendChild(content);
-
-    // Añadir el event listener al botón para agregar al carrito
-    comprar.addEventListener('click', () => {
-        console.log(`Se añadió la planta: ${product.name} al carrito.`);
-
+    if (existingItem) {
+        existingItem.quantity++;
+    } else {
         carrito.push({
             id: product.id,
             img: product.img,
             name: product.name,
             price: product.price,
+            quantity: 1
         });
+    }
 
-        // Actualizar la visualización del carrito
-        updateCartDisplay();
+    // Actualizar la visualización del carrito
+    updateCartDisplay();
+}
+
+// Crear tarjetas de productos
+function createProductCard(product) {
+    let content = document.createElement("div");
+    content.classList.add("plant-card");
+
+    content.innerHTML = `
+        <img src="${product.img}" alt="${product.name}" class="plantImg">
+        <h2>${product.name}</h2>
+        <p>Precio: $${product.price}</p>
+        <button class="add-to-cart">🪴 Agregar 🛒</button>
+    `;
+
+    plantsContainer.appendChild(content);
+
+    // Añadir evento para agregar al carrito
+    content.querySelector('.add-to-cart').addEventListener('click', () => {
+        addToCart(product);
     });
 }
 
@@ -145,8 +161,17 @@ function createProductCard(product) {
 products.forEach(createProductCard);
 
 // Event listener para vaciar el carrito
-const emptyCartButton = document.getElementById("empty-cart");
 emptyCartButton.addEventListener('click', () => {
     carrito = [];
     updateCartDisplay();
+});
+
+// Event listener para mostrar/ocultar el carrito
+showCartButton.addEventListener('click', () => {
+    document.querySelector('.buy-card').classList.toggle('show');
+});
+
+closeCartButton.addEventListener('click', () => {
+    document.querySelector('.buy-card').classList.remove('show');
+});
 });
