@@ -317,19 +317,7 @@ gap:20px;
 .add-to-cart:hover {
   background-color: #45a049; /* Cambio de color de fondo al pasar el ratón */
 }
-.navCard li{
-  display: flex; /* Utiliza flexbox para organizar los elementos */
-  flex-wrap: wrap;
-  height: 40%;
-  color: #45a049;
-}
-.cartItems-img{
-  width: 100px;
-  height: 100px;
-  background-color: lightblue;
-  margin-top: 100%;
-  
-}
+
 /*Fin carrito superior*/
 
 .content-search {
