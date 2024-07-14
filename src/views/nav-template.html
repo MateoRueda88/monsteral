@@ -27,11 +27,27 @@
           <nav class="content-nav" id="nav">
             <button class="cerrar-nav" id="cerrar">X</button>
             <ul class="nav-list">
-              <li><a href="plants.html"   class="enlace-nav">Plantas</a></li>
-              <li><a href="news.html"     class="enlace-nav">Noticias</a></li>
-              <li><a href="learn.html"    class="enlace-nav">Talleres</a></li>
-              <li><a href="about.html"    class="enlace-nav" >Nosotros</a></li>
-              <li><a href="contact.html"  class="enlace-nav">Contactanos</a></li>    
+              <li class="link-principal">
+                <a href="plants.html"   class="enlace-nav">Plantas <img src="../public/img/arrow3.png" class="menu-arrow" alt="">
+                <input type="checkbox" class="drowpdown-check">
+                </a>
+                <div class="content-dropdown">
+                  <ul class="sub-menu-mobile">
+                    <li><a href="../views/bonsaiCategory.html">Bonsai</a></li>
+                    <li><a href="../views/exteriorCategory.html">Exterior</a></li>
+                    <li><a href="../views/interiorCategory.html">Interior</a></li>
+                    <li><a href="../views/medicinalCategory.html">Medicinal</a></li>
+                    <li><a href="../views/suculentasCategory.html">Suculentas</a></li>
+                    <li><a href="../views/polinizadorasCategory.html">Polinizadoras</a></li>
+                    <li><a href="../views/purificadorasCategory.html">Purificadoras</a></li>
+                  </ul>
+                </div>
+                
+              </li>
+              <li class="link-principal"><a href="news.html"     class="enlace-nav">Noticias</a></li>
+              <li class="link-principal"><a href="learn.html"    class="enlace-nav">Talleres</a></li>
+              <li class="link-principal"><a href="about.html"    class="enlace-nav" >Nosotros</a></li>
+              <li class="link-principal"><a href="contact.html"  class="enlace-nav">Contactanos</a></li>    
             </ul>
           </nav>
         </div>
@@ -91,7 +107,19 @@
       <div class="content-navigation">
         <nav class="content-nav-tablet" id="nav">
           <ul class="nav-list-tablet">
-            <li><a href="plants.html" class="enlace-nav">Plantas</a></li>
+            <li>
+              <a href="plants.html" class="enlace-nav">Plantas <img src="../public/img/arrow3.png" class="menu-arrow" alt=""></a>
+              
+              <ul class="sub-menu-table">
+                <li class="menu-inside"><a class="menu-link-inside" href="../views/bonsaiCategory.html">Bonsai</a></li>
+                <li class="menu-inside"><a class="menu-link-inside" href="../views/exteriorCategory.html">Exterior</a></li>
+                <li class="menu-inside"><a class="menu-link-inside" href="../views/interiorCategory.html">Interior</a></li>
+                <li class="menu-inside"><a class="menu-link-inside" href="../views/medicinalCategory.html">Medicinal</a></li>
+                <li class="menu-inside"><a class="menu-link-inside" href="../views/polinizadorasCategory.html">Polinizadoras</a></li>
+                <li class="menu-inside"><a class="menu-link-inside" href="../views/purificadorasCategory.html">Purificadoras</a></li>
+                <li class="menu-inside"><a class="menu-link-inside" href="../views/suculentasCategory.html">Suculentas</a></li>
+              </ul>
+            </li>
             <li><a href="news.html" class="enlace-nav">Noticias</a></li>
             <li><a href="learn.html" class="enlace-nav">Talleres</a></li>
             <li><a href="about.html" class="enlace-nav">Nosotros</a></li>
