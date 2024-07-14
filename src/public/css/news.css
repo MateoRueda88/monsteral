@@ -11,14 +11,19 @@ main{
 }
 .containerNews{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+    height: auto;
+    margin: 0 auto;
+    padding: 0 15px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    padding-top: 20px;
     gap: 20px;
     
 }
 
 .new-card {
-    width: 300px;
+    width: 90%;
     height: auto;
     display: flex;
     border-radius: 20px;
@@ -111,9 +116,10 @@ main{
     background-color: #523726;
     text-align: center;
     color: wheat;
-    margin-top: 8px;
+    margin-bottom: 15px;
     font-size: 1rem;
-    padding: 5px 0px 5px 0px;
+    padding: 8px 0px 8px 0px;
+    
 }
 
 .containerInput{
@@ -131,7 +137,7 @@ main{
 }
 
 .subs{
-    background: linear-gradient(to right, #005198,#00941b);
+    background: linear-gradient(to right, #2e1e03,#011e06);
     text-align: center;
     font-size: 1.3rem;
     margin: 5px;
@@ -152,8 +158,8 @@ main{
 }
 
 .input-form{
-    border-bottom: 2px solid #03250950;
-    background: linear-gradient(to right, #fef9f1, #edfcf892, #e6f5f129);
+    border-bottom: 2px solid #03250988;
+    background: linear-gradient(to right, #fef9f1, #edfcf8c1, #e6f5f129);
     color: #00170b;
     padding: 0px;
     width: 70%;
