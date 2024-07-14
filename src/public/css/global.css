@@ -214,7 +214,7 @@ gap:20px;
   position: relative;
 }
 
-.container-car nav i .navCard{
+.container-car nav .navCard{
   font-size: 19px;
   display: flex;
   justify-content: space-between;
@@ -225,7 +225,7 @@ gap:20px;
   font-style: normal;
 }
 /*vaciar*/
-.container-car nav i .buy-card > .checkout button{
+.container-car nav .buy-card > .checkout button{
   display: block;
   width: 90%;
   height: 70%;
@@ -239,13 +239,13 @@ gap:20px;
   color: #523726;
   font-size: 20px;
 }
-.container-car  nav i:hover .buy-card > .checkout button:hover{
+.container-car  nav .buy-card:hover > .checkout button:hover{
   border: solid 3px #523726;
   transition: all .4s;
   background-color: #939535;
 }
 /*close*/
-.container-car nav i .buy-card > .checkout .close{
+.container-car nav .buy-card > .checkout .close{
   display: block;
   width: 90%;
   height: 70%;
@@ -261,7 +261,7 @@ gap:20px;
   text-align: center;
   font-style: normal;
 }
-.container-car  nav i:hover .buy-card > .checkout .close:hover{
+.container-car  nav:hover .buy-card > .checkout .close:hover{
   border: solid 3px #523726;
   transition: all .4s;
   background-color: #939535;
@@ -317,7 +317,19 @@ gap:20px;
 .add-to-cart:hover {
   background-color: #45a049; /* Cambio de color de fondo al pasar el ratón */
 }
-
+.navCard li{
+  display: flex; /* Utiliza flexbox para organizar los elementos */
+  flex-wrap: wrap;
+  height: 40%;
+  color: #45a049;
+}
+.cartItems-img{
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin-top: 100%;
+  
+}
 /*Fin carrito superior*/
 
 .content-search {
