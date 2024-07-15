@@ -8,15 +8,6 @@ const cantidadCarrito = document.getElementById("cantidadCarrito");
 let products = [ 
 
     {
-<<<<<<< HEAD
-      id: 1,
-      name: "Lavanda",
-      price: 20000,
-      img: "../public/img/polinizadorasCategory/lavanda.webp",
-      description: "Planta aromática con flores púrpuras que atraen polinizadores.",
-      cantidad: 1,
-    },
-=======
         id: 1,
         name: "Lavanda",
         price: 20000,
@@ -25,127 +16,92 @@ let products = [
         img3: "../public/img/imgCategories/polinizadorasCategory/lavanda2.webp",
         img4: "../public/img/imgCategories/polinizadorasCategory/lavanda3.webp",
         img5: "../public/img/imgCategories/polinizadorasCategory/lavanda4.webp",
-        description: "Planta aromática con flores púrpuras que atraen polinizadores."
+        description: "Planta aromática con flores púrpuras que atraen polinizadores.",
+        cantidad: 1,
       },
->>>>>>> origin
     {
       id: 2,
       name:"Girasol",
       price: 18000,
-<<<<<<< HEAD
-      img: "../public/img/polinizadorasCategory/girasol.webp",
-      description: "Planta alta con flores amarillas grandes que atraen abejas.",
-      cantidad: 1,
-=======
       img: "../public/img/imgCategories/polinizadorasCategory/girasol1.webp",
       img2: "../public/img/imgCategories/polinizadorasCategory/girasol1.webp",
       img3:"../public/img/imgCategories/polinizadorasCategory/girasol2.webp",
       img4: "../public/img/imgCategories/polinizadorasCategory/girasol3.webp",
       img5: "../public/img/imgCategories/polinizadorasCategory/girasol4.webp",
-      description: "Planta alta con flores amarillas grandes que atraen abejas."
->>>>>>> origin
+      description: "Planta alta con flores amarillas grandes que atraen abejas.",
+      cantidad: 1,
     },
     {
         id: 3,
         name:"Rosa",
         price:25000,
-<<<<<<< HEAD
-        img:"../public/img/polinizadorasCategory/rosa.webp",
-        description: "Planta de flores hermosas y fragantes que atraen abejas.",
-        cantidad: 1,
-=======
         img:"../public/img/imgCategories/polinizadorasCategory/rosa1.webp",
         img2:"../public/img/imgCategories/polinizadorasCategory/rosa1.webp",
         img3:"../public/img/imgCategories/polinizadorasCategory/rosa2.webp",
         img4:"../public/img/imgCategories/polinizadorasCategory/rosa3.webp",
         img5:"../public/img/imgCategories/polinizadorasCategory/rosa4.webp",
-        description: "Planta de flores hermosas y fragantes que atraen abejas."
->>>>>>> origin
+        description: "Planta de flores hermosas y fragantes que atraen abejas.",
+        cantidad: 1,
     },
     {
         id: 4,
         name:"Salvia",
         price: 22000,
-<<<<<<< HEAD
-        img: "../public/img/polinizadorasCategory/salvia.webp",
-        description: "Planta con flores coloridas que atraen mariposas.",
-        cantidad: 1,
-=======
         img: "../public/img/imgCategories/polinizadorasCategory/salvia1.webp",
         img2: "../public/img/imgCategories/polinizadorasCategory/salvia1.webp",
         img3: "../public/img/imgCategories/polinizadorasCategory/salvia2.png",
         img4: "../public/img/imgCategories/polinizadorasCategory/salvia3.webp",
         img5: "../public/img/imgCategories/polinizadorasCategory/salvia4.webp",
-        description: "Planta con flores coloridas que atraen mariposas."
->>>>>>> origin
+        description: "Planta con flores coloridas que atraen mariposas.",
+        cantidad: 1,
     },
     {
         id: 5,
         name: "Margarita",
         price: 15000,
-<<<<<<< HEAD
-        img: "../public/img/polinizadorasCategory/margarita.webp",
-        description: "Planta con flores blancas y centro amarillo que atraen abejas.",
-        cantidad: 1,
-=======
         img: "../public/img/imgCategories/polinizadorasCategory/margarita1.webp",
         img2: "../public/img/imgCategories/polinizadorasCategory/margarita1.webp",
         img3: "../public/img/imgCategories/polinizadorasCategory/margarita2.webp",
         img4: "../public/img/imgCategories/polinizadorasCategory/margarita3.webp",
         img5: "../public/img/imgCategories/polinizadorasCategory/margarita4.webp",
-        description: "Planta con flores blancas y centro amarillo que atraen abejas."
->>>>>>> origin
+        description: "Planta con flores blancas y centro amarillo que atraen abejas.",
+        cantidad: 1,
     },
     {
         id: 6,
         name: "Buganvilla",
         price: 30000,
-<<<<<<< HEAD
-        img: "../public/img/polinizadorasCategory/buganvilla.webp",
-        description: "Planta trepadora con flores brillantes que atraen colibríes.",
-        cantidad: 1,
-=======
         img: "../public/img/imgCategories/polinizadorasCategory/buganvilla1.webp",
         img2: "../public/img/imgCategories/polinizadorasCategory/buganvilla1.webp",
         img3: "../public/img/imgCategories/polinizadorasCategory/buganvilla2.webp",
         img4: "../public/img/imgCategories/polinizadorasCategory/buganvilla3.webp",
         img5: "../public/img/imgCategories/polinizadorasCategory/buganvilla4.webp",
-        description: "Planta trepadora con flores brillantes que atraen colibríes."
->>>>>>> origin
+        description: "Planta trepadora con flores brillantes que atraen colibríes.",
+        cantidad: 1,
     },
     {
         id:7,
         name:"Hortensia",
         price: 28000,
-<<<<<<< HEAD
-        img: "../public/img/polinizadorasCategory/hortensia.webp",
-        description: "Planta con grandes racimos de flores que atraen abejas.",
-        cantidad: 1,
-=======
         img:  "../public/img/imgCategories/polinizadorasCategory/hortensia1.webp",
         img2:  "../public/img/imgCategories/polinizadorasCategory/hortensia1.webp",
         img3:  "../public/img/imgCategories/polinizadorasCategory/hortensia2.webp",
         img4:  "../public/img/imgCategories/polinizadorasCategory/hortensia3.webp",
         img5:  "../public/img/imgCategories/polinizadorasCategory/hortensia4.webp",
-        description: "Planta con grandes racimos de flores que atraen abejas."
->>>>>>> origin
+        description: "Planta con grandes racimos de flores que atraen abejas.",
+        cantidad: 1,
     },
     {
         id:8,
         name:"Manzanilla",
         price: 15000,
-<<<<<<< HEAD
-        img: "../public/img/polinizadorasCategory/manzanilla.webp",
-        description: "Planta con flores blancas usada para infusiones relajantes y que atraen abejas.",
-        cantidad: 1,
-=======
         img:  "../public/img/imgCategories/polinizadorasCategory/manzanilla1.webp",
         img2:  "../public/img/imgCategories/polinizadorasCategory/manzanilla1.webp",
         img3:  "../public/img/imgCategories/polinizadorasCategory/manzanilla2.webp",
         img4:  "../public/img/imgCategories/polinizadorasCategory/manzanilla3.webp",
         img5:  "../public/img/imgCategories/polinizadorasCategory/manzanilla4.webp",
-        description: "Planta con flores blancas usada para infusiones relajantes y que atraen abejas."
->>>>>>> origin
+        description: "Planta con flores blancas usada para infusiones relajantes y que atraen abejas.",
+        cantidad: 1,
     },
     {   
         id:9,

@@ -10,172 +10,121 @@ let products = [
       id: 1,
       name: "Lengua de suegra",
       price: 30000,
-<<<<<<< HEAD
-      img: "../public/img/purificadorasCategory/lenguaSuegra.webp",
-      description: "Planta resistente que purifica el aire.",
-      cantidad: 1,
-=======
       img: "../public/img/imgCategories/purifyingCategory/Lengua de suegra/1.webp",
       img2:"../public/img/imgCategories/purifyingCategory/Lengua de suegra/2.webp", 
       img3: "../public/img/imgCategories/purifyingCategory/Lengua de suegra/3.webp",
       img4:"../public/img/imgCategories/purifyingCategory/Lengua de suegra/4.webp",
       img5: "../public/img/imgCategories/purifyingCategory/Lengua de suegra/5.webp",
-      description: "Planta resistente que purifica el aire."
->>>>>>> origin
+      description: "Planta resistente que purifica el aire.",
+      cantidad: 1,
     },
     {
       id: 2,
       name:"Pothos",
       price: 25000,
-<<<<<<< HEAD
-      img: "../public/img/purificadorasCategory/pothos.webp",
-      description: "Planta colgante que elimina toxinas del aire.",
-      cantidad: 1,
-=======
       img: "../public/img/imgCategories/purifyingCategory/Pothos/1.webp",
       img2:"../public/img/imgCategories/purifyingCategory/Pothos/5.webp", 
       img3: "../public/img/imgCategories/purifyingCategory/Pothos/2.webp",
       img4:"../public/img/imgCategories/purifyingCategory/Pothos/3.webp",
       img5: "../public/img/imgCategories/purifyingCategory/Pothos/4.webp",
-
-      description: "Planta colgante que elimina toxinas del aire."
->>>>>>> origin
+      description: "Planta colgante que elimina toxinas del aire.",
+      cantidad: 1,
     },
     {
         id: 3,
         name:"Palma Areca",
         price:40000,
-<<<<<<< HEAD
-        img:"../public/img/purificadorasCategory/palmaAreca.webp",
-        description: "Planta elegante que mejora la calidad del aire.",
-        cantidad: 1,
-=======
         img:"../public/img/imgCategories/purifyingCategory/Palma areca/1.webp",
         img2:"../public/img/imgCategories/purifyingCategory/Palma areca/5.webp", 
         img3: "../public/img/imgCategories/purifyingCategory/Palma areca/2.webp",
         img4:"../public/img/imgCategories/purifyingCategory/Palma areca/3.webp",
         img5: "../public/img/imgCategories/purifyingCategory/Palma areca/4.webp",
-        description: "Planta elegante que mejora la calidad del aire."
->>>>>>> origin
+        description: "Planta elegante que mejora la calidad del aire.",
+        cantidad: 1,
     },
     {
         id: 4,
         name:"Helecho de Boston",
         price: 28000,
-<<<<<<< HEAD
-        img: "../public/img/purificadorasCategory/helechoBoston.webp",
-        description: "Planta frondosa que purifica el aire.",
-        cantidad: 1,
-=======
         img: "../public/img/imgCategories/purifyingCategory/Helecho/1.webp",
         img2:"../public/img/imgCategories/purifyingCategory/Helecho/5.webp", 
         img3: "../public/img/imgCategories/purifyingCategory/Helecho/2.webp",
         img4:"../public/img/imgCategories/purifyingCategory/Helecho/3.webp",
         img5: "../public/img/imgCategories/purifyingCategory/Helecho/4.webp",
-        description: "Planta frondosa que purifica el aire."
->>>>>>> origin
+        description: "Planta frondosa que purifica el aire.",
+        cantidad: 1,
     },
     {
         id: 5,
         name: "Lirio de paz",
         price: 35000,
-<<<<<<< HEAD
-        img: "../public/img/purificadorasCategory/lirioPaz.webp",
-        description: "Planta con flores blancas que limpia el aire.",
-        cantidad: 1,
-=======
         img: "../public/img/imgCategories/purifyingCategory/Lirio de paz/1.webp",
         img2:"../public/img/imgCategories/purifyingCategory/Lirio de paz/5.webp", 
         img3: "../public/img/imgCategories/purifyingCategory/Lirio de paz/2.webp",
         img4:"../public/img/imgCategories/purifyingCategory/Lirio de paz/3.webp",
         img5: "../public/img/imgCategories/purifyingCategory/Lirio de paz/4.webp",
-        description: "Planta con flores blancas que limpia el aire."
->>>>>>> origin
+        description: "Planta con flores blancas que limpia el aire.",
+        cantidad: 1,
     },
     {
         id: 6,
         name: "Ficus Elástica",
         price: 42000,
-<<<<<<< HEAD
-        img: "../public/img/purificadorasCategory/ficusElastica.webp",
-        description: "Planta de hojas grandes que purifica el aire.",
-        cantidad: 1,
-=======
         img: "../public/img/imgCategories/purifyingCategory/Ficus elastica/1.webp",
         img2:"../public/img/imgCategories/purifyingCategory/Ficus elastica/5.webp", 
         img3: "../public/img/imgCategories/purifyingCategory/Ficus elastica/2.webp",
         img4:"../public/img/imgCategories/purifyingCategory/Ficus elastica/3.webp",
         img5: "../public/img/imgCategories/purifyingCategory/Ficus elastica/4.webp",
-        description: "Planta de hojas grandes que purifica el aire."
->>>>>>> origin
+        description: "Planta de hojas grandes que purifica el aire.",
+        cantidad: 1,
     },
     {
         id:7,
         name:"Palma de bambú",
         price: 39000,
-<<<<<<< HEAD
-        img: "../public/img/purificadorasCategory/palmaBambu.webp",
-        description: "Planta que elimina toxinas del aire.",
-        cantidad: 1,
-=======
         img: "../public/img/imgCategories/purifyingCategory/Palma bambú/1.webp",
         img2:"../public/img/imgCategories/purifyingCategory/Palma bambú/5.webp", 
         img3: "../public/img/imgCategories/purifyingCategory/Palma bambú/2.webp",
         img4:"../public/img/imgCategories/purifyingCategory/Palma bambú/3.webp",
         img5: "../public/img/imgCategories/purifyingCategory/Palma bambú/4.webp",
-        description: "Planta que elimina toxinas del aire."
->>>>>>> origin
+        description: "Planta que elimina toxinas del aire.",
+        cantidad: 1,
     },
     {
         id:8,
         name:"Dracena",
         price: 32000,
-<<<<<<< HEAD
-        img: "../public/img/purificadorasCategory/dracena.webp",
-        description: "Planta que mejora la calidad del aire.",
-        cantidad: 1,
-=======
         img: "../public/img/imgCategories/purifyingCategory/Dracena/1.webp",
         img2:"../public/img/imgCategories/purifyingCategory/Dracena/5.webp", 
         img3: "../public/img/imgCategories/purifyingCategory/Dracena/2.webp",
         img4:"../public/img/imgCategories/purifyingCategory/Dracena/3.webp",
         img5: "../public/img/imgCategories/purifyingCategory/Dracena/4.webp",
-        description: "Planta que mejora la calidad del aire."
->>>>>>> origin
+        description: "Planta que mejora la calidad del aire.",
+        cantidad: 1,
     },
     {   
         id:9,
         name:"Aloe Vera",
         price:25000,
-<<<<<<< HEAD
-        img:"../public/img/purificadorasCategory/aloeVera.webp",
-        description: "Planta suculenta que purifica el aire y trata heridas.",
-        cantidad: 1,
-=======
         img:"../public/img/imgCategories/purifyingCategory/Aloe vera/1.webp",
         img2:"../public/img/imgCategories/purifyingCategory/Aloe vera/5.webp", 
         img3: "../public/img/imgCategories/purifyingCategory/Aloe vera/2.webp",
         img4:"../public/img/imgCategories/purifyingCategory/Aloe vera/3.webp",
         img5: "../public/img/imgCategories/purifyingCategory/Aloe vera/4.webp",
-        description: "Planta suculenta que purifica el aire y trata heridas."
->>>>>>> origin
+        description: "Planta suculenta que purifica el aire y trata heridas.",
+        cantidad: 1,
     }, 
     {   
         id:10,
         name: "Filodendro",
         price: 27000,
-<<<<<<< HEAD
-        img:"../public/img/purificadorasCategory/filodendro.webp",
-        description: "Planta de interior que limpia el aire.",
-        cantidad: 1,
-=======
         img:"../public/img/imgCategories/purifyingCategory/Filodendro/1.webp",
         img2:"../public/img/imgCategories/purifyingCategory/Filodendro/5.webp", 
         img3: "../public/img/imgCategories/purifyingCategory/Filodendro/2.webp",
         img4:"../public/img/imgCategories/purifyingCategory/Filodendro/3.webp",
         img5: "../public/img/imgCategories/purifyingCategory/Filodendro/4.webp",
-        description: "Planta de interior que limpia el aire." 
->>>>>>> origin
+        description: "Planta de interior que limpia el aire.",
+        cantidad: 1,
     }
 ]
 

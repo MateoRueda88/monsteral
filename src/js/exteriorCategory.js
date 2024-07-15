@@ -10,22 +10,13 @@ let products = [
       id: 1,
       name: "Rosa",
       price: 45000,
-<<<<<<< HEAD
-      img:"../public/img/imgCategories/exteriorCategory/rosa.webp",
-      img2:"../public/img/imgCategories/exteriorCategory/rosa.webp", 
-      img3: "../public/img/imgCategories/exteriorCategory/rosa.JPG",
-      img4:"../public/img/imgCategories/exteriorCategory/rosa.webp",
-      img5: "../public/img/imgCategories/exteriorCategory/rosa.webp",
-      description: "Planta de flores hermosas y fragantes.",
-      cantidad: 1,
-=======
       img:"../public/img/imgCategories/exteriorCategory/rosa1.webp",
       img2:"../public/img/imgCategories/exteriorCategory/rosa1.webp", 
       img3: "../public/img/imgCategories/exteriorCategory/rosa2.webp",
       img4:"../public/img/imgCategories/exteriorCategory/rosa3.webp",
       img5: "../public/img/imgCategories/exteriorCategory/rosa4.webp",
-      description: "Planta de flores hermosas y fragantes."
->>>>>>> origin
+      description: "Planta de flores hermosas y fragantes.",
+      cantidad: 1,
     },
     {
       id: 2,
@@ -43,171 +34,99 @@ let products = [
         id: 3,
         name:"Lavanda",
         price:30000,
-<<<<<<< HEAD
-        img:"../public/img/imgCategories/exteriorCategory/lavanda.webp",
-        img2:"../public/img/imgCategories/exteriorCategory/lavanda.webp", 
-        img3: "../public/img/imgCategories/exteriorCategory/lavanda.JPG",
-        img4:"../public/img/imgCategories/exteriorCategory/lavanda.webp",
-        img5: "../public/img/imgCategories/exteriorCategory/lavanda.webp",
-        description: "Planta aromartica con flores purpuras.",
-        cantidad: 1,
-=======
         img:"../public/img/imgCategories/exteriorCategory/lavanda1.webp",
         img2:"../public/img/imgCategories/exteriorCategory/lavanda2.webp", 
         img3: "../public/img/imgCategories/exteriorCategory/lavanda3.webp",
         img4:"../public/img/imgCategories/exteriorCategory/lavanda4.webp",
         img5: "../public/img/imgCategories/exteriorCategory/lavanda1.webp",
-        description: "Planta aromartica con flores purpuras."
->>>>>>> origin
+        description: "Planta aromartica con flores purpuras.",
+        cantidad: 1,
     },
     {
         id: 4,
         name:"Jazmín",
         price: 50000,
-<<<<<<< HEAD
-        img:"../public/img/imgCategories/exteriorCategory/jazmín.webp",
-        img2:"../public/img/imgCategories/exteriorCategory/jazmín.webp", 
-        img3: "../public/img/imgCategories/exteriorCategory/jazmín.JPG",
-        img4:"../public/img/imgCategories/exteriorCategory/jazmín.webp",
-        img5: "../public/img/imgCategories/exteriorCategory/jazmín.webp",
-        description: "Planta trepadora con flores fragantes.",
-        cantidad: 1,
-=======
         img:"../public/img/imgCategories/exteriorCategory/jazmín1.webp",
         img2:"../public/img/imgCategories/exteriorCategory/jazmín1.webp", 
         img3: "../public/img/imgCategories/exteriorCategory/jazmín2.webp",
         img4:"../public/img/imgCategories/exteriorCategory/jazmín3.webp",
         img5: "../public/img/imgCategories/exteriorCategory/jazmín4.webp",
-        description: "Planta trepadora con flores fragantes."
->>>>>>> origin
+        description: "Planta trepadora con flores fragantes.",
+        cantidad: 1,
     },
     {
         id: 5,
         name: "Geranio",
         price: 35000,
-<<<<<<< HEAD
-        img:"../public/img/imgCategories/exteriorCategory/geranio.webp",
-        img2:"../public/img/imgCategories/exteriorCategory/geranio.webp", 
-        img3: "../public/img/imgCategories/exteriorCategory/geranio.JPG",
-        img4:"../public/img/imgCategories/exteriorCategory/geranio.webp",
-        img5: "../public/img/imgCategories/exteriorCategory/geranio.webp",
-        description: "Planta de flores coloridas y duraderas.",
-        cantidad: 1,
-=======
         img:"../public/img/imgCategories/exteriorCategory/geranio1.webp",
         img2:"../public/img/imgCategories/exteriorCategory/geranio2.webp", 
         img3: "../public/img/imgCategories/exteriorCategory/geranio1.webp",
         img4:"../public/img/imgCategories/exteriorCategory/geranio3.webp",
         img5: "../public/img/imgCategories/exteriorCategory/geranio4.webp",
-        description: "Planta de flores coloridas y duraderas."
->>>>>>> origin
+        description: "Planta de flores coloridas y duraderas.",
+        cantidad: 1,
     },
     {
         id: 6,
         name: "Buganvilla",
         price: 55000,
-<<<<<<< HEAD
-        img:"../public/img/imgCategories/exteriorCategory/buganvilla.webp",
-        img2:"../public/img/imgCategories/exteriorCategory/buganvilla.webp", 
-        img3: "../public/img/imgCategories/exteriorCategory/buganvilla.JPG",
-        img4:"../public/img/imgCategories/exteriorCategory/buganvilla.webp",
-        img5: "../public/img/imgCategories/exteriorCategory/buganvilla.webp",
-        description: "Planta trepadora con flores brillantes.",
-        cantidad: 1,
-=======
         img:"../public/img/imgCategories/exteriorCategory/buganvilla1.webp",
         img2:"../public/img/imgCategories/exteriorCategory/buganvilla1.webp", 
         img3: "../public/img/imgCategories/exteriorCategory/buganvilla2.webp",
         img4:"../public/img/imgCategories/exteriorCategory/buganvilla3.webp",
         img5: "../public/img/imgCategories/exteriorCategory/buganvilla4.webp",
-        description: "Planta trepadora con flores brillantes."
->>>>>>> origin
+        description: "Planta trepadora con flores brillantes.",
+        cantidad: 1,
     },
     {
         id:7,
         name:"Girasol",
         price: 20000,
-<<<<<<< HEAD
-        img:"../public/img/imgCategories/exteriorCategory/girasol.webp",
-        img2:"../public/img/imgCategories/exteriorCategory/girasol.webp", 
-        img3: "../public/img/imgCategories/exteriorCategory/girasol.JPG",
-        img4:"../public/img/imgCategories/exteriorCategory/girasol.webp",
-        img5: "../public/img/imgCategories/exteriorCategory/girasol.webp",
-        description: "Planta alta con flores amarillas grandes.",
-        cantidad: 1,
-=======
         img:"../public/img/imgCategories/exteriorCategory/girasol1.webp",
         img2:"../public/img/imgCategories/exteriorCategory/girasol1.webp", 
         img3: "../public/img/imgCategories/exteriorCategory/girasol2.webp",
         img4:"../public/img/imgCategories/exteriorCategory/girasol3.webp",
         img5: "../public/img/imgCategories/exteriorCategory/girasol4.webp",
-        description: "Planta alta con flores amarillas grandes."
->>>>>>> origin
+        description: "Planta alta con flores amarillas grandes.",
+        cantidad: 1,
     },
     {
         id:8,
         name:"Margarita",
         price: 25000,
-<<<<<<< HEAD
-        img:"../public/img/imgCategories/exteriorCategory/margarita.webp",
-        img2:"../public/img/imgCategories/exteriorCategory/margarita.webp", 
-        img3: "../public/img/imgCategories/exteriorCategory/margarita.JPG",
-        img4:"../public/img/imgCategories/exteriorCategory/margarita.webp",
-        img5: "../public/img/imgCategories/exteriorCategory/margarita.webp",
-        description: "Planta con flores blancas y centro amarillo.",
-        cantidad: 1,
-=======
         img:"../public/img/imgCategories/exteriorCategory/margarita1.webp",
         img2:"../public/img/imgCategories/exteriorCategory/margarita2.webp", 
         img3: "../public/img/imgCategories/exteriorCategory/margarita1.webp",
         img4:"../public/img/imgCategories/exteriorCategory/margarita3.webp",
         img5: "../public/img/imgCategories/exteriorCategory/margarita4.webp",
-        description: "Planta con flores blancas y centro amarillo."
->>>>>>> origin
+        description: "Planta con flores blancas y centro amarillo.",
+        cantidad: 1,
     },
     {   
         id:9,
         name:"Crisantemo",
         price:40000,
-<<<<<<< HEAD
-        img:"../public/img/imgCategories/exteriorCategory/crisantemo.webp",
-        img2:"../public/img/imgCategories/exteriorCategory/crisantemo.webp", 
-        img3: "../public/img/imgCategories/exteriorCategory/crisantemo.JPG",
-        img4:"../public/img/imgCategories/exteriorCategory/crisantemo.webp",
-        img5: "../public/img/imgCategories/exteriorCategory/crisantemo.webp",
-        description: "Planta con una gran variedad de flores.",
-        cantidad: 1,
-=======
         img:"../public/img/imgCategories/exteriorCategory/crisantemo1.webp",
         img2:"../public/img/imgCategories/exteriorCategory/crisantemo1.webp", 
         img3: "../public/img/imgCategories/exteriorCategory/crisantemo2.webp",
         img4:"../public/img/imgCategories/exteriorCategory/crisantemo3.webp",
         img5: "../public/img/imgCategories/exteriorCategory/crisantemo4.webp",
-        description: "Planta con una gran variedad de flores."
->>>>>>> origin
+        description: "Planta con una gran variedad de flores.",
+        cantidad: 1,
     }, 
     {   
         id:10,
         name: "Azalea",
         price: 45000,
-<<<<<<< HEAD
-        img:"../public/img/imgCategories/exteriorCategory/azalea.webp",
-        img2:"../public/img/imgCategories/exteriorCategory/azalea.webp", 
-        img3: "../public/img/imgCategories/exteriorCategory/azalea.JPG",
-        img4:"../public/img/imgCategories/exteriorCategory/azalea.webp",
-        img5: "../public/img/imgCategories/exteriorCategory/azalea.webp",
-        description: "Planta de arbusto con flores brillantes.",
-        cantidad: 1,
-=======
         img:"../public/img/imgCategories/exteriorCategory/azalea1.webp",
         img2:"../public/img/imgCategories/exteriorCategory/azalea2.webp", 
         img3: "../public/img/imgCategories/exteriorCategory/azalea3.webp",
         img4:"../public/img/imgCategories/exteriorCategory/azalea4.webp",
         img5: "../public/img/imgCategories/exteriorCategory/azalea1.webp",
-        description: "Planta de arbusto con flores brillantes." 
->>>>>>> origin
+        description: "Planta de arbusto con flores brillantes.",
+        cantidad: 1, 
     }
-]
+];
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 let extCategoryHTML = '';
