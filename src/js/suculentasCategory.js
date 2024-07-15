@@ -8,8 +8,8 @@ let products = [
       img:"../public/img/imgCategories/suculentasCategory/echeveria.webp",
       img2:"../public/img/imgCategories/suculentasCategory/echeveria.webp", 
       img3: "../public/img/imgCategories/suculentasCategory/todaEcheveria.JPG",
-      img4:"../public/img/imgCategories/suculentasCategory/arribaEcheveria.webp",
-      img5: "../public/img/imgCategories/suculentasCategory/usoEcheveria.webp",
+      img4:"../public/img/imgCategories/suculentasCategory/usoEcheveria.jpg",
+      img5: "../public/img/imgCategories/suculentasCategory/arribaEcheveria.webp",
       description: "Planta suculenta con hojas carnosas en forma de roseta."
     },
     {
@@ -93,11 +93,11 @@ let products = [
         id:9,
         name:"Sempervivum",
         price:16000,
-        img:"../public/img/imgCategories/suculentasCategory/sempervivum.webp",
-        img2:"../public/img/imgCategories/suculentasCategory/sempervivum.webp", 
-        img3: "../public/img/imgCategories/suculentasCategory/sempervivum.webp",
-        img4:"../public/img/imgCategories/suculentasCategory/sempervivum.webp",
-        img5: "../public/img/imgCategories/suculentasCategory/sempervivum.webp",
+        img:"../public/img/imgCategories/suculentasCategory/sempervivum1.webp",
+        img2:"../public/img/imgCategories/suculentasCategory/sempervivum2.webp", 
+        img3: "../public/img/imgCategories/suculentasCategory/sempervivum3.webp",
+        img4:"../public/img/imgCategories/suculentasCategory/sempervivum2.webp",
+        img5: "../public/img/imgCategories/suculentasCategory/sempervivum1.webp",
         description: "Planta suculenta con rosetas de hojas compactas."
     }, 
     {   
