@@ -154,7 +154,7 @@ height: 250px;
   
     .valuesContainer {
       height: auto;
-    border-top: 5px solid;
+    border-top: 5px solid  #5D5F10;
     border-color: #5D5F10;
     display: grid;
     place-items: center;
