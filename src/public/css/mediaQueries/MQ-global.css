@@ -188,7 +188,10 @@
 }
 /*Fin carrito superior*/
 
+<<<<<<< HEAD
   /* estilos footer */
+=======
+>>>>>>> bc4d8188b17b8bfbba1e032d9a764780b7fbab55
   .logo-footer img {
     width: 100px;
   }
@@ -239,6 +242,10 @@
     padding: 11px;
     border-radius: 40px;
   }
+  
+ footer{
+  width: 100%;
+ }
 
 }
 
