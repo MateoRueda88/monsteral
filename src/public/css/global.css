@@ -210,6 +210,7 @@ Contenido logo */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 20px;
 }
 .content-logo img {
   width: 110px;
