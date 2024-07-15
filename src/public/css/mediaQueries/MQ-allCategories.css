@@ -6,6 +6,12 @@
         grid-template-columns: repeat(2,1fr);
         /* margin-top: 105px; */
     }
+
+    .p{
+        font-size: 1.4rem;
+        padding: 5px;
+    }
+
     .plant-card {
         width: 300px;
     }
