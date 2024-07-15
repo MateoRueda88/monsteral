@@ -31,16 +31,6 @@
     opacity: 1 !important;
 }
 /* fin galeria imagenes */
-
-.goBack{
-    color: black;
-    position: absolute;
-    font-size: 23px;
-    padding: 5px 17px;
-}
-.goBack:hover{
-    color: #BC8150;
-}
 .containerPlants{
     width: 100%;
     display: grid;
@@ -50,7 +40,7 @@
 }
 
 .plant-card {
-    width: 400px;
+    width: 350px;
     height: auto;
     display: flex;
     flex-direction: column;
