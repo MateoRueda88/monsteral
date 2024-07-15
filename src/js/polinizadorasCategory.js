@@ -107,16 +107,24 @@ let products = [
         id:9,
         name:"Geranio",
         price:17000,
-        img:"../public/img/polinizadorasCategory/geranio.webp",
-        description: "Planta de flores coloridas y duraderas que atraen abejas.",
-        cantidad: 1,
+        img:"../public/img/imgCategories/polinizadorasCategory/geranio1.webp",
+        img2:  "../public/img/imgCategories/polinizadorasCategory/geranio1.webp",
+        img3:  "../public/img/imgCategories/polinizadorasCategory/geranio2.webp",
+        img4:  "../public/img/imgCategories/polinizadorasCategory/geranio3.webp",
+        img5:  "../public/img/imgCategories/polinizadorasCategory/geranio4.webp",
+        description: "Planta de flores coloridas y duraderas que atraen abejas."
+     
     }, 
     {   
         id:10,
         name: "Jazmín",
         price: 22000,
-        img:"../public/img/polinizadorasCategory/jazmin.webp",
-        description: "Planta trepadora con flores fragantes que atraen mariposas.",
+        img:"../public/img/imgCategories/polinizadorasCategory/jazmin1.webp",
+        img2:  "../public/img/imgCategories/polinizadorasCategory/jazmin1.webp",
+        img3:  "../public/img/imgCategories/polinizadorasCategory/jazmin2.webp",
+        img4:  "../public/img/imgCategories/polinizadorasCategory/jazmin3.webp",
+        img5:  "../public/img/imgCategories/polinizadorasCategory/jazmin4.webp",
+        description: "Planta trepadora con flores fragantes que atraen mariposas.", 
         cantidad: 1,
     }
 ]
