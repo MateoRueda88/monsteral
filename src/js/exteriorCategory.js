@@ -149,6 +149,7 @@ products.forEach((product) => {
             </div>
             <h2>${product.name}</h2>
             <p>Precio: $${product.price}</p>
+            <p>${product.description}</p>
             <p>Cantidad: ${product.cantidad}</p>
             <button class="comprar" data-id="${product.id}">Agregar</button>  
         </div>

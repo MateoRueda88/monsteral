@@ -62,6 +62,7 @@
     max-width: 400px;
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .plant-card h2 {
@@ -71,10 +72,11 @@
     text-align: center;
 }
 
-.plant-card p {
+.plant-card p{
     margin-bottom: 3px;
-    color: black;
-    font-size: 0.8rem;
+    color: #523726;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 /*boton imagenes*/
 .plant-card button{
@@ -169,6 +171,11 @@
     color: #939535;
     font-size: 35px;
   }
+  .icons-content{
+    display: flex;
+    align-items: center;
+  }
+  
   .cantidadCarrito{
     background-color: #939535;
     width: 25px;
@@ -181,6 +188,7 @@
     top: 50px;
     position: absolute;
     display: none;
+    margin-right: -43px; /* Espacio entre el icono del carrito y el span */
   }
   .modal-content, h3, p{
     font-size: 20px;
@@ -192,12 +200,6 @@
     cursor: pointer;
     color: #939535;
     font-size: 35px;
-  }
-  h1{
-    color: #BC8150;
-    text-align: center;
-    margin-top: 5%;
-
   }
   /*Fin carrito superior*/
   
