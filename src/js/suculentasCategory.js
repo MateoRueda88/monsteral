@@ -126,7 +126,7 @@ let products = [
         description: "Planta suculenta con hojas gruesas y redondeada.",
         cantidad: 1,
     }
-]
+];
 
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
