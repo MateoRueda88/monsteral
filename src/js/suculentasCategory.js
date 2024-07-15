@@ -13,10 +13,16 @@ let products = [
       img:"../public/img/imgCategories/suculentasCategory/echeveria.webp",
       img2:"../public/img/imgCategories/suculentasCategory/echeveria.webp", 
       img3: "../public/img/imgCategories/suculentasCategory/todaEcheveria.JPG",
+<<<<<<< HEAD
       img4:"../public/img/imgCategories/suculentasCategory/arribaEcheveria.webp",
       img5: "../public/img/imgCategories/suculentasCategory/echeveria.webp",
       description: "Planta suculenta con hojas carnosas en forma de roseta.",
       cantidad: 1,
+=======
+      img4:"../public/img/imgCategories/suculentasCategory/usoEcheveria.jpg",
+      img5: "../public/img/imgCategories/suculentasCategory/arribaEcheveria.webp",
+      description: "Planta suculenta con hojas carnosas en forma de roseta."
+>>>>>>> origin
     },
     {
       id: 2,
@@ -24,20 +30,27 @@ let products = [
       price: 12000,
       img:"../public/img/imgCategories/suculentasCategory/sedum.webp",
       img2:"../public/img/imgCategories/suculentasCategory/sedum.webp", 
+<<<<<<< HEAD
       img3: "../public/img/imgCategories/suculentasCategory/sedum.webp",
       img4:"../public/img/imgCategories/suculentasCategory/sedum.webp",
       img5: "../public/img/imgCategories/suculentasCategory/sedum.webp",
       description: "Planta suculenta con pequeñas hojas sedum.",
       cantidad: 1,
+=======
+      img3: "../public/img/imgCategories/suculentasCategory/arribaSedum.webp",
+      img4:"../public/img/imgCategories/suculentasCategory/generalSedum.webp",
+      img5: "../public/img/imgCategories/suculentasCategory/usoSedum.webp",
+      description: "Planta suculenta con pequeñas hojas sedum."
+>>>>>>> origin
     },
     {
         id: 3,
         name:"Aloe Vera",
         price:25000,
         img:"../public/img/imgCategories/suculentasCategory/aloeVera.webp",
-        img2:"../public/img/imgCategories/suculentasCategory/aloeVera.webp", 
-        img3: "../public/img/imgCategories/suculentasCategory/aloeVera.webp",
-        img4:"../public/img/imgCategories/suculentasCategory/aloeVera.webp",
+        img2:"../public/img/imgCategories/suculentasCategory/aloeVera2.webp", 
+        img3: "../public/img/imgCategories/suculentasCategory/aloeVera4.webp",
+        img4:"../public/img/imgCategories/suculentasCategory/aloeVera3.webp",
         img5: "../public/img/imgCategories/suculentasCategory/aloeVera.webp",
         description: "Planta suculenta utilizada para tratar quemaduras y heridas.",
         cantidad: 1,
@@ -48,20 +61,27 @@ let products = [
         price: 18000,
         img:"../public/img/imgCategories/suculentasCategory/haworthia.webp",
         img2:"../public/img/imgCategories/suculentasCategory/haworthia.webp", 
+<<<<<<< HEAD
         img3: "../public/img/imgCategories/suculentasCategory/haworthia.webp",
         img4:"../public/img/imgCategories/suculentasCategory/haworthia.webp",
         img5: "../public/img/imgCategories/suculentasCategory/haworthia.webp",
         description: "Planta suculenta con hojas verdes y puntiagudas.",
         cantidad: 1,
+=======
+        img3: "../public/img/imgCategories/suculentasCategory/haworthia2.webp",
+        img4:"../public/img/imgCategories/suculentasCategory/haworthia3.webp",
+        img5: "../public/img/imgCategories/suculentasCategory/haworthia4.webp",
+        description: "Planta suculenta con hojas verdes y puntiagudas."
+>>>>>>> origin
     },
     {
         id: 5,
         name: "Crassula",
         price: 20000,
         img:"../public/img/imgCategories/suculentasCategory/crassula.webp",
-        img2:"../public/img/imgCategories/suculentasCategory/crassula.webp", 
-        img3: "../public/img/imgCategories/suculentasCategory/crassula.webp",
-        img4:"../public/img/imgCategories/suculentasCategory/crassula.webp",
+        img2:"../public/img/imgCategories/suculentasCategory/crassula2.webp", 
+        img3: "../public/img/imgCategories/suculentasCategory/crassula3.webp",
+        img4:"../public/img/imgCategories/suculentasCategory/crassula4.webp",
         img5: "../public/img/imgCategories/suculentasCategory/crassula.webp",
         description: "Planta suculenta con hojas gruesas y brillantes.",
         cantidad: 1,
@@ -71,21 +91,27 @@ let products = [
         name: "Kalanchoe",
         price: 22000,
         img:"../public/img/imgCategories/suculentasCategory/kalanchoe.webp",
-        img2:"../public/img/imgCategories/suculentasCategory/kalanchoe.webp", 
+        img2:"../public/img/imgCategories/suculentasCategory/kalanchoe2.webp", 
         img3: "../public/img/imgCategories/suculentasCategory/kalanchoe.webp",
+<<<<<<< HEAD
         img4:"../public/img/imgCategories/suculentasCategory/kalanchoe.webp",
         img5: "../public/img/imgCategories/suculentasCategory/kalanchoe.webp",
         description: "Planta suculenta con flores pequeñas y coloridas.",
         cantidad: 1,
+=======
+        img4:"../public/img/imgCategories/suculentasCategory/kalanchoe3.webp",
+        img5: "../public/img/imgCategories/suculentasCategory/kalanchoe4.webp",
+        description: "Planta suculenta con flores pequeñas y coloridas."
+>>>>>>> origin
     },
     {
         id:7,
         name:"Graptopetalum",
         price: 17000,
         img:"../public/img/imgCategories/suculentasCategory/graptopetalum.webp",
-        img2:"../public/img/imgCategories/suculentasCategory/graptopetalum.webp", 
-        img3: "../public/img/imgCategories/suculentasCategory/graptopetalum.webp",
-        img4:"../public/img/imgCategories/suculentasCategory/graptopetalum.webp",
+        img2:"../public/img/imgCategories/suculentasCategory/graptopetalum2.webp", 
+        img3: "../public/img/imgCategories/suculentasCategory/graptopetalum3.webp",
+        img4:"../public/img/imgCategories/suculentasCategory/graptopetalum4.webp",
         img5: "../public/img/imgCategories/suculentasCategory/graptopetalum.webp",
         description: "Planta suculenta con hojas en forma de estrella.",
         cantidad: 1,
@@ -96,16 +122,24 @@ let products = [
         price: 30000,
         img:"../public/img/imgCategories/suculentasCategory/agave.webp",
         img2:"../public/img/imgCategories/suculentasCategory/agave.webp", 
+<<<<<<< HEAD
         img3: "../public/img/imgCategories/suculentasCategory/agave.webp",
         img4:"../public/img/imgCategories/suculentasCategory/agave.webp",
         img5: "../public/img/imgCategories/suculentasCategory/agave.webp",
         description: "Planta suculenta con hojas largas y puntiagudas.",
         cantidad: 1,
+=======
+        img3: "../public/img/imgCategories/suculentasCategory/agave2.webp",
+        img4:"../public/img/imgCategories/suculentasCategory/agave3.webp",
+        img5: "../public/img/imgCategories/suculentasCategory/agave4.webp",
+        description: "Planta suculenta con hojas largas y puntiagudas."
+>>>>>>> origin
     },
     {   
         id:9,
         name:"Sempervivum",
         price:16000,
+<<<<<<< HEAD
         img:"../public/img/imgCategories/suculentasCategory/sempervivum.webp",
         img2:"../public/img/imgCategories/suculentasCategory/sempervivum.webp", 
         img3: "../public/img/imgCategories/suculentasCategory/sempervivum.webp",
@@ -113,15 +147,23 @@ let products = [
         img5: "../public/img/imgCategories/suculentasCategory/sempervivum.webp",
         description: "Planta suculenta con rosetas de hojas compactas.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/suculentasCategory/sempervivum1.webp",
+        img2:"../public/img/imgCategories/suculentasCategory/sempervivum2.webp", 
+        img3: "../public/img/imgCategories/suculentasCategory/sempervivum3.webp",
+        img4:"../public/img/imgCategories/suculentasCategory/sempervivum2.webp",
+        img5: "../public/img/imgCategories/suculentasCategory/sempervivum1.webp",
+        description: "Planta suculenta con rosetas de hojas compactas."
+>>>>>>> origin
     }, 
     {   
         id:10,
         name: "Pachyphytum",
         price: 19000,
         img:"../public/img/imgCategories/suculentasCategory/pachyphytum.webp",
-        img2:"../public/img/imgCategories/suculentasCategory/pachyphytum.webp", 
-        img3: "../public/img/imgCategories/suculentasCategory/pachyphytum.webp",
-        img4:"../public/img/imgCategories/suculentasCategory/pachyphytum.webp",
+        img2:"../public/img/imgCategories/suculentasCategory/pachyphytum2.webp", 
+        img3: "../public/img/imgCategories/suculentasCategory/pachyphytum3.webp",
+        img4:"../public/img/imgCategories/suculentasCategory/pachyphytum4.webp",
         img5: "../public/img/imgCategories/suculentasCategory/pachyphytum.webp",
         description: "Planta suculenta con hojas gruesas y redondeada.",
         cantidad: 1,

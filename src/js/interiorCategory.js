@@ -10,6 +10,7 @@ let products = [
       id: 1,
       name: "Crisantemo",
       price: 60000,
+<<<<<<< HEAD
       img:"../public/img/imgCategories/interiorCategory/crisantemo.webp",
       img2:"../public/img/imgCategories/interiorCategory/crisantemo.webp", 
       img3: "../public/img/imgCategories/interiorCategory/crisantemo.JPG",
@@ -17,11 +18,20 @@ let products = [
       img5: "../public/img/imgCategories/interiorCategory/crisantemo.webp",
       description: "PLanta con flores variadas.",
       cantidad: 1,
+=======
+      img:"../public/img/imgCategories/interiorCategory/crisantemo1.webp",
+      img2:"../public/img/imgCategories/interiorCategory/crisantemo2.webp", 
+      img3: "../public/img/imgCategories/interiorCategory/crisantemo3.webp",
+      img4:"../public/img/imgCategories/interiorCategory/crisantemo4.webp",
+      img5: "../public/img/imgCategories/interiorCategory/crisantemo1.webp",
+      description: "PLanta con flores variadas."
+>>>>>>> origin
     },
     {
       id: 2,
       name:"Helecho Boston",
       price: 50000,
+<<<<<<< HEAD
       img:"../public/img/imgCategories/interiorCategory/helechoBoston.webp",
       img2:"../public/img/imgCategories/interiorCategory/helechoBoston.webp", 
       img3: "../public/img/imgCategories/interiorCategory/helechoBoston.JPG",
@@ -29,11 +39,20 @@ let products = [
       img5: "../public/img/imgCategories/interiorCategory/helechoBoston.webp",
       description: "Planta de follaje verde y frondoso.",
       cantidad: 1,
+=======
+      img:"../public/img/imgCategories/interiorCategory/helechoBoston1.webp",
+      img2:"../public/img/imgCategories/interiorCategory/helechoBoston1.webp", 
+      img3: "../public/img/imgCategories/interiorCategory/helechoBoston2.jpeg",
+      img4:"../public/img/imgCategories/interiorCategory/helechoBoston3.webp",
+      img5: "../public/img/imgCategories/interiorCategory/helechoBoston4.webp",
+      description: "Planta de follaje verde y frondoso."
+>>>>>>> origin
     },
     {
         id: 3,
         name:"Espatifilo",
         price:70000,
+<<<<<<< HEAD
         img:"../public/img/imgCategories/interiorCategory/espatifilo.webp",
         img2:"../public/img/imgCategories/interiorCategory/espatifilo.webp", 
         img3: "../public/img/imgCategories/interiorCategory/espatifilo.JPG",
@@ -41,11 +60,20 @@ let products = [
         img5: "../public/img/imgCategories/interiorCategory/espatifilo.webp",
         description: "Planta con hojas verdes y flores blancas.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/interiorCategory/espatifilo1.webp",
+        img2:"../public/img/imgCategories/interiorCategory/espatifilo1.webp", 
+        img3: "../public/img/imgCategories/interiorCategory/espatifilo2.webp",
+        img4:"../public/img/imgCategories/interiorCategory/espatifilo3.webp",
+        img5: "../public/img/imgCategories/interiorCategory/espatifilo4.webp",
+        description: "Planta con hojas verdes y flores blancas."
+>>>>>>> origin
     },
     {
         id: 4,
         name:"Sansevieria",
         price: 45000,
+<<<<<<< HEAD
         img:"../public/img/imgCategories/interiorCategory/sansevieria.webp",
         img2:"../public/img/imgCategories/interiorCategory/sansevieria.webp", 
         img3: "../public/img/imgCategories/interiorCategory/sansevieria.JPG",
@@ -53,11 +81,20 @@ let products = [
         img5: "../public/img/imgCategories/interiorCategory/sansevieria.webp",
         description: "Planta resistente que purfica el aire.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/interiorCategory/sansevieria1.webp",
+        img2:"../public/img/imgCategories/interiorCategory/sansevieria2.webp", 
+        img3: "../public/img/imgCategories/interiorCategory/sansevieria3.webp",
+        img4:"../public/img/imgCategories/interiorCategory/sansevieria4.webp",
+        img5: "../public/img/imgCategories/interiorCategory/sansevieria1.webp",
+        description: "Planta resistente que purfica el aire."
+>>>>>>> origin
     },
     {
         id: 5,
         name: "Drácena",
         price: 55000,
+<<<<<<< HEAD
         img:"../public/img/imgCategories/interiorCategory/dracena.webp",
         img2:"../public/img/imgCategories/interiorCategory/dracena.webp", 
         img3: "../public/img/imgCategories/interiorCategory/dracena.webp",
@@ -65,11 +102,20 @@ let products = [
         img5: "../public/img/imgCategories/interiorCategory/dracena.webp",
         description: "Planta con hojas largas y elegantes.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/interiorCategory/dracena1.webp",
+        img2:"../public/img/imgCategories/interiorCategory/dracena1.webp", 
+        img3: "../public/img/imgCategories/interiorCategory/dracena2.webp",
+        img4:"../public/img/imgCategories/interiorCategory/dracena3.webp",
+        img5: "../public/img/imgCategories/interiorCategory/dracena4.webp",
+        description: "Planta con hojas largas y elegantes."
+>>>>>>> origin
     },
     {
         id: 6,
         name: "Pothos",
         price: 48000,
+<<<<<<< HEAD
         img:"../public/img/imgCategories/interiorCategory/pothos.webp",
         img2:"../public/img/imgCategories/interiorCategory/pothos.webp", 
         img3: "../public/img/imgCategories/interiorCategory/pothos.webp",
@@ -77,11 +123,20 @@ let products = [
         img5: "../public/img/imgCategories/interiorCategory/pothos.webp",
         description: "Planta colgante facil de cuidar y decorativa.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/interiorCategory/pothos1.webp",
+        img2:"../public/img/imgCategories/interiorCategory/pothos1.webp", 
+        img3: "../public/img/imgCategories/interiorCategory/pothos2.webp",
+        img4:"../public/img/imgCategories/interiorCategory/pothos3.webp",
+        img5: "../public/img/imgCategories/interiorCategory/pothos4.webp",
+        description: "Planta colgante facil de cuidar y decorativa."
+>>>>>>> origin
     },
     {
         id:7,
         name:"Ficus lyrata",
         price: 80000,
+<<<<<<< HEAD
         img:"../public/img/imgCategories/interiorCategory/ficusLyrata.webp",
         img2:"../public/img/imgCategories/interiorCategory/ficusLyrata.webp", 
         img3: "../public/img/imgCategories/interiorCategory/ficusLyrata.webp",
@@ -89,11 +144,20 @@ let products = [
         img5: "../public/img/imgCategories/interiorCategory/ficusLyrata.webp",
         description: "Arbol de hojas grandes y brillantes.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/interiorCategory/ficusLyrata1.webp",
+        img2:"../public/img/imgCategories/interiorCategory/ficusLyrata1.webp", 
+        img3: "../public/img/imgCategories/interiorCategory/ficusLyrata2.webp",
+        img4:"../public/img/imgCategories/interiorCategory/ficusLyrata3.webp",
+        img5: "../public/img/imgCategories/interiorCategory/ficusLyrata4.webp",
+        description: "Arbol de hojas grandes y brillantes."
+>>>>>>> origin
     },
     {
         id:8,
         name:"Cinta",
         price: 40000,
+<<<<<<< HEAD
         img:"../public/img/imgCategories/interiorCategory/cinta.webp",
         img2:"../public/img/imgCategories/interiorCategory/cinta.webp", 
         img3: "../public/img/imgCategories/interiorCategory/cinta.webp",
@@ -101,11 +165,20 @@ let products = [
         img5: "../public/img/imgCategories/interiorCategory/cinta.webp",
         description: "Planta colgante con hojas rayadas.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/interiorCategory/cinta1.webp",
+        img2:"../public/img/imgCategories/interiorCategory/cinta2.webp", 
+        img3: "../public/img/imgCategories/interiorCategory/cinta3.webp",
+        img4:"../public/img/imgCategories/interiorCategory/cinta4.webp",
+        img5: "../public/img/imgCategories/interiorCategory/cinta1.webp",
+        description: "Planta colgante con hojas rayadas."
+>>>>>>> origin
     },
     {   
         id:9,
         name:"Monstera deliciosa",
         price:75000,
+<<<<<<< HEAD
         img:"../public/img/imgCategories/interiorCategory/monsteraDeliciosa.webp",
         img2:"../public/img/imgCategories/interiorCategory/monsteraDeliciosa.webp", 
         img3: "../public/img/imgCategories/interiorCategory/monsteraDeliciosa.webp",
@@ -113,11 +186,20 @@ let products = [
         img5: "../public/img/imgCategories/interiorCategory/monsteraDeliciosa.webp",
         description: "Planta con hojas grandes y perforadas.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/interiorCategory/monsteraDeliciosa1.webp",
+        img2:"../public/img/imgCategories/interiorCategory/monsteraDeliciosa1.webp", 
+        img3: "../public/img/imgCategories/interiorCategory/monsteraDeliciosa2.webp",
+        img4:"../public/img/imgCategories/interiorCategory/monsteraDeliciosa3.webp",
+        img5: "../public/img/imgCategories/interiorCategory/monsteraDeliciosa4.webp",
+        description: "Planta con hojas grandes y perforadas."
+>>>>>>> origin
     }, 
     {   
         id:10,
         name: "Pilea peperomioides",
         price: 60000,
+<<<<<<< HEAD
         img:"../public/img/imgCategories/interiorCategory/pileaPeperomioides.webp",
         img2:"../public/img/imgCategories/interiorCategory/pileaPeperomioides.webp", 
         img3: "../public/img/imgCategories/interiorCategory/pileaPeperomioides.webp",
@@ -125,14 +207,29 @@ let products = [
         img5: "../public/img/imgCategories/interiorCategory/pileaPeperomioides.webp",
         description: "Planta de aspecto unico con hojas redondas.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/interiorCategory/pileaPeperomioides1.webp",
+        img2:"../public/img/imgCategories/interiorCategory/pileaPeperomioides2.webp", 
+        img3: "../public/img/imgCategories/interiorCategory/pileaPeperomioides3.webp",
+        img4:"../public/img/imgCategories/interiorCategory/pileaPeperomioides4.webp",
+        img5: "../public/img/imgCategories/interiorCategory/pileaPeperomioides1.webp",
+        description: "Planta de aspecto unico con hojas redondas." 
+>>>>>>> origin
     }
 ]
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+<<<<<<< HEAD
 // Generar HTML para los productos y agregar al contenedor
 let intCategoryHTML = '';
 
 products.forEach((product) => {
+=======
+const container = document.getElementById('intCategory');
+let intCategoryHTML = '';
+
+for (let i = 0; i < products.length; i++) {
+>>>>>>> origin
     intCategoryHTML += `
         <div class="plant-card">
             <div>
@@ -156,7 +253,11 @@ products.forEach((product) => {
     `;
 });
 
+<<<<<<< HEAD
 intCategory.innerHTML = intCategoryHTML;
+=======
+container.innerHTML = intCategoryHTML;
+>>>>>>> origin
 
 document.querySelectorAll('.plant-card').forEach(card => {
     const mainIMG = card.querySelector('.mainIMG');

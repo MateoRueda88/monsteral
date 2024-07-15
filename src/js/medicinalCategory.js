@@ -10,81 +10,171 @@ let products = [
       id: 1,
       name: "Aloe Vera",
       price: 25000,
+<<<<<<< HEAD
       img: "../public/img/medicinalCategory/aloeVera.webp",
       description: "Planta suculenta utilizada para tratar quemaduras y heridas.",
       cantidad: 1,
+=======
+      img:"../public/img/imgCategories/purifyingCategory/Aloe vera/1.webp",
+      img2:"../public/img/imgCategories/purifyingCategory/Aloe vera/5.webp", 
+      img3: "../public/img/imgCategories/purifyingCategory/Aloe vera/2.webp",
+      img4:"../public/img/imgCategories/purifyingCategory/Aloe vera/3.webp",
+      img5: "../public/img/imgCategories/purifyingCategory/Aloe vera/4.webp",
+      description: "Planta suculenta utilizada para tratar quemaduras y heridas."
+>>>>>>> origin
     },
     {
       id: 2,
       name:"Manzanilla",
       price: 15000,
+<<<<<<< HEAD
       img: "../public/img/medicinalCategory/manzanilla.webp",
       description: "Planta con flores blancas usada para infusiones relajantes.",
       cantidad: 1,
+=======
+      img:"../public/img/imgCategories/medicalCategory/manzanilla/1.webp",
+      img2:"../public/img/imgCategories/medicalCategory/manzanilla/5.webp", 
+      img3: "../public/img/imgCategories/medicalCategory/manzanilla/2.webp",
+      img4:"../public/img/imgCategories/medicalCategory/manzanilla/3.webp",
+      img5: "../public/img/imgCategories/medicalCategory/manzanilla/4.webp",
+      description: "Planta con flores blancas usada para infusiones relajantes."
+>>>>>>> origin
     },
     {
         id: 3,
         name:"Menta",
         price:12000,
+<<<<<<< HEAD
         img:"../public/img/medicinalCategory/menta.webp",
         description: "Planta aromática utilizada para problemas digestivos.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/medicalCategory/menta/1.webp",
+      img2:"../public/img/imgCategories/medicalCategory/menta/5.webp", 
+      img3: "../public/img/imgCategories/medicalCategory/menta/2.webp",
+      img4:"../public/img/imgCategories/medicalCategory/menta/3.webp",
+      img5: "../public/img/imgCategories/medicalCategory/menta/4.webp",
+        description: "Planta aromática utilizada para problemas digestivos."
+>>>>>>> origin
     },
     {
         id: 4,
         name:"Romero",
         price: 18000,
+<<<<<<< HEAD
         img: "../public/img/medicinalCategory/romero.webp",
         description: "Planta aromática con propiedades antiinflamatorias.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/medicalCategory/romero/1.webp",
+      img2:"../public/img/imgCategories/medicalCategory/romero/5.webp", 
+      img3: "../public/img/imgCategories/medicalCategory/romero/2.webp",
+      img4:"../public/img/imgCategories/medicalCategory/romero/3.webp",
+      img5: "../public/img/imgCategories/medicalCategory/romero/4.webp",
+        description: "Planta aromática con propiedades antiinflamatorias."
+>>>>>>> origin
     },
     {
         id: 5,
         name: "Lavanda",
         price: 20000,
+<<<<<<< HEAD
         img: "../public/img/medicinalCategory/aloeVera.webp",
         description: "Planta aromática utilizada para aliviar el estrés.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/medicalCategory/lavanda/1.webp",
+      img2:"../public/img/imgCategories/medicalCategory/lavanda/5.webp", 
+      img3: "../public/img/imgCategories/medicalCategory/lavanda/2.webp",
+      img4:"../public/img/imgCategories/medicalCategory/lavanda/3.webp",
+      img5: "../public/img/imgCategories/medicalCategory/lavanda/4.webp",
+        description: "Planta aromática utilizada para aliviar el estrés."
+>>>>>>> origin
     },
     {
         id: 6,
         name: "Eucalipto",
         price: 22000,
+<<<<<<< HEAD
         img: "../public/img/medicinalCategory/eucalipto.webp",
         description: "Planta trepadora con flores brillantes.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/medicalCategory/eucalipto/1.webp",
+      img2:"../public/img/imgCategories/medicalCategory/eucalipto/5.webp", 
+      img3: "../public/img/imgCategories/medicalCategory/eucalipto/2.webp",
+      img4:"../public/img/imgCategories/medicalCategory/eucalipto/3.webp",
+      img5: "../public/img/imgCategories/medicalCategory/eucalipto/4.webp",
+        description: "Planta trepadora con flores brillantes."
+>>>>>>> origin
     },
     {
         id:7,
         name:"Salvia",
         price: 17000,
+<<<<<<< HEAD
         img: "../public/img/medicinalCategory/salvia.webp",
         description: "Planta alta con flores amarillas grandes.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/medicalCategory/salvia/1.webp",
+      img2:"../public/img/imgCategories/medicalCategory/salvia/5.webp", 
+      img3: "../public/img/imgCategories/medicalCategory/salvia/2.webp",
+      img4:"../public/img/imgCategories/medicalCategory/salvia/3.webp",
+      img5: "../public/img/imgCategories/medicalCategory/salvia/4.webp",
+        description: "Planta alta con flores amarillas grandes."
+>>>>>>> origin
     },
     {
         id:8,
         name:"Hierbabuena",
         price: 13000,
+<<<<<<< HEAD
         img: "../public/img/medicinalCategory/hierbabuena.webp",
         description: "Planta con flores blancas y centro amarillo.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/medicalCategory/hierbabuena/1.webp",
+      img2:"../public/img/imgCategories/medicalCategory/hierbabuena/5.webp", 
+      img3: "../public/img/imgCategories/medicalCategory/hierbabuena/2.webp",
+      img4:"../public/img/imgCategories/medicalCategory/hierbabuena/3.webp",
+      img5: "../public/img/imgCategories/medicalCategory/hierbabuena/4.webp",
+        description: "Planta con flores blancas y centro amarillo."
+>>>>>>> origin
     },
     {   
         id:9,
         name:"Calendula",
         price:19000,
+<<<<<<< HEAD
         img:"../public/img/medicinalCategory/calendula.webp",
         description: "Planta con una gran variedad de flores.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/medicalCategory/calendula/1.webp",
+        img2:"../public/img/imgCategories/medicalCategory/calendula/5.webp", 
+      img3: "../public/img/imgCategories/medicalCategory/calendula/2.webp",
+      img4:"../public/img/imgCategories/medicalCategory/calendula/3.webp",
+      img5: "../public/img/imgCategories/medicalCategory/calendula/4.webp",
+        description: "Planta con una gran variedad de flores."
+>>>>>>> origin
     }, 
     {   
         id:10,
         name: "Jengibre",
         price: 25000,
+<<<<<<< HEAD
         img:"../public/img/medicinalCategory/jengibre.webp",
         description: "Planta de arbusto con flores brillantes.",
         cantidad: 1,
+=======
+        img:"../public/img/imgCategories/medicalCategory/jengibre/1.webp",
+      img2:"../public/img/imgCategories/medicalCategory/jengibre/5.webp", 
+      img3: "../public/img/imgCategories/medicalCategory/jengibre/2.webp",
+      img4:"../public/img/imgCategories/medicalCategory/jengibre/3.webp",
+      img5: "../public/img/imgCategories/medicalCategory/jengibre/4.webp",
+        description: "Planta de arbusto con flores brillantes." 
+>>>>>>> origin
     }
 ]
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
