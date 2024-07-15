@@ -5,38 +5,22 @@ let products = [
       id: 1,
       name: "Crisantemo",
       price: 60000,
-<<<<<<< HEAD
-      img:"../public/img/imgCategories/interiorCategory/crisantemo/1.webp",
-      img2:"../public/img/imgCategories/interiorCategory/crisantemo/2.webp", 
-      img3: "../public/img/imgCategories/interiorCategory/crisantemo/3.webp",
-      img4:"../public/img/imgCategories/interiorCategory/crisantemo/4.webp",
-      img5: "../public/img/imgCategories/interiorCategory/crisantemo/5.webp",
-=======
       img:"../public/img/imgCategories/interiorCategory/crisantemo1.webp",
       img2:"../public/img/imgCategories/interiorCategory/crisantemo2.webp", 
       img3: "../public/img/imgCategories/interiorCategory/crisantemo3.webp",
       img4:"../public/img/imgCategories/interiorCategory/crisantemo4.webp",
       img5: "../public/img/imgCategories/interiorCategory/crisantemo1.webp",
->>>>>>> 2c9332a972bf8c15bd72f9bcf03d12cc07e595aa
       description: "PLanta con flores variadas."
     },
     {
       id: 2,
       name:"Helecho Boston",
       price: 50000,
-<<<<<<< HEAD
-      img: "../public/img/imgCategories/purifyingCategory/Helecho/1.webp",
-    img2:"../public/img/imgCategories/purifyingCategory/Helecho/5.webp", 
-    img3: "../public/img/imgCategories/purifyingCategory/Helecho/2.webp",
-    img4:"../public/img/imgCategories/purifyingCategory/Helecho/3.webp",
-    img5: "../public/img/imgCategories/purifyingCategory/Helecho/4.webp",
-=======
       img:"../public/img/imgCategories/interiorCategory/helechoBoston1.webp",
       img2:"../public/img/imgCategories/interiorCategory/helechoBoston1.webp", 
       img3: "../public/img/imgCategories/interiorCategory/helechoBoston2.jpeg",
       img4:"../public/img/imgCategories/interiorCategory/helechoBoston3.webp",
       img5: "../public/img/imgCategories/interiorCategory/helechoBoston4.webp",
->>>>>>> 2c9332a972bf8c15bd72f9bcf03d12cc07e595aa
       description: "Planta de follaje verde y frondoso."
     },
     {
@@ -65,38 +49,22 @@ let products = [
         id: 5,
         name: "Drácena",
         price: 55000,
-<<<<<<< HEAD
-        img: "../public/img/imgCategories/purifyingCategory/Dracena/1.webp",
-        img2:"../public/img/imgCategories/purifyingCategory/Dracena/5.webp", 
-        img3: "../public/img/imgCategories/purifyingCategory/Dracena/2.webp",
-        img4:"../public/img/imgCategories/purifyingCategory/Dracena/3.webp",
-        img5: "../public/img/imgCategories/purifyingCategory/Dracena/4.webp",
-=======
         img:"../public/img/imgCategories/interiorCategory/dracena1.webp",
         img2:"../public/img/imgCategories/interiorCategory/dracena1.webp", 
         img3: "../public/img/imgCategories/interiorCategory/dracena2.webp",
         img4:"../public/img/imgCategories/interiorCategory/dracena3.webp",
         img5: "../public/img/imgCategories/interiorCategory/dracena4.webp",
->>>>>>> 2c9332a972bf8c15bd72f9bcf03d12cc07e595aa
         description: "Planta con hojas largas y elegantes."
     },
     {
         id: 6,
         name: "Pothos",
         price: 48000,
-<<<<<<< HEAD
-        img: "../public/img/imgCategories/purifyingCategory/Pothos/1.webp",
-      img2:"../public/img/imgCategories/purifyingCategory/Pothos/5.webp", 
-      img3: "../public/img/imgCategories/purifyingCategory/Pothos/2.webp",
-      img4:"../public/img/imgCategories/purifyingCategory/Pothos/3.webp",
-      img5: "../public/img/imgCategories/purifyingCategory/Pothos/4.webp",
-=======
         img:"../public/img/imgCategories/interiorCategory/pothos1.webp",
         img2:"../public/img/imgCategories/interiorCategory/pothos1.webp", 
         img3: "../public/img/imgCategories/interiorCategory/pothos2.webp",
         img4:"../public/img/imgCategories/interiorCategory/pothos3.webp",
         img5: "../public/img/imgCategories/interiorCategory/pothos4.webp",
->>>>>>> 2c9332a972bf8c15bd72f9bcf03d12cc07e595aa
         description: "Planta colgante facil de cuidar y decorativa."
     },
     {
@@ -146,11 +114,7 @@ let products = [
 ]
 
 const container = document.getElementById('intCategory');
-<<<<<<< HEAD
-let extCategoryHTML = '';
-=======
 let intCategoryHTML = '';
->>>>>>> 2c9332a972bf8c15bd72f9bcf03d12cc07e595aa
 
 for (let i = 0; i < products.length; i++) {
     intCategoryHTML += `
