@@ -1,25 +1,27 @@
 let products = [ 
     {
       id: 1,
-      name: "Rosa",
-      price: 45000,
-      img:"../public/img/imgCategories/exteriorCategory/rosa.webp",
-      img2:"../public/img/imgCategories/exteriorCategory/rosa.webp", 
-      img3: "../public/img/imgCategories/exteriorCategory/rosa.JPG",
-      img4:"../public/img/imgCategories/exteriorCategory/rosa.webp",
-      img5: "../public/img/imgCategories/exteriorCategory/rosa.webp",
-      description: "Planta de flores hermosas y fragantes."
+      name:"Rosa",
+        price:25000,
+        img:"../public/img/imgCategories/polinizadorasCategory/rosa1.webp",
+        img2:"../public/img/imgCategories/polinizadorasCategory/rosa1.webp",
+        img3:"../public/img/imgCategories/polinizadorasCategory/rosa2.webp",
+        img4:"../public/img/imgCategories/polinizadorasCategory/rosa3.webp",
+        img5:"../public/img/imgCategories/polinizadorasCategory/rosa4.webp",
+        description: "Planta de flores hermosas y fragantes que atraen abejas.",
+        cantidad: 1
     },
     {
       id: 2,
-      name:"Hortensia",
-      price: 60000,
-      img:"../public/img/imgCategories/exteriorCategory/hortensia.webp",
-      img2:"../public/img/imgCategories/exteriorCategory/hortensia.webp", 
-      img3: "../public/img/imgCategories/exteriorCategory/hortensia.JPG",
-      img4:"../public/img/imgCategories/exteriorCategory/hortensia.webp",
-      img5: "../public/img/imgCategories/exteriorCategory/hortensia.webp",
-      description: "Planta con grandes racimos de flores."
+      name:"Salvia",
+        price: 17000,
+        img:"../public/img/imgCategories/medicalCategory/salvia/1.webp",
+      img2:"../public/img/imgCategories/medicalCategory/salvia/5.webp", 
+      img3: "../public/img/imgCategories/medicalCategory/salvia/2.webp",
+      img4:"../public/img/imgCategories/medicalCategory/salvia/3.webp",
+      img5: "../public/img/imgCategories/medicalCategory/salvia/4.webp",
+        description: "Planta alta con flores amarillas grandes.",
+        cantidad: 1
     },
     {
         id: 3,
@@ -36,8 +38,41 @@ let products = [
         id: 4,
         name:"Manzanilla",
         price: 15000,
-        img: "../public/img/medicinalCategory/manzanilla.webp",
-        description: "Planta con flores blancas usada para infusiones relajantes."
+        name: "Jazmín",
+        price: 22000,
+        name: "Lengua de suegra",
+      price: 30000,
+      img: "../public/img/imgCategories/purifyingCategory/Lengua de suegra/1.webp",
+      img2:"../public/img/imgCategories/purifyingCategory/Lengua de suegra/2.webp", 
+      img3: "../public/img/imgCategories/purifyingCategory/Lengua de suegra/3.webp",
+      img4:"../public/img/imgCategories/purifyingCategory/Lengua de suegra/4.webp",
+      img5: "../public/img/imgCategories/purifyingCategory/Lengua de suegra/5.webp",
+      description: "Planta resistente que purifica el aire.",
+      cantidad: 1
+      },
+      {
+          id:5,
+          name:"Cinta",
+          price: 40000,
+          img:"../public/img/imgCategories/interiorCategory/cinta1.webp",
+          img2:"../public/img/imgCategories/interiorCategory/cinta2.webp", 
+          img3: "../public/img/imgCategories/interiorCategory/cinta3.webp",
+          img4:"../public/img/imgCategories/interiorCategory/cinta4.webp",
+          img5: "../public/img/imgCategories/interiorCategory/cinta1.webp",
+          description: "Planta colgante con hojas rayadas.",
+          cantidad: 1
+      },
+      {
+          id:6,
+          name:"Sedum",
+      price: 12000,
+      img:"../public/img/imgCategories/suculentasCategory/sedum.webp",
+      img2:"../public/img/imgCategories/suculentasCategory/sedum.webp", 
+      img3: "../public/img/imgCategories/suculentasCategory/arribaSedum.webp",
+      img4:"../public/img/imgCategories/suculentasCategory/generalSedum.webp",
+      img5: "../public/img/imgCategories/suculentasCategory/usoSedum.webp",
+      description: "Planta suculenta con pequeñas hojas sedum.",
+      cantidad: 1
       }
     ]
 
