@@ -5,22 +5,22 @@ let products = [
       id: 1,
       name: "Crisantemo",
       price: 60000,
-      img:"../public/img/imgCategories/interiorCategory/crisantemo.webp",
-      img2:"../public/img/imgCategories/interiorCategory/crisantemo.webp", 
-      img3: "../public/img/imgCategories/interiorCategory/crisantemo.JPG",
-      img4:"../public/img/imgCategories/interiorCategory/crisantemo.webp",
-      img5: "../public/img/imgCategories/interiorCategory/crisantemo.webp",
+      img:"../public/img/imgCategories/interiorCategory/crisantemo/1.webp",
+      img2:"../public/img/imgCategories/interiorCategory/crisantemo/2.webp", 
+      img3: "../public/img/imgCategories/interiorCategory/crisantemo/3.webp",
+      img4:"../public/img/imgCategories/interiorCategory/crisantemo/4.webp",
+      img5: "../public/img/imgCategories/interiorCategory/crisantemo/5.webp",
       description: "PLanta con flores variadas."
     },
     {
       id: 2,
       name:"Helecho Boston",
       price: 50000,
-      img:"../public/img/imgCategories/interiorCategory/helechoBoston.webp",
-      img2:"../public/img/imgCategories/interiorCategory/helechoBoston.webp", 
-      img3: "../public/img/imgCategories/interiorCategory/helechoBoston.JPG",
-      img4:"../public/img/imgCategories/interiorCategory/helechoBoston.webp",
-      img5: "../public/img/imgCategories/interiorCategory/helechoBoston.webp",
+      img: "../public/img/imgCategories/purifyingCategory/Helecho/1.webp",
+    img2:"../public/img/imgCategories/purifyingCategory/Helecho/5.webp", 
+    img3: "../public/img/imgCategories/purifyingCategory/Helecho/2.webp",
+    img4:"../public/img/imgCategories/purifyingCategory/Helecho/3.webp",
+    img5: "../public/img/imgCategories/purifyingCategory/Helecho/4.webp",
       description: "Planta de follaje verde y frondoso."
     },
     {
@@ -49,22 +49,22 @@ let products = [
         id: 5,
         name: "Drácena",
         price: 55000,
-        img:"../public/img/imgCategories/interiorCategory/dracena.webp",
-        img2:"../public/img/imgCategories/interiorCategory/dracena.webp", 
-        img3: "../public/img/imgCategories/interiorCategory/dracena.webp",
-        img4:"../public/img/imgCategories/interiorCategory/dracena.webp",
-        img5: "../public/img/imgCategories/interiorCategory/dracena.webp",
+        img: "../public/img/imgCategories/purifyingCategory/Dracena/1.webp",
+        img2:"../public/img/imgCategories/purifyingCategory/Dracena/5.webp", 
+        img3: "../public/img/imgCategories/purifyingCategory/Dracena/2.webp",
+        img4:"../public/img/imgCategories/purifyingCategory/Dracena/3.webp",
+        img5: "../public/img/imgCategories/purifyingCategory/Dracena/4.webp",
         description: "Planta con hojas largas y elegantes."
     },
     {
         id: 6,
         name: "Pothos",
         price: 48000,
-        img:"../public/img/imgCategories/interiorCategory/pothos.webp",
-        img2:"../public/img/imgCategories/interiorCategory/pothos.webp", 
-        img3: "../public/img/imgCategories/interiorCategory/pothos.webp",
-        img4:"../public/img/imgCategories/interiorCategory/pothos.webp",
-        img5: "../public/img/imgCategories/interiorCategory/pothos.webp",
+        img: "../public/img/imgCategories/purifyingCategory/Pothos/1.webp",
+      img2:"../public/img/imgCategories/purifyingCategory/Pothos/5.webp", 
+      img3: "../public/img/imgCategories/purifyingCategory/Pothos/2.webp",
+      img4:"../public/img/imgCategories/purifyingCategory/Pothos/3.webp",
+      img5: "../public/img/imgCategories/purifyingCategory/Pothos/4.webp",
         description: "Planta colgante facil de cuidar y decorativa."
     },
     {
@@ -113,7 +113,7 @@ let products = [
     }
 ]
 
-const container = document.getElementById('extCategory');
+const container = document.getElementById('intCategory');
 let extCategoryHTML = '';
 
 for (let i = 0; i < products.length; i++) {
