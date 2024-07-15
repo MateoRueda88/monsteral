@@ -99,6 +99,8 @@ normalizar nuestra hoja de estilos */
   height: 65vh;
   gap: 1.5rem;
   list-style-type: none; 
+  margin-right: 15px;
+ 
 }
 
 ul.nav-list {
@@ -159,16 +161,17 @@ ul.nav-list {
   display: grid;
   grid-template-rows: var(--rows, 0fr);
   transition: .5s grid-template-rows;
+  
   } 
 
 /* 
   ul de nuestro submenu */
 
 .sub-menu-mobile {
-  width: 90%;
+  width: 97%;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  text-align: center;
   align-items: center;
   overflow: hidden;
   gap: 1rem;
@@ -178,6 +181,9 @@ ul.nav-list {
 /* 
 li de nuestro submenu */
  .sub-menu-mobile li { 
+  width: 100%;
+  display: flex;
+  justify-content: center;
   border: none;
   list-style-type: none;
   position: relative;
@@ -189,7 +195,9 @@ anchor de nuestro submenu */
  .sub-menu-mobile li a {
   text-decoration: none;
   color: #939535;
-  font-size: 10pt;
+  font-size: 9pt;
+  margin-right: 30px;
+  
 }
 .sub-menu-mobile li a:hover{
   background-color: #c8b999;
