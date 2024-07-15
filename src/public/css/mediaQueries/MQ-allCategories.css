@@ -6,12 +6,8 @@
         grid-template-columns: repeat(2,1fr);
         margin-top: 105px;
     }
-    .goBack{
-        font-size: 27px;
-        padding: 55px 20px;
-    }
     .plant-card {
-        width: 330px;
+        width: 300px;
     }
     .container .xContainer .xContainerx{
         width: 65px;
@@ -43,10 +39,7 @@
         grid-template-columns: repeat(3,1fr);
         margin-top: 120px;
     }
-    .goBack{
-        font-size: 30px;
-        padding: 65px 25px;
-    }
+    
     .footer {
         height: 20vh;
     }
