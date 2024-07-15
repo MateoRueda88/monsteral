@@ -330,7 +330,7 @@ height: 380px;
   
     .valuesContainer {
       height: auto;
-    border-top: 5px solid;
+    border-top: 5px solid #5D5F10;
     border-color:none;
     display: grid;
     place-items: center;
