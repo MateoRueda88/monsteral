@@ -193,6 +193,7 @@ anchor de nuestro submenu */
 }
 .sub-menu-mobile li a:hover{
   background-color: #c8b999;
+  color: #523726;
 } 
 /* 
 Contenido logo */
@@ -432,7 +433,7 @@ h3{
   padding: 0.3rem;
 }
 .logo-footer img {
-  width: 50px;
+  width: 60px;
 }
 .footer .email {
   color: #523726;
@@ -450,5 +451,6 @@ h3{
 }
 
 .icons-footer img {
-  height: 2vh;
+  width: 25px;
+  height: 23px;
 }
