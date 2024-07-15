@@ -15,19 +15,19 @@ function longitudInput(event) {
   let longitudInputNombre = valorInput.length;
   if (longitudInputNombre < 3) {
     Swal.fire({
-      title: "Ingrese mas caracteres",
+      title: "Ingresa mas caracteres",
       showConfirmButton: false,
-      background: "rgb(228, 228, 204)",
+      background: "#52c096",
       icon: "info",
-      timer: "1000",
+      timer: "3000",
       position: "center",
       backdrop: true,
-      color: "#939535",
+       color: "yellow",
       allowOutsideClick: true,
       toost: true,
       showConfirmButton: false,
       customClass: {
-        title: "titulo-password",
+        title: "titulo-password-re",
       },
     });
   } else {
@@ -43,10 +43,10 @@ function tipoDato(event) {
   let tipoDate = event.target.value;
   if (isNaN(tipoDate)) {
     Swal.fire({
-      title: "Ingrese campo valido",
+      title: "Ingresa campo valido",
       showConfirmButton: false,
-      background: "rgb(228, 228, 204)",
-      icon: "warning",
+      background: "#52c096",
+      icon: "info",
       timer: "1000",
       position: "center",
       backdrop: true,
@@ -55,7 +55,7 @@ function tipoDato(event) {
       toost: true,
       showConfirmButton: false,
       customClass: {
-        title: "titulo-password",
+        title: "titulo-password-re",
       },
     });
   } else {
@@ -87,32 +87,33 @@ function RegisterUser(event) {
     passwordValue === "" ||
     confirmPasswordValue === ""
   ) {
-    Swal.fire({
-      title: "Por favor llenar todos los campos",
-      showConfirmButton: false,
-      background: "rgb(228, 228, 204)",
-      icon: "warning",
-      timer: "3000",
-      position: "center",
-      backdrop: true,
-      color: "#939535",
-      allowOutsideClick: true,
-      toost: true,
-      showConfirmButton: false,
-      customClass: {
-        title: "titulo-password",
-      },
-    });
+      Swal.fire({
+        title: "Ingresar todos los campos",
+        showConfirmButton: false,
+        background: "#52c096",
+        icon: "info",
+        timer: "1000",
+        position: "center",
+        backdrop: true,
+        color: "#939535",
+        allowOutsideClick: true,
+        toost: true,
+        showConfirmButton: false,
+        customClass: {
+          title: "titulo-password-re",
+        },
+      });
     return; // Salir de la función si hay campos vacíos
   }
 
   // Validar que las contraseñas coincidan
   if (passwordValue !== confirmPasswordValue) {
     Swal.fire({
-      title: "Las constraseñas no coiciden",
-      icon: "error",
-      background: "rgb(228, 228, 204)",
-      timer: "3000",
+      title: "Las contraseñas no coinciden",
+      showConfirmButton: false,
+      background: "#52c096",
+      icon: "info",
+      timer: "1000",
       position: "center",
       backdrop: true,
       color: "#939535",
@@ -120,7 +121,7 @@ function RegisterUser(event) {
       toost: true,
       showConfirmButton: false,
       customClass: {
-        title: "titulo-password",
+        title: "titulo-password-re",
       },
     });
     return; // Salir de la función si las contraseñas no coinciden
@@ -130,9 +131,10 @@ function RegisterUser(event) {
   if (userRegistered.find((user) => user.email === emailValue)) {
     Swal.fire({
       title: "El usuario ya exíste",
+      showConfirmButton: false,
+      background: "#52c096",
       icon: "info",
-      background: "rgb(228, 228, 204)",
-      timer: "3000",
+      timer: "1000",
       position: "center",
       backdrop: true,
       color: "#939535",
@@ -140,7 +142,7 @@ function RegisterUser(event) {
       toost: true,
       showConfirmButton: false,
       customClass: {
-        title: "titulo-password",
+        title: "titulo-password-re",
       },
     });
     return; // Salir de la función si el usuario ya existe
@@ -164,16 +166,20 @@ function RegisterUser(event) {
   // Guardar Array en el LocalStorage
   localStorage.setItem("user", JSON.stringify(userRegistered));
   Swal.fire({
-    title: "Registro Exitoso",
-    icon: "success",
-    background: "rgb(228, 228, 204)",
-    timer: "3000",
+    title: "Registro exitoso",
+    showConfirmButton: false,
+    background: "#52c096",
+    icon: "info",
+    timer: "1000",
     position: "center",
     backdrop: true,
     color: "#939535",
     allowOutsideClick: true,
     toost: true,
     showConfirmButton: false,
+    customClass: {
+      title: "titulo-password-re",
+    },
   });
 
   // Limpiar los campos
