@@ -28,7 +28,14 @@
   .login{
     font-size: .7rem;
   }
-      
+  #eye-open{
+    margin-left: 200px;
+    margin-top: 62px;
+  }
+  #eye-closed{
+    margin-left: 200px;
+    margin-top: 62px;
+  }
   /* estilos validaciones */
       
   .error{
@@ -62,6 +69,14 @@
  .input-form {
     font-size: 0.9rem;
     height: 42px;
+  }
+  #eye-open{
+    margin-left: 290px;
+    margin-top: 65px;
+  }
+  #eye-closed{
+    margin-left: 290px;
+    margin-top: 65px;
   }
           
   .btn-cont div{
