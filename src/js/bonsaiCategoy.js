@@ -1,3 +1,8 @@
+const bonCategory = document.getElementById("bonCategory");
+const verCarrito = document.getElementById("verCarrito");
+const modalContainer = document.getElementById("modal-container");
+const cantidadCarrito = document.getElementById("cantidadCarrito");
+
 //Lista productos categoria plantas bonsai
 let products = [ 
     {
@@ -9,7 +14,8 @@ let products = [
       img3: "../public/img/imgCategories/bonsaiCategory/hojaBonsaiPino.webp",
       img4:"../public/img/imgCategories/bonsaiCategory/escritorioBonsaiPino.webp",
       img5: "../public/img/imgCategories/bonsaiCategory/arribaBonsaiPino.webp",
-      description: "Pequeño árbol de pino cultivado en maceta."
+      description: "Pequeño árbol de pino cultivado en maceta.",
+      cantidad: 1,
     },
     {
       id: 2,
@@ -20,7 +26,8 @@ let products = [
       img3: "../public/img/imgCategories/bonsaiCategory/hojabonsaiJapones.webp",
       img4:"../public/img/imgCategories/bonsaiCategory/arribaBonsaiJapones.webp",
       img5: "../public/img/imgCategories/bonsaiCategory/escritorioBonsaiJapones.webp",
-      description: "Árbol de arce con hojas rojas cultivado en maceta."
+      description: "Árbol de arce con hojas rojas cultivado en maceta.",
+      cantidad: 1,
     },
     {
         id: 3,
@@ -31,7 +38,8 @@ let products = [
         img3: "../public/img/imgCategories/bonsaiCategory/hojabonsaiFicus.webp",
         img4:"../public/img/imgCategories/bonsaiCategory/escritoriobonsaiFicus.webp",
         img5: "../public/img/imgCategories/bonsaiCategory/bonsaiFicus.webp",
-        description: "Planta aromática utilizada para problemas digestivos."
+        description: "Planta aromática utilizada para problemas digestivos.",
+        cantidad: 1,
     },
     {
         id: 4,
@@ -42,7 +50,8 @@ let products = [
         img3: "../public/img/imgCategories/bonsaiCategory/hojasbonsaiOlmoChino.webp",
         img4:"../public/img/imgCategories/bonsaiCategory/escritorioBosaiOlmoChino.webp",
         img5: "../public/img/imgCategories/bonsaiCategory/bonsaiFicus.webp",
-        description: "Planta aromática con propiedades antiinflamatorias."
+        description: "Planta aromática con propiedades antiinflamatorias.",
+        cantidad: 1,
     },
     {
         id: 5,
@@ -53,7 +62,8 @@ let products = [
         img3: "../public/img/imgCategories/bonsaiCategory/hojabonsaiJunipero.webp",
         img4:"../public/img/imgCategories/bonsaiCategory/escritorioBonsaiJunipero.webp",
         img5: "../public/img/imgCategories/bonsaiCategory/arribaBonsaiJunipero.webp",
-        description: "Árbol de junípero en miniatura."
+        description: "Árbol de junípero en miniatura.",
+        cantidad: 1,
     },
     {
         id: 6,
@@ -64,7 +74,8 @@ let products = [
         img3: "../public/img/imgCategories/bonsaiCategory/hojaBonsaiAzalea.webp",
         img4:"../public/img/imgCategories/bonsaiCategory/arribaBonsaiAzalea.webp",
         img5: "../public/img/imgCategories/bonsaiCategory/escritorioBonsaiAzalea.webp",
-        description: "Árbol de azalea con flores cultivado en maceta."
+        description: "Árbol de azalea con flores cultivado en maceta.",
+        cantidad: 1,
     },
     {
         id:7,
@@ -75,7 +86,8 @@ let products = [
         img3: "../public/img/imgCategories/bonsaiCategory/hojabonsaiCipres.webp",
         img4:"../public/img/imgCategories/bonsaiCategory/arribaBonsaiCipres.webp",
         img5: "../public/img/imgCategories/bonsaiCategory/escritorioBonsaiCipres.webp",
-        description: "Pequeño árbol de ciprés cultivado en maceta."
+        description: "Pequeño árbol de ciprés cultivado en maceta.",
+        cantidad: 1,
     },
     {
         id:8,
@@ -86,7 +98,8 @@ let products = [
         img3: "../public/img/imgCategories/bonsaiCategory/hojaBonsaiGranado.JPG",
         img4:"../public/img/imgCategories/bonsaiCategory/arribaBonsaiGranado.webp",
         img5: "../public/img/imgCategories/bonsaiCategory/escritorioBonsaiGranado.webp",
-        description: "Árbol de granado en miniatura."
+        description: "Árbol de granado en miniatura.",
+        cantidad: 1,
     },
     {   
         id:9,
@@ -97,7 +110,8 @@ let products = [
         img3: "../public/img/imgCategories/bonsaiCategory/hojaBonsaiAzalea.webp",
         img4:"../public/img/imgCategories/bonsaiCategory/arribaBonsaiCerezo.webp",
         img5: "../public/img/imgCategories/bonsaiCategory/escritorioBonsaiAzalea.webp",
-        description: "Árbol de cerezo con flores cultivado en maceta."
+        description: "Árbol de cerezo con flores cultivado en maceta.",
+        cantidad: 1,
     }, 
     {   
         id:10,
@@ -108,11 +122,14 @@ let products = [
         img3: "../public/img/imgCategories/bonsaiCategory/escritorioBonsaiGinkgo.webp",
         img4:"../public/img/imgCategories/bonsaiCategory/arribaBonsaiGinkgo.webp",
         img5: "../public/img/imgCategories/bonsaiCategory/hojaBonsaiGinkgo.webp",
-        description: "Árbol de ginkgo biloba cultivado en forma de bonsái." 
+        description: "Árbol de ginkgo biloba cultivado en forma de bonsái.",
+        cantidad: 1,
     }
 ]
 
-const container = document.getElementById('bonCategory');
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+// Generar HTML para los productos y agregar al contenedor
 let bonCategoryHTML = '';
 
 for (let i = 0; i < products.length; i++) {
