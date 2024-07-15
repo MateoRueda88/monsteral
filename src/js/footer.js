@@ -1,6 +1,9 @@
 
-async function fetchFooter() {
-    return fetch('../views/footer')
-    .then(response => response.text())
-    .then(menu => { return menu });
-}
+document.addEventListener("DOMContentLoaded", () => {
+    fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('idFooter').innerHTML = data;
+        })
+        .catch(error => console.error('Error al cargar el footer:', error));
+});
