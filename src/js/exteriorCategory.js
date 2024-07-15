@@ -1,3 +1,8 @@
+const extCategory = document.getElementById("extCategory");
+const verCarrito = document.getElementById("verCarrito");
+const modalContainer = document.getElementById("modal-container");
+const cantidadCarrito = document.getElementById("cantidadCarrito");
+
 //Lista productos categoria plantas exteriores
 
 let products = [ 
@@ -10,7 +15,8 @@ let products = [
       img3: "../public/img/imgCategories/exteriorCategory/rosa2.webp",
       img4:"../public/img/imgCategories/exteriorCategory/rosa3.webp",
       img5: "../public/img/imgCategories/exteriorCategory/rosa4.webp",
-      description: "Planta de flores hermosas y fragantes."
+      description: "Planta de flores hermosas y fragantes.",
+      cantidad: 1,
     },
     {
       id: 2,
@@ -21,7 +27,8 @@ let products = [
       img3: "../public/img/imgCategories/exteriorCategory/hortensia2.webp",
       img4:"../public/img/imgCategories/exteriorCategory/hortensia3.webp",
       img5: "../public/img/imgCategories/exteriorCategory/hortensia.webp",
-      description: "Planta con grandes racimos de flores."
+      description: "Planta con grandes racimos de flores.",
+      cantidad: 1,
     },
     {
         id: 3,
@@ -32,7 +39,8 @@ let products = [
         img3: "../public/img/imgCategories/exteriorCategory/lavanda3.webp",
         img4:"../public/img/imgCategories/exteriorCategory/lavanda4.webp",
         img5: "../public/img/imgCategories/exteriorCategory/lavanda1.webp",
-        description: "Planta aromartica con flores purpuras."
+        description: "Planta aromartica con flores purpuras.",
+        cantidad: 1,
     },
     {
         id: 4,
@@ -43,7 +51,8 @@ let products = [
         img3: "../public/img/imgCategories/exteriorCategory/jazmín2.webp",
         img4:"../public/img/imgCategories/exteriorCategory/jazmín3.webp",
         img5: "../public/img/imgCategories/exteriorCategory/jazmín4.webp",
-        description: "Planta trepadora con flores fragantes."
+        description: "Planta trepadora con flores fragantes.",
+        cantidad: 1,
     },
     {
         id: 5,
@@ -54,7 +63,8 @@ let products = [
         img3: "../public/img/imgCategories/exteriorCategory/geranio1.webp",
         img4:"../public/img/imgCategories/exteriorCategory/geranio3.webp",
         img5: "../public/img/imgCategories/exteriorCategory/geranio4.webp",
-        description: "Planta de flores coloridas y duraderas."
+        description: "Planta de flores coloridas y duraderas.",
+        cantidad: 1,
     },
     {
         id: 6,
@@ -65,7 +75,8 @@ let products = [
         img3: "../public/img/imgCategories/exteriorCategory/buganvilla2.webp",
         img4:"../public/img/imgCategories/exteriorCategory/buganvilla3.webp",
         img5: "../public/img/imgCategories/exteriorCategory/buganvilla4.webp",
-        description: "Planta trepadora con flores brillantes."
+        description: "Planta trepadora con flores brillantes.",
+        cantidad: 1,
     },
     {
         id:7,
@@ -76,7 +87,8 @@ let products = [
         img3: "../public/img/imgCategories/exteriorCategory/girasol2.webp",
         img4:"../public/img/imgCategories/exteriorCategory/girasol3.webp",
         img5: "../public/img/imgCategories/exteriorCategory/girasol4.webp",
-        description: "Planta alta con flores amarillas grandes."
+        description: "Planta alta con flores amarillas grandes.",
+        cantidad: 1,
     },
     {
         id:8,
@@ -87,7 +99,8 @@ let products = [
         img3: "../public/img/imgCategories/exteriorCategory/margarita1.webp",
         img4:"../public/img/imgCategories/exteriorCategory/margarita3.webp",
         img5: "../public/img/imgCategories/exteriorCategory/margarita4.webp",
-        description: "Planta con flores blancas y centro amarillo."
+        description: "Planta con flores blancas y centro amarillo.",
+        cantidad: 1,
     },
     {   
         id:9,
@@ -98,7 +111,8 @@ let products = [
         img3: "../public/img/imgCategories/exteriorCategory/crisantemo2.webp",
         img4:"../public/img/imgCategories/exteriorCategory/crisantemo3.webp",
         img5: "../public/img/imgCategories/exteriorCategory/crisantemo4.webp",
-        description: "Planta con una gran variedad de flores."
+        description: "Planta con una gran variedad de flores.",
+        cantidad: 1,
     }, 
     {   
         id:10,
@@ -109,39 +123,39 @@ let products = [
         img3: "../public/img/imgCategories/exteriorCategory/azalea3.webp",
         img4:"../public/img/imgCategories/exteriorCategory/azalea4.webp",
         img5: "../public/img/imgCategories/exteriorCategory/azalea1.webp",
-        description: "Planta de arbusto con flores brillantes." 
+        description: "Planta de arbusto con flores brillantes.",
+        cantidad: 1, 
     }
-]
+];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-const container = document.getElementById('extCategory');
 let extCategoryHTML = '';
 
-for (let i = 0; i < products.length; i++) {
+products.forEach((product) => {
     extCategoryHTML += `
         <div class="plant-card">
             <div>
                 <div class="container">
                     <div class="imgContainer">
-                        <img src= "${products[i].img}" alt="" class="mainIMG">
+                        <img src="${product.img}" alt="" class="mainIMG">
                     </div>
                     <div class="xContainer">
-                        <img src="${products[i].img2}" alt="" class="xContainerx active">
-                        <img src="${products[i].img3}" alt="" class="xContainerx">
-                        <img src="${products[i].img4}" alt="" class="xContainerx">
-                        <img src="${products[i].img5}" alt="" class="xContainerx">
+                        <img src="${product.img2}" alt="" class="xContainerx active">
+                        <img src="${product.img3}" alt="" class="xContainerx">
+                        <img src="${product.img4}" alt="" class="xContainerx">
+                        <img src="${product.img5}" alt="" class="xContainerx">
                     </div>
                 </div>
             </div>
-            <h2>${products[i].name}</h2>
-            <p>Precio: $${products[i].price}</p>
-            <div class="car">
-                <img src="../public/img/greenCar.webp" alt="car" class="carImg">
-            </div>
+            <h2>${product.name}</h2>
+            <p>Precio: $${product.price}</p>
+            <p>Cantidad: ${product.cantidad}</p>
+            <button class="comprar" data-id="${product.id}">Agregar</button>  
         </div>
     `;
-}
+});
 
-container.innerHTML = extCategoryHTML;
+extCategory.innerHTML = extCategoryHTML;
 
 document.querySelectorAll('.plant-card').forEach(card => {
     const mainIMG = card.querySelector('.mainIMG');
@@ -156,3 +170,40 @@ document.querySelectorAll('.plant-card').forEach(card => {
         });
     });
 });
+
+// Manejo del carrito
+document.querySelectorAll('.comprar').forEach(button => {
+    button.addEventListener('click', (event) => {
+        const productId = event.target.getAttribute('data-id');
+        const product = products.find(p => p.id == productId);
+        
+        //Buscar producto repetido
+        const repeat = carrito.some((repeatProduct) => repeatProduct.id === product.id);
+        if(repeat){
+            carrito.map((prod) => {
+                if(prod.id === product.id){
+                    prod.cantidad++;
+                }
+            });
+        }else{
+        carrito.push({
+            id: product.id,
+            img: product.img,
+            name: product.name,
+            price: product.price,
+            cantidad: product.cantidad,
+        });
+        console.log(carrito);
+        console.log(carrito.length);
+        carritoCounter();
+        saveLocal();
+    }
+    
+    });
+});
+
+//Local storage
+//SETITEMS
+const saveLocal = () => {
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+};
