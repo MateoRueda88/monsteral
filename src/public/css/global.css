@@ -13,7 +13,6 @@ normalizar nuestra hoja de estilos */
 .header-content {
   width: 100%;
   height: auto;
-  height: auto;
   display: flex;
   flex-direction: column;
 }
@@ -33,6 +32,7 @@ normalizar nuestra hoja de estilos */
   padding-bottom: 4px;
 }
 .menu-hamburguesa {
+  margin-top: 7px;
   width: auto;
   height: fit-content;
 }
@@ -208,7 +208,10 @@ Contenido logo */
 .icons-content {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
+  height: auto;
+  margin-bottom: 7px;
 }
 
 .icons-content a {
