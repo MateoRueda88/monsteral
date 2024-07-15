@@ -15,19 +15,19 @@ function LoginEmail(event) {
         Swal.fire({
             title: "No hay usuarios registrados",
             showConfirmButton: false,
-            background: '#523726',
-            icon: 'info',
-            timer: '2000',
-            position: 'center',
+            background: "#52c096",
+            icon: "info",
+            timer: "1000",
+            position: "center",
             backdrop: true,
-            color: '#939535',
+            color: "#939535",
             allowOutsideClick: true,
             toost: true,
             showConfirmButton: false,
-            customClass:{
-            title: 'titulo-password'
-            }
-    });
+            customClass: {
+              title: "titulo-password-lo",
+            },
+          });
     return;
     }
     
@@ -37,21 +37,21 @@ function LoginEmail(event) {
     // Validar que validateUser sea un array
     if (!Array.isArray(validateUser)) {
         Swal.fire({
-            title: "Datos de usuario no válidos",
+            title: "Datos de uruario no validos",
             showConfirmButton: false,
-            background: '#523726',
-            icon: 'info',
-            timer: '2000',
-            position: 'center',
+            background: "#52c096",
+            icon: "info",
+            timer: "1000",
+            position: "center",
             backdrop: true,
-            color: '#939535',
+            color: "#939535",
             allowOutsideClick: true,
             toost: true,
             showConfirmButton: false,
-            customClass:{
-            title: 'titulo-password'
-            }
-    });
+            customClass: {
+              title: "titulo-password-lo",
+            },
+          });
     return;
     }
 
@@ -60,19 +60,19 @@ function LoginEmail(event) {
         Swal.fire({
             title: "Campos vacios",
             showConfirmButton: false,
-            background: '#523726',
-            icon: 'warning',
-            timer: '2000',
-            position: 'center',
+            background: "#52c096",
+            icon: "info",
+            timer: "1000",
+            position: "center",
             backdrop: true,
-            color: '#939535',
+            color: "#939535",
             allowOutsideClick: true,
             toost: true,
             showConfirmButton: false,
-            customClass:{
-            title: 'titulo-password'
-            }
-    });
+            customClass: {
+              title: "titulo-password-lo",
+            },
+          });
     return;
     }
     // Validar que el usuario exista
@@ -80,60 +80,61 @@ function LoginEmail(event) {
     if (!user) {
         Swal.fire({
             title: "El email ingresado no existe",
-            icon: 'warning',
-            background: '#523726',
-            timer: '3000',
-            position: 'center',
+            showConfirmButton: false,
+            background: "#52c096",
+            icon: "info",
+            timer: "1000",
+            position: "center",
             backdrop: true,
-            color: '#939535',
+            color: "#939535",
             allowOutsideClick: true,
             toost: true,
             showConfirmButton: false,
-            customClass:{
-            title: 'titulo-password'
-            }      
-    });
+            customClass: {
+              title: "titulo-password-lo",
+            },
+          });
         return; 
     }
 
     // Validar que la contraseña coincida
     if (user.password !== password.value) {
         Swal.fire({
-            title: "Las constraseñas no coiciden",
-            icon: 'error',
-            background: '#523726',
-            timer: '3000',
-            position: 'center',
+            title: "Las constraseñas no coinciden",
+            showConfirmButton: false,
+            background: "#52c096",
+            icon: "info",
+            timer: "1000",
+            position: "center",
             backdrop: true,
-            color: '#939535',
+            color: "#939535",
             allowOutsideClick: true,
             toost: true,
             showConfirmButton: false,
-            customClass:{
-            title: 'titulo-password'
-            }
-           
-    });
+            customClass: {
+              title: "titulo-password-lo",
+            },
+          });
         return; 
     }
 
     // Usuario logueado con éxito
     Swal.fire({
-        title: "Usuario logueado con éxito",
-        icon: 'success',
-        background: '#523726',
-        timer: '3000',
-        position: 'center',
+        title: "Usuario logueado con exíto",
+        showConfirmButton: false,
+        background: "#52c096",
+        icon: "info",
+        timer: "1000",
+        position: "center",
         backdrop: true,
-        color: '#939535',
+        color: "#939535",
         allowOutsideClick: true,
         toost: true,
         showConfirmButton: false,
-        customClass:{
-        title: 'titulo-password'
-        }
-       
-});
+        customClass: {
+          title: "titulo-password-lo",
+        },
+      });
 
     // Ir a otra página desde js
     //window.location.href = "../views/about.html";

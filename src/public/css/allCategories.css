@@ -31,16 +31,6 @@
     opacity: 1 !important;
 }
 /* fin galeria imagenes */
-
-.goBack{
-    color: black;
-    position: absolute;
-    font-size: 23px;
-    padding: 5px 17px;
-}
-.goBack:hover{
-    color: #BC8150;
-}
 .containerPlants{
     width: 100%;
     display: grid;
@@ -50,7 +40,7 @@
 }
 
 .plant-card {
-    width: 400px;
+    width: 350px;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -62,6 +52,7 @@
     max-width: 400px;
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .plant-card h2 {
@@ -71,11 +62,34 @@
     text-align: center;
 }
 
-.plant-card p {
+.plant-card p{
     margin-bottom: 3px;
-    color: black;
-    font-size: 0.8rem;
+    color: #523726;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
+/*boton imagenes*/
+.plant-card button{
+    border: none;
+    border-radius: 5%;
+    outline: 0;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: #BC8150;
+    text-align: center;
+    cursor: pointer;
+    width: 50%;
+    font-size: 1.3rem;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+.plant-card button:hover{
+    opacity: 0.9;
+    background-color: #939535;
+  }
+  /*fin boton imagenes*/
+  
 .car{
     width: 40px;
     height: 40px;

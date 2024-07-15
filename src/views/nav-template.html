@@ -14,7 +14,7 @@
     <body> 
 
     <!-- content header -->
-    <header class="header-content">
+    <header class="header-content" id="menu-container">
       
       <div class="badge text-bg-primary text-wrap" style="width: 100%;">
         Envios gratis por compras superiores a $200.000
@@ -44,45 +44,16 @@
           <input type="search" id="search" class="search-tablet" placeholder="¿Que estas buscando?" />
           <img src="../public/img/macgnificGlass.webp" alt="" class="img-lupa" />
         </div>
-
         <div class="icons-content">
+          <a href="register.html"><img class="icons" src="../public/img/user.webp" alt=" img user" /></a>  
 
-          <a href="register.html"><img class="icons" src="../public/img/user.webp" alt=" img user" /></a>   
+          <a href="#"><img class="ver-carrito" id="verCarrito" src="../public/img/car.webp" alt="img car"/><span id="cantidadCarrito" class="cantidadCarrito"></span></a>  
           
-          <!--------------------------- Carrito ------------------------------>
-          <div class="container-car" id="cart-container">
-            <div id="cart-icon"> 
-            <a href="#"><img class="icons" id="verCarrito" src="../public/img/car.webp" alt="img car"/></a>  
-            <span class="quantity">0</span>
-            </div>
-            <nav>
-                <div class="buy-card" id="buy-card">
-                  <h1>Carrito de compras</h1>
-                  <ul class="navCard" id="cart-items-header">
-                    <li>Imagen</li>
-                    <li>Nombre</li>
-                    <li>Precio</li>
-                    <li>Cantidad</li>     
-                  </ul>
-                    <div class="total" id="cart-total">Total: $</div>
-
-                    <div class="checkout">
-                    <button id="empty-cart">Vaciar Carrito</button>
-                    <div class="close" id="close-cart">Cerrar</div> 
-                </div>
-              </div>
-            </nav>
-          </div>
-          <!--------------------------- Fin Carrito ------------------------------>
-
           <a href="https://web.whatsapp.com/"><img class="icons" src="../public/img/whatsapp.webp" alt="img whatsapp" /></a> 
       </div>
     </div>
 
-     <!-- Contenedor de productos -->
-     <div id="products-container" class="plant-container"></div>
-
-
+     
       <!-- </div> -->
       <div class="content-search">
         <input type="search" id="search" class="search" placeholder="¿Que estas buscando?" />
@@ -91,7 +62,19 @@
       <div class="content-navigation">
         <nav class="content-nav-tablet" id="nav">
           <ul class="nav-list-tablet">
-            <li><a href="plants.html" class="enlace-nav">Plantas</a></li>
+            <li>
+              <a href="#" class="enlace-nav">Plantas <img src="../public/img/arrow3.png" class="menu-arrow" alt=""></a>
+              
+              <ul class="sub-menu-table">
+                <li class="menu-inside"><a class="menu-link-inside" href="../views/bonsaiCategory.html">Bonsai</a></li>
+                <li class="menu-inside"><a class="menu-link-inside" href="../views/exteriorCategory.html">Exterior</a></li>
+                <li class="menu-inside"><a class="menu-link-inside" href="../views/interiorCategory.html">Interior</a></li>
+                <li class="menu-inside"><a class="menu-link-inside" href="../views/medicinalCategory.html">Medicinal</a></li>
+                <li class="menu-inside"><a class="menu-link-inside" href="../views/polinizadorasCategory.html">Polinizadoras</a></li>
+                <li class="menu-inside"><a class="menu-link-inside" href="../views/purificadorasCategory.html">Purificadoras</a></li>
+                <li class="menu-inside"><a class="menu-link-inside" href="../views/suculentasCategory.html">Suculentas</a></li>
+              </ul>
+            </li>
             <li><a href="news.html" class="enlace-nav">Noticias</a></li>
             <li><a href="learn.html" class="enlace-nav">Talleres</a></li>
             <li><a href="about.html" class="enlace-nav">Nosotros</a></li>
@@ -101,13 +84,11 @@
         </nav>
   
       </div>
-
-
     </header>
 
-  <script src="/src/js/stock.js"></script>
-
-  
-
+    <script src="../js/header.js"></script>
+    <script src="../js/bonsaiCategoy.js"></script>
+    <script src="../js/carrito.js"></script>
+   
   </body> 
 </html>

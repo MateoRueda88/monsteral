@@ -117,22 +117,21 @@
   }
  
   
-  /* estilos validaciones */
-  
-  .error{
-    text-align: center;
-    font-size: 10pt;
-  }
-  .email:invalid{
-    border: 2px solid red;
-  }
  
-/* 
-  estilos SweetAlert */
+/* estilos validaciones */
 
-  .titulo-password{
-    color: #523726;
-    font-size: 1rem;
-    font-weight: 300;
-  }
- 
+.error{
+  text-align: center;
+  font-size: 10pt;
+}
+.email:invalid{
+  border: 2px solid red;
+}
+
+/* validaciones SwwetAlert */
+.titulo-password-re{
+  /*   */
+  color: #523726;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

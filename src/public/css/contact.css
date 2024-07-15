@@ -144,9 +144,17 @@ label {
 /* estilos validaciones */
 
 .error{
+  width: 100%;
   text-align: center;
   font-size: 10pt;
 }
 .email:invalid{
   border: 2px solid red;
+}
+
+/* validaciones SwwetAlert */
+.titulo-password{
+  color: #472611;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
