@@ -116,6 +116,7 @@ box-shadow: 12px 18px 0px rgba(6, 48, 35, 0.776); /* Sombra ajustada */
 }
 
 
+
 /* estilos validaciones */
 
 .error{
@@ -126,11 +127,9 @@ box-shadow: 12px 18px 0px rgba(6, 48, 35, 0.776); /* Sombra ajustada */
   border: 2px solid red;
 }
 
-/* 
-estilos SweetAlert */
-
-.titulo-password{
-  color: #C8B999;
-  font-size: 1rem;
+/* validaciones SwwetAlert */
+.titulo-password-lo{
+  color: #523726;
+  font-size: 1.2rem;
   font-weight: bold;
 }

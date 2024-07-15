@@ -1,3 +1,8 @@
+const intCategory = document.getElementById("intCategory");
+const verCarrito = document.getElementById("verCarrito");
+const modalContainer = document.getElementById("modal-container");
+const cantidadCarrito = document.getElementById("cantidadCarrito");
+
 //Lista productos categoria interiores
 
 let products = [ 
@@ -10,7 +15,8 @@ let products = [
       img3: "../public/img/imgCategories/interiorCategory/crisantemo3.webp",
       img4:"../public/img/imgCategories/interiorCategory/crisantemo4.webp",
       img5: "../public/img/imgCategories/interiorCategory/crisantemo1.webp",
-      description: "PLanta con flores variadas."
+      description: "PLanta con flores variadas.",
+      cantidad: 1,
     },
     {
       id: 2,
@@ -21,7 +27,8 @@ let products = [
       img3: "../public/img/imgCategories/interiorCategory/helechoBoston2.jpeg",
       img4:"../public/img/imgCategories/interiorCategory/helechoBoston3.webp",
       img5: "../public/img/imgCategories/interiorCategory/helechoBoston4.webp",
-      description: "Planta de follaje verde y frondoso."
+      description: "Planta de follaje verde y frondoso.",
+      cantidad: 1,
     },
     {
         id: 3,
@@ -32,7 +39,8 @@ let products = [
         img3: "../public/img/imgCategories/interiorCategory/espatifilo2.webp",
         img4:"../public/img/imgCategories/interiorCategory/espatifilo3.webp",
         img5: "../public/img/imgCategories/interiorCategory/espatifilo4.webp",
-        description: "Planta con hojas verdes y flores blancas."
+        description: "Planta con hojas verdes y flores blancas.",
+        cantidad: 1,
     },
     {
         id: 4,
@@ -43,7 +51,8 @@ let products = [
         img3: "../public/img/imgCategories/interiorCategory/sansevieria3.webp",
         img4:"../public/img/imgCategories/interiorCategory/sansevieria4.webp",
         img5: "../public/img/imgCategories/interiorCategory/sansevieria1.webp",
-        description: "Planta resistente que purfica el aire."
+        description: "Planta resistente que purfica el aire.",
+        cantidad: 1,
     },
     {
         id: 5,
@@ -54,7 +63,8 @@ let products = [
         img3: "../public/img/imgCategories/interiorCategory/dracena2.webp",
         img4:"../public/img/imgCategories/interiorCategory/dracena3.webp",
         img5: "../public/img/imgCategories/interiorCategory/dracena4.webp",
-        description: "Planta con hojas largas y elegantes."
+        description: "Planta con hojas largas y elegantes.",
+        cantidad: 1,
     },
     {
         id: 6,
@@ -65,7 +75,8 @@ let products = [
         img3: "../public/img/imgCategories/interiorCategory/pothos2.webp",
         img4:"../public/img/imgCategories/interiorCategory/pothos3.webp",
         img5: "../public/img/imgCategories/interiorCategory/pothos4.webp",
-        description: "Planta colgante facil de cuidar y decorativa."
+        description: "Planta colgante facil de cuidar y decorativa.",
+        cantidad: 1,
     },
     {
         id:7,
@@ -76,7 +87,8 @@ let products = [
         img3: "../public/img/imgCategories/interiorCategory/ficusLyrata2.webp",
         img4:"../public/img/imgCategories/interiorCategory/ficusLyrata3.webp",
         img5: "../public/img/imgCategories/interiorCategory/ficusLyrata4.webp",
-        description: "Arbol de hojas grandes y brillantes."
+        description: "Arbol de hojas grandes y brillantes.",
+        cantidad: 1,
     },
     {
         id:8,
@@ -87,7 +99,8 @@ let products = [
         img3: "../public/img/imgCategories/interiorCategory/cinta3.webp",
         img4:"../public/img/imgCategories/interiorCategory/cinta4.webp",
         img5: "../public/img/imgCategories/interiorCategory/cinta1.webp",
-        description: "Planta colgante con hojas rayadas."
+        description: "Planta colgante con hojas rayadas.",
+        cantidad: 1,
     },
     {   
         id:9,
@@ -98,7 +111,8 @@ let products = [
         img3: "../public/img/imgCategories/interiorCategory/monsteraDeliciosa2.webp",
         img4:"../public/img/imgCategories/interiorCategory/monsteraDeliciosa3.webp",
         img5: "../public/img/imgCategories/interiorCategory/monsteraDeliciosa4.webp",
-        description: "Planta con hojas grandes y perforadas."
+        description: "Planta con hojas grandes y perforadas.",
+        cantidad: 1,
     }, 
     {   
         id:10,
@@ -109,39 +123,40 @@ let products = [
         img3: "../public/img/imgCategories/interiorCategory/pileaPeperomioides3.webp",
         img4:"../public/img/imgCategories/interiorCategory/pileaPeperomioides4.webp",
         img5: "../public/img/imgCategories/interiorCategory/pileaPeperomioides1.webp",
-        description: "Planta de aspecto unico con hojas redondas." 
+        description: "Planta de aspecto unico con hojas redondas.",
+        cantidad: 1,
     }
 ]
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-const container = document.getElementById('intCategory');
+// Generar HTML para los productos y agregar al contenedor
 let intCategoryHTML = '';
 
-for (let i = 0; i < products.length; i++) {
+products.forEach((product) => {
     intCategoryHTML += `
         <div class="plant-card">
             <div>
                 <div class="container">
                     <div class="imgContainer">
-                        <img src= "${products[i].img}" alt="" class="mainIMG">
+                        <img src="${product.img}" alt="" class="mainIMG">
                     </div>
                     <div class="xContainer">
-                        <img src="${products[i].img2}" alt="" class="xContainerx active">
-                        <img src="${products[i].img3}" alt="" class="xContainerx">
-                        <img src="${products[i].img4}" alt="" class="xContainerx">
-                        <img src="${products[i].img5}" alt="" class="xContainerx">
+                        <img src="${product.img2}" alt="" class="xContainerx active">
+                        <img src="${product.img3}" alt="" class="xContainerx">
+                        <img src="${product.img4}" alt="" class="xContainerx">
+                        <img src="${product.img5}" alt="" class="xContainerx">
                     </div>
                 </div>
             </div>
-            <h2>${products[i].name}</h2>
-            <p>Precio: $${products[i].price}</p>
-            <div class="car">
-                <img src="../public/img/greenCar.webp" alt="car" class="carImg">
-            </div>
+            <h2>${product.name}</h2>
+            <p>Precio: $${product.price}</p>
+            <p>Cantidad: ${product.cantidad}</p>
+            <button class="comprar" data-id="${product.id}">Agregar</button>  
         </div>
     `;
-}
+});
 
-container.innerHTML = intCategoryHTML;
+intCategory.innerHTML = intCategoryHTML;
 
 document.querySelectorAll('.plant-card').forEach(card => {
     const mainIMG = card.querySelector('.mainIMG');
@@ -156,5 +171,41 @@ document.querySelectorAll('.plant-card').forEach(card => {
         });
     });
 });
+// Manejo del carrito
+document.querySelectorAll('.comprar').forEach(button => {
+    button.addEventListener('click', (event) => {
+        const productId = event.target.getAttribute('data-id');
+        const product = products.find(p => p.id == productId);
+        
+        //Buscar producto repetido
+        const repeat = carrito.some((repeatProduct) => repeatProduct.id === product.id);
+        if(repeat){
+            carrito.map((prod) => {
+                if(prod.id === product.id){
+                    prod.cantidad++;
+                }
+            });
+        }else{
+        carrito.push({
+            id: product.id,
+            img: product.img,
+            name: product.name,
+            price: product.price,
+            cantidad: product.cantidad,
+        });
+        console.log(carrito);
+        console.log(carrito.length);
+        carritoCounter();
+        saveLocal();
+    }
     
+    });
+});
+
+//Local storage
+//SETITEMS
+const saveLocal = () => {
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+};
+
 

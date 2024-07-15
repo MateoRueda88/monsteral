@@ -89,4 +89,3 @@ const carritoCounter = () => {
 };
 
 carritoCounter();
-
