@@ -144,6 +144,7 @@ label {
 /* estilos validaciones */
 
 .error{
+  width: 100%;
   text-align: center;
   font-size: 10pt;
 }
