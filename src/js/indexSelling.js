@@ -51,7 +51,7 @@ let products = [
           id:5,
           name:"Cinta",
           price: 40000,
-          img:"../public/img/imgCategories/interiorCategory/cinta1.webp",
+          img:"../public/img/imgCategories/interiorCategory/cinta2.webp",
           img2:"../public/img/imgCategories/interiorCategory/cinta2.webp", 
           img3: "../public/img/imgCategories/interiorCategory/cinta3.webp",
           img4:"../public/img/imgCategories/interiorCategory/cinta4.webp",
