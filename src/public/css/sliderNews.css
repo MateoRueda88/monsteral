@@ -89,9 +89,10 @@
     cursor: pointer;
     font-size: 30px;
     margin: 0 50px;
-    padding: 0 105px;
+    padding: 0 60px;
     text-transform: capitalize;
     color: #555;
+    z-index: 20;
 }
 
 .gallery-controls-button:focus{

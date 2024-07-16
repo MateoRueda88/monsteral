@@ -35,9 +35,10 @@
 }
 
 .gallery-controls button{
-    font-size: 30px;
+    font-size: 40px;
     margin: 0 50px;
-    padding: 0 255px;
+    padding: 0 140px;
+    z-index: 20;
 }
 
 }
@@ -81,9 +82,10 @@
     }
     
     .gallery-controls button{
-        font-size: 30px;
+        font-size: 40px;
         margin: 0 50px;
-        padding: 0 255px;
+        padding: 0 200px;
+        z-index: 20;
     }
     
     }
