@@ -17,9 +17,23 @@ display: flex;
 align-items: center;
 flex-direction: column;
 padding-top: 30px;
-
 }
-
+#eye-open{
+  position: absolute;
+  margin-left: 155px;
+  margin-top: 55px;
+  color: #E4E4CC ;
+  font-size: 14px;
+  cursor: pointer;
+}
+#eye-closed{
+  position: absolute;
+  margin-left: 155px;
+  margin-top: 55px;
+  color: #E4E4CC ;
+  font-size: 14px;
+  cursor: pointer;
+}
 
 .registerDecoration{
 position: relative;

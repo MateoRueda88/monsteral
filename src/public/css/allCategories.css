@@ -4,6 +4,22 @@
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
 }
+
+.ads{
+    background-color:#523726;
+    width: auto;
+    height: auto;
+    padding: 2px;
+
+    }
+.p{
+    font-weight: bold;
+    color: #c8b999;
+    text-align: center;
+    font-size: .9rem;
+}
+
+
 /* inicio galeria imagenes */
 .container .imgContainer .mainIMG{
     width: 100%;
