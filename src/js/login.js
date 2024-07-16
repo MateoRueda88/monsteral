@@ -75,8 +75,6 @@ function LoginEmail(event) {
           });
     return;
     }
-    
-
     // Validar que el usuario exista
     const user = validateUser.find(user => user.email === email.value);
     if (!user) {
@@ -142,3 +140,32 @@ function LoginEmail(event) {
     //window.location.href = "../views/about.html";
 
  }
+
+
+// Seleccionar los íconos de ojo abierto y cerrado
+const eyeOpen = document.getElementById('eye-open');
+const eyeClosed = document.getElementById('eye-closed');
+
+// Función para mostrar la contraseña
+function showPassword() {
+    if (password.type === 'password') {
+        password.type = 'text';
+        eyeOpen.style.display = 'none';
+        eyeClosed.style.display = 'block';
+    }
+}
+
+// Función para ocultar la contraseña
+function hidePassword() {
+    if (password.type === 'text') {
+        password.type = 'password';
+        eyeOpen.style.display = 'block';
+        eyeClosed.style.display = 'none';
+    }
+}
+
+// Agregar eventos de clic a los íconos
+eyeOpen.addEventListener('click', showPassword);
+eyeClosed.addEventListener('click', hidePassword);
+ 
+ 
