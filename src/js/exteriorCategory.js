@@ -140,7 +140,7 @@ products.forEach((product) => {
                         <img src="${product.img}" alt="" class="mainIMG">
                     </div>
                     <div class="xContainer">
-                        <img src="${product.img2}" alt="" class="xContainerx active">
+                        <img src="${product.img2}" alt="" class=" activexContainerx">
                         <img src="${product.img3}" alt="" class="xContainerx">
                         <img src="${product.img4}" alt="" class="xContainerx">
                         <img src="${product.img5}" alt="" class="xContainerx">
