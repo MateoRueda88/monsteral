@@ -20,6 +20,7 @@
   }
   .content-nav {
     display: none;
+
   }
   /* seccion buscador */
   .content-search {
@@ -219,5 +220,11 @@
  footer{
   width: 100%;
  }
+ .content-nav-tablet {
+
+  padding-top: 2%;
+  padding-bottom: 1% ;
+
+}
 }
  
