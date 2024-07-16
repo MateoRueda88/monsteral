@@ -53,6 +53,7 @@
     grid-template-columns: repeat(1,1fr);
     margin-top: 45px;
     gap: 35px 0;
+    margin-bottom: 15px;
 }
 
 .plant-card {
@@ -69,6 +70,7 @@
     margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    background-color: rgb(255, 255, 255);
 }
 
 .plant-card h2 {
