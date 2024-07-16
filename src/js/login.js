@@ -119,21 +119,23 @@ function LoginEmail(event) {
     }
 
     // Usuario logueado con éxito
-    Swal.fire({
+      Swal.fire({
         title: "Usuario logueado con exíto",
-        showConfirmButton: false,
         background: "#52c096",
         icon: "info",
-        timer: "1000",
+        timer: "3000",
         position: "center",
         backdrop: true,
         color: "#939535",
-        allowOutsideClick: true,
-        toost: true,
-        showConfirmButton: false,
+        confirmButtonText: "ok",
         customClass: {
           title: "titulo-password-lo",
         },
+
+      }).then((result) => {
+        if (result.isConfirmed) {
+          window.location.href = "./index.html"; // Cambia esto por la URL a la que quieres redirigir
+        }
       });
 
     // Ir a otra página desde js
