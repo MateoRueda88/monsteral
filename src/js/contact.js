@@ -35,33 +35,3 @@ function tipoDato(event) {
     errPhone.textContent = "✔";
   }
 }
-
-nombre.addEventListener("change", (event) => {
-  // longitudInput(event);
-  tipoDato(event);
-});
-function longitudInput(event) {
-  let valorInput = event.target.value;
-  let longitudInputNombre = valorInput.length;
-  if (longitudInputNombre < 3) {
-    Swal.fire({
-      title: "Ingresa mas caracteres",
-      showConfirmButton: false,
-      background: "#005c39",
-      icon: "info",
-      timer: "1000",
-      position: "center",
-      backdrop: true,
-      color: "#939535",
-      allowOutsideClick: true,
-      toost: true,
-      showConfirmButton: false,
-      customClass: {
-        title: "titulo-password",
-      },
-    });
-  
-  } else {
-    errName.textContent = "✔";
-  }
-}
