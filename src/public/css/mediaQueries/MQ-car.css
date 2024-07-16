@@ -1,10 +1,9 @@
-@media screen and (min-width: 768px) {
-    /*tamaño carrito*/
-.modal-content .imgCar{
-    height: 100px;
-    width: 100px;
-  
-  }
+
+/*@media screen and (min-width: 768px) {
+    .subTitleCar{
+        font-size: 15px;
+    }
+      }
   
   .total-content{
     font-size: 20px;
@@ -23,67 +22,10 @@
     font-size: 25px;
   }
 }
-  /*Fin carrito superior*/
-
-
-  @media screen and (min-width: 1024px) {
-     /*tamaño carrito*/
-.modal-content{
-    margin: 2%;
-  }
-  .modal-header .modal-header-title{
-    font-size: 40px;
-  }
-  .modal-header .imgCar{
-    height: 100px;
-    width: 100px;
-  }
-  
-  .total-content{
-    font-size: 25px;
-    padding: 10px;
-    text-align: center;
-    background-color: #BC8150;
-    border-radius: 5%;
-    margin-top: 2%;
-    margin-bottom: 4%;
-  }
-  .delete-product{
-    cursor: pointer;
-    color: #939535;
-    font-size: 35px;
-  }
-  .cantidadCarrito{
-    background-color: #939535;
-    width: 25px;
-    text-align: center;
-    right: 7.5rem;
-    color: white;
-    border-radius: 50%;
-    font-size: 20px;
-    padding: 4px;
-    top: 50px;
-    position: absolute;
-    display: none;
-  }
-  .modal-content, h3, p{
-    font-size: 20px;
-  }
-  h3{
-    font-weight: bold;
-  }
-  .sumar, .restar{
-    cursor: pointer;
-    color: #939535;
-    font-size: 35px;
-  }
-  /*Fin carrito superior*/
-  
-   }
-
-
+*/
+/*
    @media screen and (min-width: 375px) {
-    /*tamaño carrito*/
+
     .modal-container{
       width: 100%;
       max-width: 90%;
@@ -113,7 +55,7 @@
     .delete-product{
       font-size: 15px;
     }
-    .cantidadCarrito{
+    span .cantidadCarrito{
       width: 15px;
       font-size: 10px;
       right: 3.5rem;

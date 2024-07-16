@@ -1,20 +1,20 @@
   /*tamaño carrito*/
   .modal-container{
     width: 100%;
-    margin: 0 35%;
-    max-width: 10%;
-    border-radius: 5%;
-    color: #523726;
-    font-weight: bold;
-    background-color: #c8b999;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  /*for the top*/
-  position: fixed;
-  overflow: auto;
-  z-index: 9;
-  top: 14vh;
+  margin: 0 5%;
+  max-width: 90%; /*ancho carrito*/
+  border-radius: 5%;
+  color: #523726;
+  font-weight: bold;
+  background-color: #c8b999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+/*for the top*/
+position: fixed;
+overflow: auto;
+z-index: 9;
+top: 14vh;
   }
   .modal-container::-webkit-scrollbar{
     display: none;
@@ -28,21 +28,20 @@
     margin-bottom: 2%;
     padding: 2%;
   }
-  .modal-header-title{
+  .modal-header .modal-header-title{
     justify-self: start;
-    font-size: 25px;
+    font-size: 40px; /*titulo carrito*/
   }
   .modal-header-button{
     cursor: pointer;
     color: #939535;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 45px; /*tamaño x*/
   }
   .modal-container {
     width: 100%;
-    max-height: 300px; /* Altura máxima del contenedor con scroll */
+    max-height: 500px; /* Altura máxima del contenedor con scroll */
     overflow-y: auto; /* Habilitar scroll vertical */
-    
   }
   .modal-container > .modal-content{
     display: flex;
@@ -51,6 +50,8 @@
     align-items: center;
     width: 90%;
     margin: 10px;
+    margin-left: 0.5px;
+    margin-right: 0.5px;
   }
   .modal-container > div > img{
     height: 120px;
@@ -58,7 +59,7 @@
     border-radius: 15%;
   }
   .total-content{
-    font-size: 25px;
+    font-size: 20px; /*total a pagar*/
     padding: 10px;
     text-align: center;
     background-color: #BC8150;
@@ -69,11 +70,11 @@
   .delete-product{
     cursor: pointer;
     color: #939535;
-    font-size: 35px;
+    font-size: 35px; /*x productos*/
   }
   .cantidadCarrito{
     background-color: #939535;
-    width: 25px;
+    width: 25px; /*circulito carrito*/
     text-align: center;
     right: 7.5rem;
     color: white;
@@ -84,8 +85,8 @@
     position: absolute;
     display: none;
   }
-  .modal-content, h3, p{
-    font-size: 20px;
+  .modal-content .subTitleCar{
+    font-size: 25px;
   }
   h3{
     font-weight: bold;
