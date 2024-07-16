@@ -188,14 +188,14 @@
 
   .icons-content {
     height: auto;
-    gap: 33px;
-    padding-top: 1%;
+    gap: 30px;
+    padding-top: .3rem;
   }
 
   .icons-content a img {
-    width: 37px;
-    height: 34px;
-    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
   }
 
   .content-logo img {
