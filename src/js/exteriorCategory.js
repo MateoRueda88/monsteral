@@ -127,8 +127,10 @@ let products = [
         cantidad: 1, 
     }
 ];
+
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+// Generar HTML para los productos y agregar al contenedor
 let extCategoryHTML = '';
 
 products.forEach((product) => {
@@ -140,7 +142,7 @@ products.forEach((product) => {
                         <img src="${product.img}" alt="" class="mainIMG">
                     </div>
                     <div class="xContainer">
-                        <img src="${product.img2}" alt="" class=" activexContainerx">
+                        <img src="${product.img2}" alt="" class="xContainerx active">
                         <img src="${product.img3}" alt="" class="xContainerx">
                         <img src="${product.img4}" alt="" class="xContainerx">
                         <img src="${product.img5}" alt="" class="xContainerx">
@@ -158,6 +160,7 @@ products.forEach((product) => {
 
 extCategory.innerHTML = extCategoryHTML;
 
+// Funcionalidad de cambiar imágenes
 document.querySelectorAll('.plant-card').forEach(card => {
     const mainIMG = card.querySelector('.mainIMG');
     const xContainerx = card.querySelectorAll('.xContainerx');
