@@ -83,16 +83,18 @@
 
 .cantidadCarrito {
   background-color: #939535;
-  width: 25px; /* Tamaño de círculo carrito */
-  text-align: center;
-  right: 7.5rem;
+  width: 30px; /* Tamaño de círculo carrito */
+  height: 25px;
+  text-align:center;
+  right: 6.5rem;
   color: white;
   border-radius: 50%;
   font-size: 20px;
-  padding: 4px;
-  top: 50px;
-  position: absolute;
+  padding-bottom: 3%;
+  top: 48px;
+  position:absolute;
   display: none;
+  
 }
 
 .modal-content .subTitleCar {

@@ -105,8 +105,9 @@ label {
 }
 .container-info div p a {
   text-decoration: none;
-  color: #939535;
+  color: #292a04;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 .container-info div p a:hover {
   color: #523726;

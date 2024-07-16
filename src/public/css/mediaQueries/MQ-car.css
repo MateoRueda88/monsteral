@@ -1,20 +1,25 @@
 
-/*@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+
+  .cantidadCarrito{
+    width: 300px;
+    padding-bottom:3% ;
+    right: 4.5rem;
+    top: 40px;
+  }
+
     .subTitleCar{
         font-size: 15px;
     }
       }
-  
+ /* 
   .total-content{
     font-size: 20px;
   }
   .delete-product{
     font-size: 25px;
   }
-  .cantidadCarrito{
-    right: 4.5rem;
-    top: 40px;
-  }
+
   .modal-content, h3, p{
     font-size: 13px;
   }
